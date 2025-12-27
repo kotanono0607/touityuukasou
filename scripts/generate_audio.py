@@ -23,6 +23,7 @@ import os
 import sys
 import time
 import hashlib
+import wave
 from pathlib import Path
 from typing import Optional
 
@@ -76,6 +77,16 @@ def compute_script_hash(text: str, speaker: str) -> str:
     return hashlib.md5(content.encode()).hexdigest()[:12]
 
 
+def save_pcm_as_wav(pcm_data: bytes, output_path: Path):
+    """PCMデータをWAVファイルとして保存（24kHz, 16bit, mono）"""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with wave.open(str(output_path), "wb") as wf:
+        wf.setnchannels(1)        # モノラル
+        wf.setsampwidth(2)        # 16bit = 2bytes
+        wf.setframerate(24000)    # 24kHz
+        wf.writeframes(pcm_data)
+
+
 def generate_audio_gemini(
     client,
     text: str,
@@ -111,12 +122,10 @@ def generate_audio_gemini(
                 )
             )
 
-            # レスポンスから音声データを抽出
+            # レスポンスから音声データを抽出してWAVとして保存
             for part in response.candidates[0].content.parts:
                 if part.inline_data is not None:
-                    output_path.parent.mkdir(parents=True, exist_ok=True)
-                    with open(output_path, "wb") as f:
-                        f.write(part.inline_data.data)
+                    save_pcm_as_wav(part.inline_data.data, output_path)
                     return True
 
             print("  警告: 音声が生成されませんでした")
