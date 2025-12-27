@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_audio.py - Google Text-to-Speech APIを使用して音声を生成
+generate_audio.py - Gemini APIを使用して音声を生成
 
 使用方法:
     python scripts/generate_audio.py [--dry-run] [--episode N] [--limit N]
@@ -11,11 +11,10 @@ generate_audio.py - Google Text-to-Speech APIを使用して音声を生成
     --limit N    生成数を制限
 
 必要な環境変数:
-    GOOGLE_CLOUD_PROJECT  - GCPプロジェクトID
-    GOOGLE_APPLICATION_CREDENTIALS - サービスアカウントキーのパス
+    GEMINI_API_KEY - Gemini APIキー
 
 出力:
-    outputs/audio/episode{N}/scene_{id}_{index}.mp3
+    outputs/audio/episode{N}/scene_{id}_{index}.wav
 """
 
 import argparse
@@ -27,14 +26,34 @@ import hashlib
 from pathlib import Path
 from typing import Optional
 
-# Google Cloud Text-to-Speech をインポート
+# Gemini APIをインポート
 try:
-    from google.cloud import texttospeech
-    TTS_AVAILABLE = True
+    from google import genai
+    from google.genai import types
+    GENAI_AVAILABLE = True
 except ImportError:
-    TTS_AVAILABLE = False
-    print("警告: google-cloud-texttospeech がインストールされていません")
-    print("      pip install google-cloud-texttospeech")
+    GENAI_AVAILABLE = False
+    print("警告: google-genai がインストールされていません")
+    print("      pip install google-genai")
+
+# 設定
+GEMINI_MODEL = "gemini-2.0-flash-exp"
+WAIT_BETWEEN_AUDIO = 3  # 音声間の待機秒数
+MAX_RETRIES = 3
+RETRY_WAIT = 30
+
+# キャラクター別の読み上げ指示
+CHARACTER_VOICE_PROMPTS = {
+    "ren": "疲れた感じの落ち着いた男性の声で、少し投げやりに",
+    "yuki": "明るく元気な若い女性の声で、ハキハキと",
+    "sumika": "大人の女性の声で、感情を抑えながらも切なく",
+    "sumika_young": "若い女性の声で、夢を追う情熱を込めて",
+    "mother": "年配の女性の声で、優しく穏やかに",
+    "mother_young": "中年女性の声で、厳しくも愛情を込めて",
+    "father": "年配の男性の声で、温かく",
+    "voice_entity": "不気味で歪んだ声で、エコーがかかったように",
+    "narrator": "落ち着いたナレーターの声で、淡々と",
+}
 
 
 def load_json(filepath: Path) -> dict:
@@ -50,64 +69,79 @@ def save_json(filepath: Path, data: dict):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def compute_script_hash(text: str, voice_settings: dict) -> str:
+def compute_script_hash(text: str, speaker: str) -> str:
     """スクリプトのハッシュを計算（キャッシュ用）"""
-    content = f"{text}|{json.dumps(voice_settings, sort_keys=True)}"
+    content = f"{text}|{speaker}"
     return hashlib.md5(content.encode()).hexdigest()[:12]
 
 
-def generate_audio_tts(
+def build_voice_prompt(text: str, speaker: str, emotion: str = "") -> str:
+    """Gemini音声生成用のプロンプトを構築"""
+    voice_instruction = CHARACTER_VOICE_PROMPTS.get(speaker, CHARACTER_VOICE_PROMPTS["narrator"])
+
+    emotion_note = ""
+    if emotion:
+        emotion_note = f"（{emotion}の感情を込めて）"
+
+    prompt = f"""以下のセリフを{voice_instruction}読んでください。{emotion_note}
+
+「{text}」
+
+※自然な日本語の抑揚で、感情を込めて読み上げてください。"""
+
+    return prompt
+
+
+def generate_audio_gemini(
+    client,
     text: str,
-    voice_settings: dict,
+    speaker: str,
+    emotion: str,
     output_path: Path,
 ) -> bool:
-    """Google TTS APIで音声を生成"""
-    if not TTS_AVAILABLE:
-        print("  エラー: TTS SDKが利用できません")
-        return False
+    """Gemini APIで音声を生成（リトライ機能付き）"""
+    prompt = build_voice_prompt(text, speaker, emotion)
 
-    try:
-        client = texttospeech.TextToSpeechClient()
+    for attempt in range(MAX_RETRIES):
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_modalities=["AUDIO"]
+                )
+            )
 
-        # 入力テキスト
-        synthesis_input = texttospeech.SynthesisInput(text=text)
+            # レスポンスから音声データを抽出
+            for part in response.candidates[0].content.parts:
+                if part.inline_data is not None:
+                    # 音声を保存
+                    output_path.parent.mkdir(parents=True, exist_ok=True)
+                    with open(output_path, "wb") as f:
+                        f.write(part.inline_data.data)
+                    return True
 
-        # 音声設定
-        voice = texttospeech.VoiceSelectionParams(
-            language_code=voice_settings.get("language", "ja-JP"),
-            name=voice_settings.get("name", "ja-JP-Neural2-B"),
-        )
+            print("  警告: 音声が生成されませんでした")
+            return False
 
-        # オーディオ設定
-        pitch = voice_settings.get("pitch", 0)
-        speaking_rate = voice_settings.get("speaking_rate", 1.0)
+        except Exception as e:
+            error_msg = str(e)
+            print(f"  試行 {attempt + 1}/{MAX_RETRIES} 失敗: {error_msg}")
 
-        audio_config = texttospeech.AudioConfig(
-            audio_encoding=texttospeech.AudioEncoding.MP3,
-            pitch=pitch,
-            speaking_rate=speaking_rate,
-        )
+            if "429" in error_msg or "quota" in error_msg.lower() or "rate" in error_msg.lower():
+                print(f"  レート制限検知。{RETRY_WAIT}秒待機中...")
+                time.sleep(RETRY_WAIT)
+            elif attempt < MAX_RETRIES - 1:
+                print(f"  {RETRY_WAIT}秒後にリトライ...")
+                time.sleep(RETRY_WAIT)
+            else:
+                return False
 
-        # 音声合成
-        response = client.synthesize_speech(
-            input=synthesis_input,
-            voice=voice,
-            audio_config=audio_config,
-        )
-
-        # 保存
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, "wb") as f:
-            f.write(response.audio_content)
-
-        return True
-
-    except Exception as e:
-        print(f"  エラー: {e}")
-        return False
+    return False
 
 
 def process_episode(
+    client,
     scripts_path: Path,
     output_dir: Path,
     manifest_path: Path,
@@ -139,17 +173,18 @@ def process_episode(
         scene_id = script_data.get("scene_id", "unknown")
         beat_index = script_data.get("beat_index", 0)
         text = script_data.get("text", "")
-        voice_settings = script_data.get("voice_settings", {})
+        speaker = script_data.get("speaker", "narrator")
+        emotion = script_data.get("emotion", "")
 
         if not text:
             continue
 
         # 出力ファイル名
-        filename = f"{scene_id}_{beat_index:03d}.mp3"
+        filename = f"{scene_id}_{beat_index:03d}.wav"
         output_path = episode_output_dir / filename
 
         # ハッシュでキャッシュ確認
-        script_hash = compute_script_hash(text, voice_settings)
+        script_hash = compute_script_hash(text, speaker)
         manifest_key = f"ep{episode_num}_{scene_id}_{beat_index}"
 
         if manifest_key in manifest:
@@ -158,19 +193,20 @@ def process_episode(
                 skipped += 1
                 continue
 
-        speaker = script_data.get("speaker", "narrator")
         print(f"  [{i+1}/{len(scripts)}] {filename} ({speaker})")
 
         if dry_run:
             print(f"    テキスト: {text[:50]}...")
-            print(f"    音声: {voice_settings.get('name', 'default')}")
+            print(f"    話者: {speaker}")
             generated += 1
             continue
 
         # 音声生成
-        success = generate_audio_tts(
+        success = generate_audio_gemini(
+            client=client,
             text=text,
-            voice_settings=voice_settings,
+            speaker=speaker,
+            emotion=emotion,
             output_path=output_path,
         )
 
@@ -183,20 +219,22 @@ def process_episode(
                 "scene_id": scene_id,
                 "beat_index": beat_index,
                 "speaker": speaker,
-                "duration_estimate": len(text) * 0.15,  # 概算
             }
             save_json(manifest_path, manifest)
+            print(f"    保存完了: {output_path}")
         else:
             failed += 1
 
         # レート制限対策
-        time.sleep(0.1)
+        if i < len(scripts) - 1:
+            print(f"    {WAIT_BETWEEN_AUDIO}秒待機中...")
+            time.sleep(WAIT_BETWEEN_AUDIO)
 
     return generated, skipped, failed
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Google TTSで音声を生成")
+    parser = argparse.ArgumentParser(description="Gemini APIで音声を生成")
     parser.add_argument("--dry-run", action="store_true", help="APIを呼び出さずに確認")
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--limit", type=int, help="生成数の上限")
@@ -207,23 +245,29 @@ def main():
     output_dir = base_dir / "outputs" / "audio"
     manifest_path = output_dir / "manifest.json"
 
-    # GCP設定確認
+    client = None
+
+    # APIキー確認
     if not args.dry_run:
-        project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
-        if not project_id:
-            print("エラー: GOOGLE_CLOUD_PROJECT 環境変数を設定してください")
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            print("エラー: GEMINI_API_KEY 環境変数を設定してください")
             print()
             print("例:")
-            print("  export GOOGLE_CLOUD_PROJECT=your-project-id")
-            print("  export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json")
+            print("  export GEMINI_API_KEY=your-api-key")
+            print()
+            print("または:")
+            print("  GEMINI_API_KEY=your-api-key python scripts/generate_audio.py")
             sys.exit(1)
 
-        if not TTS_AVAILABLE:
-            print("エラー: TTS SDKをインストールしてください")
-            print("  pip install google-cloud-texttospeech")
+        if not GENAI_AVAILABLE:
+            print("エラー: google-genai をインストールしてください")
+            print("  pip install google-genai")
             sys.exit(1)
 
-        print(f"GCPプロジェクト: {project_id}")
+        # クライアント初期化
+        client = genai.Client(api_key=api_key)
+        print("Gemini API クライアント初期化完了")
 
     print()
     print("音声生成を開始します...")
@@ -248,6 +292,7 @@ def main():
         print(f"エピソード{episode_num}:")
 
         generated, skipped, failed = process_episode(
+            client=client,
             scripts_path=scripts_path,
             output_dir=output_dir,
             manifest_path=manifest_path,
