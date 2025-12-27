@@ -159,32 +159,70 @@ def get_reference_images(
     return ref_images
 
 
-def build_gemini_prompt(prompt: str, negative_prompt: str, style: str = "", has_references: bool = False) -> str:
-    """Gemini用のプロンプトを構築"""
-    ref_instruction = ""
-    if has_references:
-        ref_instruction = """
-=== CRITICAL: CHARACTER CONSISTENCY ===
-I have provided reference images above. You MUST follow these rules STRICTLY:
+def build_character_descriptions(
+    character_ids: List[str],
+    characters_data: dict,
+) -> str:
+    """キャラクターIDリストから統一された説明文を生成"""
+    descriptions = []
+    characters = characters_data.get("characters", {})
 
-CHARACTER DESIGN (MANDATORY - DO NOT DEVIATE):
-- Copy the EXACT face shape, eye shape, and facial features from the reference
-- Copy the EXACT hair style, hair color, and hair length from the reference
-- Copy the EXACT clothing design, colors, and accessories from the reference
-- DO NOT improvise or change ANY aspect of the character's appearance
-- The character in the output MUST look like the SAME PERSON as the reference
+    for char_id in character_ids:
+        char_info = characters.get(char_id, {})
+        if not char_info:
+            continue
 
-BACKGROUND:
-- Match the background style and color palette from the reference
-- Maintain the same atmosphere and lighting mood
+        # imagen_prompt.base を優先使用、なければ appearance から生成
+        imagen_prompt = char_info.get("imagen_prompt", {})
+        if imagen_prompt.get("base"):
+            desc = imagen_prompt["base"]
+        else:
+            # appearance から説明を構築
+            appearance = char_info.get("appearance", {})
+            parts = []
+            if char_info.get("gender"):
+                gender_map = {"male": "male", "female": "female"}
+                parts.append(gender_map.get(char_info["gender"], "person"))
+            if char_info.get("age"):
+                parts.append(f"{char_info['age']} years old")
+            if appearance.get("hair"):
+                parts.append(f"{appearance['hair']} hair")
+            if appearance.get("eyes"):
+                parts.append(f"{appearance['eyes']} eyes")
+            if appearance.get("build"):
+                parts.append(appearance["build"])
+            if appearance.get("clothing"):
+                parts.append(appearance["clothing"])
+            if appearance.get("features"):
+                parts.extend(appearance["features"])
+            desc = ", ".join(parts) if parts else char_info.get("description", "")
 
-WARNING: If the output character looks different from the reference, it is a FAILURE.
+        name = char_info.get("name_en", char_info.get("name", char_id))
+        descriptions.append(f"{name}: {desc}")
+
+    return "\n".join(descriptions)
+
+
+def build_gemini_prompt(
+    prompt: str,
+    negative_prompt: str,
+    style: str = "",
+    character_descriptions: str = "",
+) -> str:
+    """Gemini用のプロンプトを構築（参考コード形式）"""
+
+    # キャラクター説明セクション
+    char_section = ""
+    if character_descriptions:
+        char_section = f"""
+CHARACTERS (maintain exact visual consistency across all scenes):
+{character_descriptions}
 """
 
     full_prompt = f"""Generate a single high-quality anime illustration.
-{ref_instruction}
+
 CRITICAL RULES:
-- NO speech bubbles, NO text, NO words, NO letters anywhere in the image
+- NO speech bubbles, NO text, NO words, NO letters anywhere
 - Fully rendered detailed background (NOT white/blank background)
 - Rich colors and shading
 - Professional anime art quality
@@ -193,7 +231,7 @@ QUALITY: High detail, vibrant colors, fully colored illustration, detailed backg
 
 STYLE: Japanese anime/manga style, clean bold lineart, expressive faces, aspect ratio 16:9
 {style}
-
+{char_section}
 SCENE DESCRIPTION:
 {prompt}
 
@@ -208,19 +246,15 @@ def generate_image_gemini(
     negative_prompt: str,
     style: str,
     output_path: Path,
-    reference_images: List[tuple[str, Image.Image]] = None,
+    character_descriptions: str = "",
 ) -> bool:
     """Gemini APIで画像を生成（リトライ機能付き）"""
-    has_references = reference_images and len(reference_images) > 0
-    full_prompt = build_gemini_prompt(prompt, negative_prompt, style, has_references)
+    full_prompt = build_gemini_prompt(
+        prompt, negative_prompt, style, character_descriptions
+    )
 
-    # コンテンツ構築（参照画像 + テキストプロンプト）
-    contents = []
-    if has_references:
-        for label, img in reference_images:
-            contents.append(f"[{label}]")
-            contents.append(img)
-    contents.append(full_prompt)
+    # コンテンツ構築（テキストプロンプトのみ）
+    contents = full_prompt
 
     for attempt in range(MAX_RETRIES):
         try:
@@ -271,7 +305,6 @@ def process_episode(
     base_dir: Path,
     dry_run: bool = False,
     limit: Optional[int] = None,
-    use_references: bool = True,
     debug: bool = False,
 ) -> tuple[int, int, int]:
     """1つのエピソードの画像を生成"""
@@ -306,17 +339,15 @@ def process_episode(
         filename = f"{scene_id}_{beat_index:03d}.png"
         output_path = episode_output_dir / filename
 
-        # 参照画像を取得
-        ref_images = []
-        ref_paths = []
-        if use_references and PIL_AVAILABLE:
-            ref_images = get_reference_images(
-                prompt_data, characters_data, locations_data, base_dir, debug
-            )
-            ref_paths = [label for label, _ in ref_images]
+        # キャラクター説明を生成（テキストベース）
+        character_ids = prompt_data.get("characters", [])
+        char_descriptions = build_character_descriptions(character_ids, characters_data)
 
-        # ハッシュでキャッシュ確認
-        prompt_hash = compute_prompt_hash(prompt, negative_prompt, ref_paths)
+        if debug and char_descriptions:
+            print(f"    [DEBUG] Characters: {character_ids}")
+
+        # ハッシュでキャッシュ確認（キャラクター説明も含める）
+        prompt_hash = compute_prompt_hash(prompt, negative_prompt, character_ids)
         manifest_key = f"ep{episode_num}_{scene_id}_{beat_index}"
 
         if manifest_key in manifest:
@@ -326,12 +357,16 @@ def process_episode(
                 skipped += 1
                 continue
 
-        ref_info = f" (参照: {len(ref_images)}枚)" if ref_images else ""
-        print(f"  [{i+1}/{len(prompts)}] {filename}{ref_info}")
+        char_info = f" (キャラ: {len(character_ids)}人)" if character_ids else ""
+        print(f"  [{i+1}/{len(prompts)}] {filename}{char_info}")
 
         if dry_run:
             print(f"    プロンプト: {prompt[:80]}...")
             print(f"    ネガティブ: {negative_prompt[:50]}...")
+            if char_descriptions:
+                print(f"    キャラクター説明:")
+                for line in char_descriptions.split("\n"):
+                    print(f"      {line[:70]}...")
             generated += 1
             continue
 
@@ -342,7 +377,7 @@ def process_episode(
             negative_prompt=negative_prompt,
             style=style,
             output_path=output_path,
-            reference_images=ref_images if use_references else None,
+            character_descriptions=char_descriptions,
         )
 
         if success:
@@ -372,7 +407,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="APIを呼び出さずに確認")
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--limit", type=int, help="生成枚数の上限")
-    parser.add_argument("--no-reference", action="store_true", help="参照画像を使用しない")
     parser.add_argument("--debug", action="store_true", help="デバッグ出力を表示")
     args = parser.parse_args()
 
@@ -384,8 +418,6 @@ def main():
     # キャラクター・ロケーションデータを読み込み
     characters_data = load_json(base_dir / "data" / "characters.json")
     locations_data = load_json(base_dir / "data" / "locations.json")
-
-    use_references = not args.no_reference
 
     client = None
 
@@ -413,15 +445,11 @@ def main():
 
     print()
     print("画像生成を開始します...")
+    print("(テキストベースキャラクター記述モード: imagen_prompt.baseを使用)")
     if args.dry_run:
         print("(ドライラン: APIは呼び出しません)")
-    if use_references:
-        print("(参照画像モード: キャラクター/背景画像を使用)")
-    else:
-        print("(参照画像なし)")
     if args.debug:
         print(f"[DEBUG] base_dir: {base_dir}")
-        print(f"[DEBUG] PIL_AVAILABLE: {PIL_AVAILABLE}")
     print()
 
     total_generated = 0
@@ -450,7 +478,6 @@ def main():
             base_dir=base_dir,
             dry_run=args.dry_run,
             limit=args.limit,
-            use_references=use_references,
             debug=args.debug,
         )
 
