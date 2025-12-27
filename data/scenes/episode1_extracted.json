@@ -1,0 +1,839 @@
+{
+  "episode": 1,
+  "title": "雨と依頼人",
+  "title_en": "",
+  "scenes": [
+    {
+      "id": "ep1_sc001",
+      "title": "シーン1",
+      "location": "lost_and_found",
+      "weather": "rain",
+      "characters_present": [
+        "ren",
+        "yuki"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "雨が降っている。"
+        },
+        {
+          "type": "narration",
+          "text": "それも、傘を差すのが馬鹿らしくなるような、執拗で静かな雨だ。アスファルトを叩く音が遠くの電車の走行音と混ざり合い、世界全体が水底に沈んでいるような錯覚を覚える。"
+        },
+        {
+          "type": "narration",
+          "text": "深夜零時十三分。"
+        },
+        {
+          "type": "narration",
+          "text": "灰谷レンは、遺失物取扱所の窓口カウンターに頬杖をつきながら、ガラス窓を流れ落ちる雨粒をぼんやりと眺めていた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……面倒だ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "誰に言うでもなく呟いて、口に咥えたスティックを噛む。煙草に見えるそれは、実際には魔除けの効果を持つアロマスティックだ。ラベンダーとセージを調合した、どこか線香じみた香りがかすかに漂う。"
+        },
+        {
+          "type": "narration",
+          "text": "古びた駅舎の片隅にあるこの遺失物取扱所は、昼間は普通の落とし物窓口として機能している。傘、財布、定期入れ、スマートフォン。そういった、ありふれた忘れ物たちの一時的な住処。"
+        },
+        {
+          "type": "narration",
+          "text": "だが、日付が変わり、終電が去った後、この場所は少しだけ違う顔を見せる。"
+        },
+        {
+          "type": "narration",
+          "text": "カウンターの後ろにある棚には、普通の落とし物に混じって、奇妙なものが並んでいる。色褪せた手紙の束。片方だけの子供用の靴。弦の切れたギター。そのどれもが、三ヶ月の保管期限をとうに過ぎている。"
+        },
+        {
+          "type": "narration",
+          "text": "レンはそれらを処分したことがない。できない、と言った方が正確かもしれない。"
+        },
+        {
+          "type": "dialogue",
+          "text": "灰谷さん、お茶入りましたよ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "奥のスタッフルームから、若い女の声が聞こえた。続いて、湯気の立つマグカップを持った人影が現れる。"
+        },
+        {
+          "type": "narration",
+          "text": "ユキ。この春から夜勤のアルバイトとして配属された新人だ。二十代前半、黒縁眼鏡の奥にある瞳は真面目そうで、どこか思い詰めたような色を宿している。"
+        },
+        {
+          "type": "dialogue",
+          "text": "読み取り",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "ありがとう。そこ置いといて",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "……また寝てたんですか？",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "寝てない。瞑想してた",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "目、開いてましたけど",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは答えず、マグカップに手を伸ばした。安物のほうじ茶の香りが、アロマスティックの匂いと混ざる。"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは呆れたように息を吐きながら、カウンターの隣に腰を下ろした。"
+        },
+        {
+          "type": "dialogue",
+          "text": "今日は静かですね",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "雨の日は関係ない。来る時は来る",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "想い",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "だが、まだ力の制御ができていない。すぐに感情移入して、泣く。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……灰谷さんって、本当にやる気ないですよね",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "無駄な力を使わないだけだ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンはほうじ茶を啜りながら、窓の外を見た。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc002",
+      "title": "シーン2",
+      "location": "lost_and_found",
+      "weather": "rain_heavy",
+      "characters_present": [
+        "ren",
+        "sumika",
+        "yuki"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "深夜零時四十七分。"
+        },
+        {
+          "type": "narration",
+          "text": "雨脚が少し強くなった頃、ガラス戸が開いた。"
+        },
+        {
+          "type": "narration",
+          "text": "湿った夜気とともに入ってきたのは、一人の女だった。"
+        },
+        {
+          "type": "narration",
+          "text": "三十代半ばだろうか。濡れそぼった髪が頬に張り付き、コートの裾からは水が滴り落ちている。傘を持っていないのか、それとも差すことすら忘れていたのか——全身がずぶ濡れだった。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは頬杖をついたまま、女を見た。"
+        },
+        {
+          "type": "narration",
+          "text": "普通の落とし物の届け出なら、こんな時間には来ない。終電はとっくに終わっている。そして、この女の目には、ある種の切迫した色が浮かんでいた。何かを探している人間特有の、焦りと縋るような光。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは一瞬だけ、遠い記憶に意識を引っ張られた。だが、すぐにそれを振り払う。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……いらっしゃいませ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが慌てて立ち上がり、タオルを取りに行こうとする。だが、女はそれを制するように首を横に振った。"
+        },
+        {
+          "type": "narration",
+          "text": "そして、カウンターの前に立つと、掠れた声で言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あの……ここは、遺失物取扱所、ですよね",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "ええ、そうですが",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが頷く。レンは黙ったまま、女を観察していた。"
+        },
+        {
+          "type": "narration",
+          "text": "服装は地味だが、質の良いものを着ている。ただ、手入れがされていない。爪は短く切られ、化粧気はない。生活に余裕がないのではなく、自分自身に構う気力がないのだろう。"
+        },
+        {
+          "type": "narration",
+          "text": "そして——右手の薬指に、かすかな痕があった。かつて指輪をしていた跡。今はもう、何もない。"
+        },
+        {
+          "type": "narration",
+          "text": "女は一度、深く息を吸った。そして——"
+        },
+        {
+          "type": "dialogue",
+          "text": "私、落としてしまったんです",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "何をですか？",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが尋ねる。"
+        },
+        {
+          "type": "narration",
+          "text": "女は少しの間、黙っていた。雨粒が床に落ちる音だけが、静かに響く。"
+        },
+        {
+          "type": "narration",
+          "text": "やがて、女は口を開いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——私の『声』を、落としてしまったんです",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが困惑したように振り返る。レンは表情を変えなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "声、ですか……？",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "はい。私の……歌う声を。どこかに、落としてしまって",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "女の目には涙が滲んでいた。だが、その涙すらも、どこか乾いているように見えた。長い間泣き続けて、もう涙の出し方を忘れてしまったかのような。"
+        },
+        {
+          "type": "narration",
+          "text": "レンはゆっくりと頬杖を外し、椅子の背にもたれかかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——ここは警察じゃないですよ",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "灰谷さんっ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが非難するように声を上げる。だが、レンは構わず続けた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "声を落とした、ってのは比喩ですか。それとも本当に、何か物を失くしたんですか。どっちにしても、うちは普通の遺失物取扱所です。届け出があった落とし物を保管して、届けがあれば持ち主に返す。それ以上のことは——",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "——灰谷さん",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキの声が、妙に硬かった。"
+        },
+        {
+          "type": "narration",
+          "text": "レンが視線を向けると、ユキは女の方を真っ直ぐに見つめていた。その目が、かすかに潤んでいる。"
+        },
+        {
+          "type": "dialogue",
+          "text": "読み取り",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "この人……本当に、落としてるんです",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキの声が震えていた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "声を。本当に。私には……聞こえます。この人の中に、あるべきものが、ない。空洞みたいに……ぽっかりと",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキの目から、涙が一筋こぼれた。他人の空虚を、自分のことのように感じてしまう——それが彼女の力であり、業でもある。"
+        },
+        {
+          "type": "narration",
+          "text": "女が目を見開いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなた……私の中が、見えるの……？",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "見えるっていうか……感じる、というか……",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは言葉を探すように視線を彷徨わせた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "物には、持ち主の想いが宿るんです。強い想いほど、深く。そして時々……その想いが、持ち主から離れて、物だけが残ることがある",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンは深く、深く息を吐いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "…………",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "本当に、面倒だ。"
+        },
+        {
+          "type": "narration",
+          "text": "だが——ユキがこうなってしまった以上、追い返すわけにもいかない。この新人は、一度共感してしまうと、解決するまで引きずる。放っておくと三日は泣き続ける。"
+        },
+        {
+          "type": "narration",
+          "text": "レンはちらりと、カウンター後ろの棚を見た。保管期限を過ぎた落とし物たち。持ち主が来ないまま、何年も眠り続けているもの。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは椅子から立ち上がり、カウンターの下から一枚の紙を取り出した。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——名前は",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "女が顔を上げる。"
+        },
+        {
+          "type": "dialogue",
+          "text": "え……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "届出書です。名前と連絡先、それから、落とした物の詳細を書いてもらいます",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "あ、あの、でも、私が落としたのは——",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "『声』でしょう。分かってます",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは紙とペンをカウンターに置いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ここは確かに遺失物取扱所です。ただし",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "窓の外で、稲光が一瞬だけ世界を白く染めた。遠雷が、地響きのように腹の底を揺らす。"
+        },
+        {
+          "type": "dialogue",
+          "text": "深夜零時以降は、少し管轄が広がる",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "女は呆然とレンを見つめていた。ユキもまた、安堵したような、それでいて不安そうな顔で立ち尽くしている。"
+        },
+        {
+          "type": "narration",
+          "text": "レンはアロマスティックを咥え直し、窓の外の雨を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "届出を受理したら、捜索を開始します。見つかる保証はない。見つかっても、戻したくないと言われることもある。それでもいいなら——",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ペンを持つ女の手が、小さく震えていた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——書いてください。〈遺失物届〉",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "雨音が、少しだけ静かになった気がした。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc003",
+      "title": "シーン3",
+      "location": "lost_and_found",
+      "weather": "rain_heavy",
+      "characters_present": [
+        "ren",
+        "yuki",
+        "voice_entity",
+        "sumika"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "午前一時二十分。"
+        },
+        {
+          "type": "dialogue",
+          "text": "蒼井澄香（あおい　すみか）"
+        },
+        {
+          "type": "narration",
+          "text": "レンはそれを受け取り、内容に目を通す。"
+        },
+        {
+          "type": "narration",
+          "text": "蒼井澄香。三十四歳。職業欄は空白。緊急連絡先も、空白。"
+        },
+        {
+          "type": "dialogue",
+          "text": "遺失物の詳細"
+        },
+        {
+          "type": "narration",
+          "text": "私の歌声。十年前に、どこかに置いてきてしまいました"
+        },
+        {
+          "type": "narration",
+          "text": "レンは眉をひそめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——十年前？"
+        },
+        {
+          "type": "dialogue",
+          "text": "はい"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の声は相変わらず掠れていた。声帯に問題があるようには聞こえない。だが、どこか——芯がない。空気だけが漏れ出ているような、そんな声。"
+        },
+        {
+          "type": "dialogue",
+          "text": "今まで気づかなかったってことですか。十年も",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "気づいていました。ただ……",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は視線を落とした。"
+        },
+        {
+          "type": "dialogue",
+          "text": "探す気力が、なかったんです。でも最近になって、どうしても見つけたくなって。見つけないと、このまま——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "言葉が途切れる。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは書類をカウンターに置き、腕を組んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "声",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年前に何があったか、訊いてもいいですか",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は少しの間、黙っていた。ユキが心配そうに見守る中、やがて、ぽつりと言葉が漏れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——歌手を、目指していたんです",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "雨音が、遠くで響いている。"
+        },
+        {
+          "type": "dialogue",
+          "text": "小さなライブハウスで歌ったり、オーディションを受けたり。二十代の頃は、それだけが生きがいでした。でも、全然うまくいかなくて。お金もなくなって、周りにも迷惑をかけて——",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の手が、膝の上で握りしめられた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ある日、喉が動かなくなったんです。病院に行っても、どこも悪くないって言われて。心因性だって。要するに、心が歌うことを拒否したんですね",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "心因性失声症。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは知っている。強いストレスやトラウマによって、身体的な異常がないにも関わらず、声が出なくなる症状。珍しくはないが、厄介な症例だ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "失くしもの",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "それで、声を『落とした』と",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "おかしいですよね",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は自嘲するように笑った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも、そうとしか言えないんです。あの日から、私の中には、歌う声がない。喋ることはできます。でも、歌おうとすると——何も出てこない。あるべき場所に、何もないんです",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが小さく息を呑んだ。その目から、涙が一筋、頬を伝い落ちる。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは黙っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "こういう依頼は、珍しくない。"
+        },
+        {
+          "type": "narration",
+          "text": "人の強い想いは、時として——形を持つ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "怪異",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "だが、レンたちには見える。"
+        },
+        {
+          "type": "narration",
+          "text": "聞こえる。"
+        },
+        {
+          "type": "narration",
+          "text": "そして——回収する。"
+        },
+        {
+          "type": "narration",
+          "text": "それが、深夜零時以降の遺失物取扱所の仕事だ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……分かりました",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンはゆっくりと立ち上がった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "届出は受理します。捜索を開始しますが、いくつか確認しておきたいことがある",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "はい",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年前、声が出なくなったのはいつですか。季節は。場所は",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は少し考えるように目を伏せた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……秋でした。十月の終わり頃。場所は——この街の、どこかのライブハウスだったと思います。最後のステージに立った日に、声が出なくなったので",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "ライブハウスの名前は",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "覚えていません。小さな店で、もう潰れていると思います",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは頷いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "他に何か、心当たりはありますか。その日持っていた物とか、よく行っていた場所とか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は首を横に振った。"
+        },
+        {
+          "type": "narration",
+          "text": "だが、その動きは——どこか、躊躇いを含んでいるように見えた。無意識に、右手が胸元に触れている。"
+        },
+        {
+          "type": "narration",
+          "text": "何かを隠している。"
+        },
+        {
+          "type": "narration",
+          "text": "レンはそれ以上追及しなかった。隠し事は誰にでもある。それを暴くのは、必要になってからでいい。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——分かりました。こちらで調査を進めます。何か分かったら連絡しますので、連絡先を——",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "あの",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香が遮った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私も、一緒に探してはいけませんか",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは眉を上げた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "依頼人が同行するのは、あまり……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "お願いします",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の目に、強い光が宿った。今夜初めて見せた、はっきりとした意志の色。"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年間、逃げてきたんです。自分の声から。自分の夢から。だから——今度は、自分で見つけたいんです。たとえ、もう取り戻せなくても",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは澄香を見つめた。"
+        },
+        {
+          "type": "narration",
+          "text": "その目の奥に、何かが見えた気がした。諦めとは違う、覚悟のようなもの。失くしたものを取り戻すためではなく、失くしたものと向き合うための決意。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは深くため息を吐いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——勝手にしてください。ただし、危険な目に遭っても責任は取りませんよ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の表情が、かすかに——ほんのかすかに——緩んだ。"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが慌てて立ち上がる。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あ、あの、私もついていきます！",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "お前は留守番だ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "えっ、なんでですか！",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "泣くから",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "泣きませんっ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンはユキを無視して、壁に掛けてあった古いコートを取った。"
+        },
+        {
+          "type": "narration",
+          "text": "ポケットに手を入れると、冷たい金属の感触がある。錆びた鍵。この仕事を始めた時から持ち歩いている、仕事道具のひとつ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "雨、まだ降ってますね",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが窓の外を見て言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ああ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンはコートを羽織り、ドアに手をかけた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "雨の日は、落とし物が見つかりやすい",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "雨は記憶を呼び覚ます。悲しみも、後悔も、雨音とともに蘇ってくる。そして、想いが強くなれば、それに宿った怪異も姿を現しやすくなる。"
+        },
+        {
+          "type": "narration",
+          "text": "ガラス戸を開けると、湿った夜気が流れ込んできた。"
+        },
+        {
+          "type": "narration",
+          "text": "遠くで、終電を告げる放送が——もうとっくに終わったはずの——幻のように響いていた。"
+        }
+      ]
+    }
+  ]
+}
