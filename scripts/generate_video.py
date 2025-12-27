@@ -6,8 +6,10 @@ generate_video.py - 画像と音声を結合して動画を生成
     python scripts/generate_video.py [--episode N] [--dry-run]
 
 オプション:
-    --episode N  指定エピソードのみ処理
-    --dry-run    ffmpegを実行せずにコマンドを表示
+    --episode N       指定エピソードのみ処理
+    --dry-run         ffmpegを実行せずにコマンドを表示
+    --burn-subtitles  字幕を動画に焼き付け
+    --with-bgm        BGMをミックス
 
 必要:
     ffmpeg (コマンドラインツール)
@@ -40,6 +42,108 @@ def get_audio_duration(audio_path: Path) -> float:
             return frames / float(rate)
     except Exception:
         return 3.0  # デフォルト3秒
+
+
+def get_video_duration(video_path: Path) -> float:
+    """動画の長さを秒で取得"""
+    try:
+        cmd = [
+            "ffprobe", "-v", "error",
+            "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1",
+            str(video_path)
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=10)
+        return float(result.stdout.strip())
+    except Exception:
+        return 0.0
+
+
+def get_bgm_for_episode(episode_num: int, base_dir: Path) -> Optional[dict]:
+    """エピソードに適したBGMを取得"""
+    bgm_json_path = base_dir / "data" / "bgm.json"
+    if not bgm_json_path.exists():
+        return None
+
+    bgm_data = load_json(bgm_json_path)
+    tracks = bgm_data.get("tracks", {})
+
+    # エピソード別のデフォルトBGM
+    episode_bgm = {
+        1: "office_ambient",  # 導入、遺失物取扱所
+        2: "emotional_sad",   # 澄香の物語
+        3: "flashback",       # 回想シーン中心
+        4: "determination",   # クライマックス
+    }
+
+    track_id = episode_bgm.get(episode_num, "main_theme")
+    track = tracks.get(track_id)
+
+    if track:
+        bgm_path = base_dir / track.get("file", "")
+        if bgm_path.exists():
+            return {
+                "path": bgm_path,
+                "volume": track.get("volume", 0.3),
+                "name": track.get("name", track_id),
+            }
+
+    return None
+
+
+def mix_bgm_with_video(
+    video_path: Path,
+    bgm_path: Path,
+    output_path: Path,
+    bgm_volume: float = 0.3,
+    dry_run: bool = False,
+) -> bool:
+    """動画にBGMをミックス"""
+    if not video_path.exists() or not bgm_path.exists():
+        return False
+
+    video_duration = get_video_duration(video_path)
+    if video_duration <= 0:
+        return False
+
+    # BGMをループしつつ、動画の音声（セリフ）とミックス
+    # amixフィルタで音声をミックス、BGMは音量を下げる
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", str(video_path),
+        "-stream_loop", "-1",  # BGMを無限ループ
+        "-i", str(bgm_path),
+        "-filter_complex",
+        f"[1:a]volume={bgm_volume},afade=t=in:st=0:d=2,afade=t=out:st={video_duration-3}:d=3[bgm];"
+        f"[0:a][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]",
+        "-map", "0:v",
+        "-map", "[aout]",
+        "-c:v", "copy",
+        "-c:a", "aac",
+        "-b:a", "192k",
+        "-t", str(video_duration),
+        str(output_path)
+    ]
+
+    if dry_run:
+        print(f"  [DRY-RUN] BGMミックス: {bgm_path.name} → {output_path.name}")
+        return True
+
+    try:
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=600,
+        )
+        if result.returncode != 0:
+            error_lines = result.stderr.strip().split('\n')
+            last_lines = '\n'.join(error_lines[-5:])
+            print(f"  BGMミックスエラー:\n{last_lines}")
+        return result.returncode == 0
+    except Exception as e:
+        print(f"  BGMミックスエラー: {e}")
+        return False
 
 
 # キャラクター名の日本語マッピング
@@ -271,6 +375,7 @@ def process_episode(
     base_dir: Path,
     dry_run: bool = False,
     burn_subs: bool = False,
+    with_bgm: bool = False,
 ) -> bool:
     """1エピソードの動画を生成"""
 
@@ -352,16 +457,38 @@ def process_episode(
                 for v in scene_videos:
                     v.unlink(missing_ok=True)
 
+            current_video = output_path
+
+            # BGMミックス
+            if with_bgm:
+                bgm_info = get_bgm_for_episode(episode_num, base_dir)
+                if bgm_info:
+                    print(f"  BGMミックス中: {bgm_info['name']}")
+                    bgm_output = video_dir / f"episode{episode_num}_bgm.mp4"
+                    if mix_bgm_with_video(
+                        current_video,
+                        bgm_info["path"],
+                        bgm_output,
+                        bgm_info["volume"],
+                        dry_run,
+                    ):
+                        print(f"  BGMミックス完了")
+                        current_video = bgm_output
+                    else:
+                        print(f"  BGMミックス失敗、BGMなしで続行")
+                else:
+                    print(f"  BGMファイルなし、スキップ")
+
             # 字幕焼き付け
             if burn_subs:
                 subtitled_path = video_dir / f"episode{episode_num}_subtitled.mp4"
                 print(f"  字幕焼き付け中...")
-                if burn_subtitles(output_path, srt_path, subtitled_path, dry_run):
+                if burn_subtitles(current_video, srt_path, subtitled_path, dry_run):
                     print(f"  完成: {subtitled_path}")
                 else:
                     print(f"  字幕焼き付け失敗")
             else:
-                print(f"  完成: {output_path}")
+                print(f"  完成: {current_video}")
 
             return True
 
@@ -373,6 +500,7 @@ def main():
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--dry-run", action="store_true", help="ffmpegを実行せずに確認")
     parser.add_argument("--burn-subtitles", action="store_true", help="字幕を動画に焼き付け")
+    parser.add_argument("--with-bgm", action="store_true", help="BGMをミックス")
     args = parser.parse_args()
 
     base_dir = Path(__file__).parent.parent
@@ -393,6 +521,8 @@ def main():
     print("動画生成を開始します...")
     if args.dry_run:
         print("(ドライラン: ffmpegは実行しません)")
+    if args.with_bgm:
+        print("(BGMをミックスします)")
     if args.burn_subtitles:
         print("(字幕を動画に焼き付けます)")
     print()
@@ -402,7 +532,13 @@ def main():
             continue
 
         print(f"エピソード{episode_num}:")
-        success = process_episode(episode_num, base_dir, args.dry_run, args.burn_subtitles)
+        success = process_episode(
+            episode_num,
+            base_dir,
+            args.dry_run,
+            args.burn_subtitles,
+            args.with_bgm,
+        )
         if success:
             print(f"  完了")
         else:

@@ -1,0 +1,138 @@
+{
+  "$schema": "./schemas/bgm.schema.json",
+  "version": "1.0.0",
+  "description": "BGM定義ファイル - Suno AI用プロンプトとシーンマッピング",
+  "tracks": {
+    "main_theme": {
+      "name": "深夜零時の遺失物係",
+      "name_en": "Midnight Lost and Found",
+      "file": "assets/bgm/main_theme.mp3",
+      "duration_target": 180,
+      "suno_prompt": "Japanese lo-fi ambient, mysterious piano melody, soft strings, rainy night atmosphere, melancholic but warm, subtle electronic elements, 80 bpm, minor key",
+      "suno_style": "ambient, lo-fi, cinematic",
+      "mood": "mysterious, nostalgic, warm",
+      "usage": ["opening", "ending", "title"],
+      "volume": 0.3
+    },
+
+    "office_ambient": {
+      "name": "古びた窓口",
+      "name_en": "The Old Counter",
+      "file": "assets/bgm/office_ambient.mp3",
+      "duration_target": 240,
+      "suno_prompt": "Dark ambient, minimal piano, flickering fluorescent light atmosphere, rain sounds, old clock ticking feel, Japanese noir, mysterious, 60 bpm, very subtle",
+      "suno_style": "dark ambient, minimal, atmospheric",
+      "mood": "mysterious, quiet, slightly eerie",
+      "usage": ["lost_and_found"],
+      "locations": ["lost_and_found"],
+      "volume": 0.2
+    },
+
+    "tension": {
+      "name": "怪異の気配",
+      "name_en": "Presence of the Unknown",
+      "file": "assets/bgm/tension.mp3",
+      "duration_target": 120,
+      "suno_prompt": "Horror ambient, dissonant strings, unsettling atmosphere, Japanese horror style, dark drone, subtle breathing sounds, building tension, no melody, 50 bpm",
+      "suno_style": "horror, dark ambient, cinematic",
+      "mood": "tense, eerie, unsettling",
+      "usage": ["entity_encounter", "horror"],
+      "locations": ["alley"],
+      "volume": 0.25
+    },
+
+    "emotional_sad": {
+      "name": "失われた声",
+      "name_en": "The Lost Voice",
+      "file": "assets/bgm/emotional_sad.mp3",
+      "duration_target": 180,
+      "suno_prompt": "Sad piano ballad, emotional strings, Japanese drama style, tearful atmosphere, solo piano with gentle orchestral swells, 70 bpm, A minor, cinematic emotional",
+      "suno_style": "emotional, orchestral, piano",
+      "mood": "sad, emotional, tearful",
+      "usage": ["emotional_peak", "revelation"],
+      "volume": 0.35
+    },
+
+    "flashback": {
+      "name": "10年前の記憶",
+      "name_en": "Memories of Ten Years Ago",
+      "file": "assets/bgm/flashback.mp3",
+      "duration_target": 150,
+      "suno_prompt": "Nostalgic acoustic guitar, warm analog synth, dream-like atmosphere, sepia tone feeling, soft drums, Japanese indie folk style, hopeful but bittersweet, 85 bpm",
+      "suno_style": "indie folk, nostalgic, dreamy",
+      "mood": "nostalgic, warm, bittersweet",
+      "usage": ["flashback"],
+      "locations": ["sumika_apartment", "livehouse"],
+      "is_flashback": true,
+      "volume": 0.3
+    },
+
+    "hope": {
+      "name": "朝の光",
+      "name_en": "Morning Light",
+      "file": "assets/bgm/hope.mp3",
+      "duration_target": 120,
+      "suno_prompt": "Uplifting piano and strings, gentle morning atmosphere, Japanese drama resolution style, hopeful melody, warm orchestral arrangement, sunrise feeling, 90 bpm, major key",
+      "suno_style": "cinematic, uplifting, orchestral",
+      "mood": "hopeful, warm, resolution",
+      "usage": ["resolution", "morning"],
+      "volume": 0.35
+    },
+
+    "mother_scene": {
+      "name": "母との再会",
+      "name_en": "Reunion with Mother",
+      "file": "assets/bgm/mother_scene.mp3",
+      "duration_target": 150,
+      "suno_prompt": "Gentle piano, warm strings, family drama style, traditional Japanese home atmosphere, emotional but restrained, subtle koto elements, 65 bpm, tender",
+      "suno_style": "emotional, traditional, warm",
+      "mood": "tender, emotional, familial",
+      "usage": ["family_scene"],
+      "locations": ["mother_house", "mother_house_entrance"],
+      "volume": 0.3
+    },
+
+    "determination": {
+      "name": "決意",
+      "name_en": "Determination",
+      "file": "assets/bgm/determination.mp3",
+      "duration_target": 90,
+      "suno_prompt": "Building orchestral, determined piano chords, Japanese drama climax style, rising strings, powerful but emotional, building to crescendo, 100 bpm, empowering",
+      "suno_style": "cinematic, dramatic, orchestral",
+      "mood": "determined, powerful, emotional",
+      "usage": ["climax", "decision"],
+      "volume": 0.4
+    }
+  },
+
+  "scene_mapping": {
+    "ep1_sc001": "office_ambient",
+    "ep1_sc002": "office_ambient",
+    "ep2_sc001": "tension",
+    "ep2_sc002": "emotional_sad",
+    "ep3_sc001": "flashback",
+    "ep3_sc002": "mother_scene",
+    "ep4_sc001": "determination",
+    "ep4_sc002": "hope"
+  },
+
+  "default_by_location": {
+    "lost_and_found": "office_ambient",
+    "alley": "tension",
+    "livehouse": "flashback",
+    "sumika_apartment": "flashback",
+    "mother_house": "mother_scene",
+    "mother_house_entrance": "mother_scene",
+    "station_bench": "emotional_sad"
+  },
+
+  "default_by_mood": {
+    "mysterious": "office_ambient",
+    "tense": "tension",
+    "sad": "emotional_sad",
+    "nostalgic": "flashback",
+    "hopeful": "hope",
+    "emotional": "emotional_sad",
+    "determined": "determination"
+  }
+}
