@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "props": {
+    "rusty_key": {
+      "name": "錆びた鍵",
+      "name_en": "Rusty Key",
+      "description": "レンの仕事道具。怪異を「開錠」するための鍵。",
+      "reference_image": "images/props/prop_rusty_key.png",
+      "owner": "ren"
+    },
+    "silver_pick": {
+      "name": "銀色のギターピック",
+      "name_en": "Silver Guitar Pick",
+      "description": "澄香の父の形見。澄香が母から受け取り、ライブで使っていた。",
+      "reference_image": "images/props/prop_silver_pick.png",
+      "owner": "sumika"
+    },
+    "rusty_microphone": {
+      "name": "錆びたマイク",
+      "name_en": "Rusty Microphone",
+      "description": "怪異化した「声」が宿っていたマイク。ライブハウス跡地で発見。",
+      "reference_image": "images/props/prop_rusty_microphone.png",
+      "owner": "voice_entity"
+    }
+  }
+}
