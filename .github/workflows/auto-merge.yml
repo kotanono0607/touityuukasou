@@ -1,0 +1,85 @@
+name: Auto Merge
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+      - 'feature/**'
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge-pr:
+    name: Auto Merge Pull Request
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable auto-merge for PR
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  create-and-merge:
+    name: Create PR and Merge
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get default branch
+        id: default-branch
+        run: |
+          DEFAULT_BRANCH=$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')
+          echo "branch=$DEFAULT_BRANCH" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if PR exists
+        id: check-pr
+        run: |
+          PR_EXISTS=$(gh pr list --head "${{ github.ref_name }}" --json number -q '.[0].number' || echo "")
+          echo "pr_number=$PR_EXISTS" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        id: create-pr
+        if: steps.check-pr.outputs.pr_number == ''
+        run: |
+          PR_URL=$(gh pr create \
+            --title "Auto-merge: ${{ github.ref_name }}" \
+            --body "$(cat <<'EOF'
+          ## 自動マージ
+
+          このPRは `${{ github.ref_name }}` ブランチへのプッシュにより自動作成されました。
+
+          ### 変更内容
+          ${{ github.event.head_commit.message }}
+          EOF
+          )" \
+            --base "${{ steps.default-branch.outputs.branch }}" \
+            --head "${{ github.ref_name }}")
+          echo "pr_url=$PR_URL" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Enable auto-merge
+        run: |
+          if [ -n "${{ steps.create-pr.outputs.pr_url }}" ]; then
+            gh pr merge --auto --merge "${{ steps.create-pr.outputs.pr_url }}"
+          elif [ -n "${{ steps.check-pr.outputs.pr_number }}" ]; then
+            gh pr merge --auto --merge "${{ steps.check-pr.outputs.pr_number }}"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
