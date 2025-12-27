@@ -24,7 +24,7 @@ import sys
 import time
 import hashlib
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List
 
 # Gemini APIをインポート
 try:
@@ -35,6 +35,15 @@ except ImportError:
     GENAI_AVAILABLE = False
     print("警告: google-genai がインストールされていません")
     print("      pip install google-genai")
+
+# PIL（画像読み込み用）
+try:
+    from PIL import Image
+    PIL_AVAILABLE = True
+except ImportError:
+    PIL_AVAILABLE = False
+    print("警告: Pillow がインストールされていません（参照画像機能に必要）")
+    print("      pip install Pillow")
 
 # 設定
 GEMINI_MODEL = "gemini-2.0-flash-exp"  # 画像生成対応モデル
@@ -56,16 +65,96 @@ def save_json(filepath: Path, data: dict):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
-def compute_prompt_hash(prompt: str, negative_prompt: str) -> str:
+def compute_prompt_hash(prompt: str, negative_prompt: str, ref_images: List[str] = None) -> str:
     """プロンプトのハッシュを計算（キャッシュ用）"""
-    content = f"{prompt}|{negative_prompt}"
+    ref_str = ",".join(sorted(ref_images)) if ref_images else ""
+    content = f"{prompt}|{negative_prompt}|{ref_str}"
     return hashlib.md5(content.encode()).hexdigest()[:12]
 
 
-def build_gemini_prompt(prompt: str, negative_prompt: str, style: str = "") -> str:
-    """Gemini用のプロンプトを構築"""
-    full_prompt = f"""Generate a single high-quality anime illustration.
+def load_reference_image(image_path: Path) -> Optional[Image.Image]:
+    """参照画像を読み込む"""
+    if not PIL_AVAILABLE:
+        return None
+    if not image_path.exists():
+        return None
+    try:
+        img = Image.open(image_path)
+        # 大きすぎる画像はリサイズ（API制限対策）
+        max_size = 1024
+        if img.width > max_size or img.height > max_size:
+            ratio = min(max_size / img.width, max_size / img.height)
+            new_size = (int(img.width * ratio), int(img.height * ratio))
+            img = img.resize(new_size, Image.Resampling.LANCZOS)
+        return img
+    except Exception as e:
+        print(f"  警告: 参照画像読み込み失敗 {image_path}: {e}")
+        return None
 
+
+def get_reference_images(
+    prompt_data: dict,
+    characters_data: dict,
+    locations_data: dict,
+    base_dir: Path,
+) -> List[tuple[str, Image.Image]]:
+    """プロンプトに対応する参照画像を取得"""
+    ref_images = []
+
+    # キャラクター参照画像
+    characters = prompt_data.get("characters", [])
+    for char_id in characters[:2]:  # 最大2キャラまで
+        char_info = characters_data.get("characters", {}).get(char_id, {})
+        ref_path = char_info.get("reference_image")
+        if ref_path:
+            img = load_reference_image(base_dir / ref_path)
+            if img:
+                char_name = char_info.get("name", char_id)
+                ref_images.append((f"Character: {char_name}", img))
+
+    # 背景参照画像
+    location_id = prompt_data.get("location", "")
+    location_info = locations_data.get("locations", {}).get(location_id, {})
+
+    # 複数の参照画像がある場合（天候/時間帯で選択）
+    ref_images_dict = location_info.get("reference_images", {})
+    weather = prompt_data.get("weather", "")
+
+    if ref_images_dict:
+        # 天候に応じた画像を選択
+        if "rain" in weather and "night_rain" in ref_images_dict:
+            ref_path = ref_images_dict["night_rain"]
+        elif "morning" in ref_images_dict:
+            ref_path = ref_images_dict.get("morning")
+        else:
+            # 最初の画像を使用
+            ref_path = list(ref_images_dict.values())[0] if ref_images_dict else None
+    else:
+        # 単一の参照画像
+        ref_path = location_info.get("reference_image")
+
+    if ref_path:
+        img = load_reference_image(base_dir / ref_path)
+        if img:
+            loc_name = location_info.get("name", location_id)
+            ref_images.append((f"Background: {loc_name}", img))
+
+    return ref_images
+
+
+def build_gemini_prompt(prompt: str, negative_prompt: str, style: str = "", has_references: bool = False) -> str:
+    """Gemini用のプロンプトを構築"""
+    ref_instruction = ""
+    if has_references:
+        ref_instruction = """
+REFERENCE IMAGES: I have provided reference images above. Please:
+- Match the character designs EXACTLY (face, hair, clothing, colors)
+- Match the background style and atmosphere
+- Maintain visual consistency with the references
+"""
+
+    full_prompt = f"""Generate a single high-quality anime illustration.
+{ref_instruction}
 CRITICAL RULES:
 - NO speech bubbles, NO text, NO words, NO letters anywhere in the image
 - Fully rendered detailed background (NOT white/blank background)
@@ -91,15 +180,25 @@ def generate_image_gemini(
     negative_prompt: str,
     style: str,
     output_path: Path,
+    reference_images: List[tuple[str, Image.Image]] = None,
 ) -> bool:
     """Gemini APIで画像を生成（リトライ機能付き）"""
-    full_prompt = build_gemini_prompt(prompt, negative_prompt, style)
+    has_references = reference_images and len(reference_images) > 0
+    full_prompt = build_gemini_prompt(prompt, negative_prompt, style, has_references)
+
+    # コンテンツ構築（参照画像 + テキストプロンプト）
+    contents = []
+    if has_references:
+        for label, img in reference_images:
+            contents.append(f"[{label}]")
+            contents.append(img)
+    contents.append(full_prompt)
 
     for attempt in range(MAX_RETRIES):
         try:
             response = client.models.generate_content(
                 model=GEMINI_MODEL,
-                contents=full_prompt,
+                contents=contents,
                 config=types.GenerateContentConfig(
                     response_modalities=["TEXT", "IMAGE"]
                 )
@@ -139,8 +238,12 @@ def process_episode(
     prompts_path: Path,
     output_dir: Path,
     manifest_path: Path,
+    characters_data: dict,
+    locations_data: dict,
+    base_dir: Path,
     dry_run: bool = False,
     limit: Optional[int] = None,
+    use_references: bool = True,
 ) -> tuple[int, int, int]:
     """1つのエピソードの画像を生成"""
 
@@ -174,8 +277,17 @@ def process_episode(
         filename = f"{scene_id}_{beat_index:03d}.png"
         output_path = episode_output_dir / filename
 
+        # 参照画像を取得
+        ref_images = []
+        ref_paths = []
+        if use_references and PIL_AVAILABLE:
+            ref_images = get_reference_images(
+                prompt_data, characters_data, locations_data, base_dir
+            )
+            ref_paths = [label for label, _ in ref_images]
+
         # ハッシュでキャッシュ確認
-        prompt_hash = compute_prompt_hash(prompt, negative_prompt)
+        prompt_hash = compute_prompt_hash(prompt, negative_prompt, ref_paths)
         manifest_key = f"ep{episode_num}_{scene_id}_{beat_index}"
 
         if manifest_key in manifest:
@@ -185,7 +297,8 @@ def process_episode(
                 skipped += 1
                 continue
 
-        print(f"  [{i+1}/{len(prompts)}] {filename}")
+        ref_info = f" (参照: {len(ref_images)}枚)" if ref_images else ""
+        print(f"  [{i+1}/{len(prompts)}] {filename}{ref_info}")
 
         if dry_run:
             print(f"    プロンプト: {prompt[:80]}...")
@@ -200,6 +313,7 @@ def process_episode(
             negative_prompt=negative_prompt,
             style=style,
             output_path=output_path,
+            reference_images=ref_images if use_references else None,
         )
 
         if success:
@@ -229,12 +343,19 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="APIを呼び出さずに確認")
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--limit", type=int, help="生成枚数の上限")
+    parser.add_argument("--no-reference", action="store_true", help="参照画像を使用しない")
     args = parser.parse_args()
 
     base_dir = Path(__file__).parent.parent
     prompts_dir = base_dir / "prompts" / "imagen"
     output_dir = base_dir / "outputs" / "images"
     manifest_path = output_dir / "manifest.json"
+
+    # キャラクター・ロケーションデータを読み込み
+    characters_data = load_json(base_dir / "data" / "characters.json")
+    locations_data = load_json(base_dir / "data" / "locations.json")
+
+    use_references = not args.no_reference
 
     client = None
 
@@ -264,6 +385,10 @@ def main():
     print("画像生成を開始します...")
     if args.dry_run:
         print("(ドライラン: APIは呼び出しません)")
+    if use_references:
+        print("(参照画像モード: キャラクター/背景画像を使用)")
+    else:
+        print("(参照画像なし)")
     print()
 
     total_generated = 0
@@ -287,8 +412,12 @@ def main():
             prompts_path=prompts_path,
             output_dir=output_dir,
             manifest_path=manifest_path,
+            characters_data=characters_data,
+            locations_data=locations_data,
+            base_dir=base_dir,
             dry_run=args.dry_run,
             limit=args.limit,
+            use_references=use_references,
         )
 
         total_generated += generated
