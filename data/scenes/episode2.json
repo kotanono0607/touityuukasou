@@ -1,0 +1,786 @@
+{
+  "episode": 2,
+  "title": "声の残響",
+  "title_en": "Echoes of the Voice",
+  "scenes": [
+    {
+      "id": "ep2_sc001",
+      "title": "夜の捜索",
+      "location": "alley",
+      "time": "02:00",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "午前二時。雨は小降りになっていた。レンは傘も差さずに、夜の街を歩いていた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……だから留守番しろって言ったのに",
+          "emotion": "exasperated"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "だって、蒼井さん一人じゃ危ないじゃないですか",
+          "emotion": "defensive"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "俺がいるだろ",
+          "emotion": "deadpan"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "灰谷さんは頼りにならないので",
+          "emotion": "blunt"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ひどい言われようだな",
+          "emotion": "resigned"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "蒼井さん、この辺りに見覚えはありますか？",
+          "emotion": "curious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……分かりません。十年前のことで、街もだいぶ変わっていて",
+          "emotion": "uncertain"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "無理もないですよね。十年って、長いですから",
+          "emotion": "sympathetic"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc002",
+      "title": "過去を語る",
+      "location": "alley",
+      "time": "02:10",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "蒼井さん。十年前、最後にステージに立った時のことを、もう少し詳しく教えてもらえますか",
+          "emotion": "probing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……どうしてですか",
+          "emotion": "hesitant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "落とし物を探すには、落とした状況を知る必要がある。どこで、どうやって、なぜ落としたのか",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "それから——隠し事があるなら、今のうちに話しておいてください。怪異は、隠された感情に敏感です",
+          "emotion": "serious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あの日は、私にとって最後のチャンスだったんです",
+          "emotion": "nostalgic"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc003",
+      "title": "回想：六畳一間のアパート",
+      "location": "sumika_apartment",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "flashback_years_ago": 10,
+      "characters_present": ["sumika_young"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "十年前——蒼井澄香は二十四歳だった。六畳一間のアパート。壁には防音のために貼った古い毛布。窓際に置かれた小さなキーボード。"
+        },
+        {
+          "type": "narration",
+          "text": "高校を卒業してから六年。ずっと歌手を目指してきた。昼間はコンビニでアルバイト。夜は小さなライブハウスを回る。"
+        },
+        {
+          "type": "narration",
+          "text": "「いい声してるね」——そう言われたことは、何度もあった。「でも、ごめん。今回は見送りで」——その言葉も、何度も聞いた。"
+        },
+        {
+          "type": "narration",
+          "text": "二十四歳の秋。貯金残高は三万円を切っていた。そんな時、実家から電話がかかってきた。"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc004",
+      "title": "回想：母との電話",
+      "location": "sumika_apartment",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "flashback_years_ago": 10,
+      "characters_present": ["sumika_young", "mother_young"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "澄香。いつまで続けるつもりなの",
+          "emotion": "cold",
+          "voice_note": "電話越し"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "……お母さん",
+          "emotion": "pained"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "六年よ。六年も経って、まだ何も形になってないじゃない",
+          "emotion": "harsh"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "お父さんみたいになりたいの？　夢ばかり追いかけて、何も残せないまま死んでいくの？",
+          "emotion": "bitter"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "お父さんは——",
+          "emotion": "defensive"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "お父さんは不幸だったのよ。才能があったわ。本当に。でも、それだけじゃ駄目だったの",
+          "emotion": "trembling"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "私は、あなたに同じ思いをしてほしくないの。お願いだから、帰ってきて",
+          "emotion": "pleading"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "嫌。嫌よ。私は歌いたいの。歌うことしかできないの",
+          "emotion": "defiant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "分かるわよ。痛いほど分かる。だから——止めたいの",
+          "emotion": "quiet_sad"
+        },
+        {
+          "type": "narration",
+          "text": "電話が、切れた。澄香は受話器を握りしめたまま、しばらく動けなかった。"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc005",
+      "title": "回想：実家でピックを受け取る",
+      "location": "mother_house",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "flashback_years_ago": 10,
+      "characters_present": ["sumika_young", "mother_young"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "それから一週間後。澄香は実家の玄関に立っていた。最後の援助を頼みに来たのだ。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "……上がりなさい",
+          "emotion": "resigned"
+        },
+        {
+          "type": "narration",
+          "text": "リビングに通される。父の遺影が、棚の上から澄香を見下ろしていた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "お金なら、ないわよ",
+          "emotion": "blunt"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "……分かってる",
+          "emotion": "dejected"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "じゃあ、何しに来たの",
+          "emotion": "questioning"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "帰る。来たのが間違いだった",
+          "emotion": "defeated"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "待ちなさい",
+          "emotion": "firm"
+        },
+        {
+          "type": "narration",
+          "text": "母は棚の引き出しを開け、何かを取り出した。銀色の、小さなギターピック。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "お父さんの形見よ。ずっと取っておいたの。捨てようと思ったこともあった。でも——できなかった",
+          "emotion": "conflicted"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "私は反対よ。今でも。でも、止められないことも分かってる。あなたは——お父さんに似てるから",
+          "emotion": "sad_acceptance"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother_young",
+          "text": "これを持っていきなさい。お父さんの代わりに、あなたを見守ってくれるように",
+          "emotion": "tender"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "……ありがとう",
+          "emotion": "tearful"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc006",
+      "title": "回想：最後のステージ",
+      "location": "livehouse",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "flashback_years_ago": 10,
+      "characters_present": ["sumika_young"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "それから二ヶ月後。一つのチャンスが巡ってきた。ある音楽プロデューサーが、新人発掘のために小さなライブハウスを回っているという噂。"
+        },
+        {
+          "type": "narration",
+          "text": "ライブ当日。小さなライブハウスは、二十人も入れば満員になるような場所だった。"
+        },
+        {
+          "type": "narration",
+          "text": "マイクスタンドには、父のピックをテープで貼り付けてあった。父が見守ってくれている——そう思うと、少しだけ勇気が出た。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika_young",
+          "text": "——こんばんは。蒼井澄香です。今日は二曲、聴いてください",
+          "emotion": "nervous"
+        },
+        {
+          "type": "narration",
+          "text": "一曲目は、なんとか歌い切った。声は震えていたかもしれない。でも、最後まで歌えた。"
+        },
+        {
+          "type": "narration",
+          "text": "二曲目のイントロが始まった。その時——ふと、客席の奥を見てしまった。スーツの男性が、腕を組んでこちらを見ている。その目が——どこか冷めているように見えた。"
+        },
+        {
+          "type": "internal",
+          "speaker": "sumika_young",
+          "text": "もし、ここで失敗したら。もし、この人にも認められなかったら。私は、どうなるんだろう。結局、お母さんの言う通りだったんじゃないか。"
+        },
+        {
+          "type": "narration",
+          "text": "歌い出しのタイミングが来た。口を開いた。——声が、出ない。喉が、動かない。"
+        },
+        {
+          "type": "narration",
+          "text": "気がついた時には、ステージを降りていた。楽屋を通り過ぎ、裏口から外に飛び出した。"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc007",
+      "title": "回想：逃走",
+      "location": "alley",
+      "time": null,
+      "weather": "night",
+      "is_flashback": true,
+      "flashback_years_ago": 10,
+      "characters_present": ["sumika_young"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "走った。どこへ向かっているのかも分からず、ただ走った。路地裏でようやく立ち止まった。"
+        },
+        {
+          "type": "internal",
+          "speaker": "sumika_young",
+          "text": "終わった。全部、終わった。"
+        },
+        {
+          "type": "narration",
+          "text": "涙が溢れてきた。嗚咽が漏れた。声を殺して泣いた。"
+        },
+        {
+          "type": "internal",
+          "speaker": "sumika_young",
+          "text": "——ピック。父のピックを、置いてきてしまった。マイクスタンドに貼り付けたまま——逃げてきてしまった。"
+        },
+        {
+          "type": "narration",
+          "text": "取りに戻らなければ。そう思った。でも、体が動かなかった。あの場所に戻ることが、怖かった。"
+        },
+        {
+          "type": "narration",
+          "text": "——明日にしよう。でも、明日も行けなかった。一週間経っても。一ヶ月経っても。そして——十年が過ぎた。"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc008",
+      "title": "告白",
+      "location": "alley",
+      "time": "02:30",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……父のピックを、置いてきてしまったんです。マイクスタンドに貼り付けたまま……逃げることしか考えられなくて",
+          "emotion": "trembling"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "後から取りに行こうと思いました。何度も。でも——できなかった",
+          "emotion": "regretful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "それが、隠していたことですか。父の形見を、置き去りにした。十年間、取りに行くこともできなかった",
+          "emotion": "neutral"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……最低ですよね。母がくれた、父の形見なのに。お守りだって言ってくれたのに……私は、それを捨てて逃げた",
+          "emotion": "self_loathing"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc009",
+      "title": "怪異の核",
+      "location": "alley",
+      "time": "02:35",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "なるほど。それで繋がった",
+          "emotion": "understanding"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "あなたの『声』が、なぜ怪異化したか。普通、想いが物に宿るには、強い感情の『核』が必要になる。あなたの場合——その核は、父親のピックだ",
+          "emotion": "analytical"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "歌への想い。父への想い。母への罪悪感。夢を諦めた絶望。それら全てが、あのピックに宿った",
+          "emotion": "serious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "想いが強いほど、怪異は強くなる。十年分の後悔と、十年分の恨み。厄介な相手になりそうだ",
+          "emotion": "grim"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "恨み……？",
+          "emotion": "shocked"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "捨てられた想いは、恨みに変わる。あなたに捨てられた『声』は、十年間ずっとあの場所で待っていた。そして待ちくたびれて、憎しみに変わった",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ただ——覚悟はしておいてください",
+          "emotion": "warning"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc010",
+      "title": "ユキの読み取り",
+      "location": "alley",
+      "time": "02:40",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ユキ。この辺りで、何か感じるか",
+          "emotion": "focused"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは目を閉じた。数秒の沈黙の後、ゆっくりと目を開く。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "……あります。かなり強い。悲しみと……怒り。誰かを待っている。ずっと、ずっと待っている",
+          "emotion": "shaken",
+          "voice_note": "顔が青ざめている"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "すごく、寂しかったんです。この声は",
+          "emotion": "tearful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "方向は",
+          "emotion": "urgent"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "あっち、だと思います",
+          "emotion": "pointing",
+          "action": "路地の奥を指差す"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "行きます",
+          "emotion": "determined"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "十年間、逃げ続けた。父の形見からも。自分の声からも。でも——もう、逃げたくない",
+          "emotion": "resolved"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc011",
+      "title": "廃墟のライブハウス",
+      "location": "livehouse",
+      "time": "02:50",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "路地を進むにつれて、空気が変わっていった。湿った夜気の中に、何か別のものが混ざり始める。重く、冷たく、どこか——悲しい匂い。"
+        },
+        {
+          "type": "narration",
+          "text": "やがて、路地は小さな広場に出た。かつてはライブハウスがあったのだろう。今は更地になっており、雑草が伸び放題になっている。"
+        },
+        {
+          "type": "narration",
+          "text": "その中央に、朽ちかけた看板が一つ、雨に打たれながら立っていた。『Live House　VOICE』"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……ここだ。ここが——あの日、私がステージに立った場所",
+          "emotion": "shocked",
+          "voice_note": "ほとんど聞こえないほど小さい声"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "いる",
+          "emotion": "tense"
+        },
+        {
+          "type": "narration",
+          "text": "黒い、靄のようなもの。地面から湧き上がるように、ゆらゆらと揺れている。その中心には——古い、錆びたマイク。そしてマイクスタンドには——銀色に光る、小さなピック。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あのマイク……私が、最後に使った……そして——父の、ピック……",
+          "emotion": "overwhelmed"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc012",
+      "title": "怪異の読み取り",
+      "location": "livehouse",
+      "time": "02:55",
+      "weather": "rain_light",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ユキ。あれを読み取れるか",
+          "emotion": "serious"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは躊躇いながらも、一歩前に出た。目を閉じ、意識を集中させる。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "——っ！",
+          "emotion": "overwhelmed",
+          "action": "突然膝をつく"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "だ、だめです……これ……強すぎて……この声……『帰りたくない』って、言ってます",
+          "emotion": "terrified"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "帰りたくない……？",
+          "emotion": "surprised"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "『もう戻りたくない』『あの人のところには帰らない』って……すごく、強い拒絶の意志が……",
+          "emotion": "shaking"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "でも、それだけじゃない。『どうして来てくれなかったの』『ずっと待ってたのに』って……悲しみと、怒りが、混ざり合って……",
+          "emotion": "crying"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "そんな……私は、声を取り戻しに来たのに……",
+          "emotion": "devastated"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc013",
+      "title": "落としたのか、捨てたのか",
+      "location": "livehouse",
+      "time": "03:00",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "蒼井さん。一つ、確認させてください。あなたは本当に、声を『落とした』んですか",
+          "emotion": "piercing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……え？",
+          "emotion": "confused"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "それとも——『捨てた』んですか",
+          "emotion": "serious"
+        },
+        {
+          "type": "narration",
+          "text": "黒い靄が、まるで呼応するように激しく蠢いた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……十年前。あのステージで声が出なくなった時……私、思ったんです。もう、いいって。もう十分頑張ったって",
+          "emotion": "confessing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "父のピックを置いてきたのも……本当は、無意識に……そうしたかったのかもしれない。父の夢を背負うのが、重かった",
+          "emotion": "anguished"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "自分から、手放したんです。歌うことを。夢を追うことを。父の形見を。声を",
+          "emotion": "broken"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "——自分で、捨てたんです",
+          "emotion": "devastated"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc014",
+      "title": "怪異の覚醒",
+      "location": "livehouse",
+      "time": "03:05",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "怪異が生まれるのは、物に強い想いが宿った時だ。だが、その想いが『執着』なのか『拒絶』なのかで、性質が変わる",
+          "emotion": "explaining"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "執着から生まれた怪異は、持ち主を求める。だが、拒絶から生まれた怪異は——持ち主を恨む",
+          "emotion": "grim"
+        },
+        {
+          "type": "narration",
+          "text": "黒い靄が、形を変え始めた。煙のようだったそれが、少しずつ——人の形に近づいていく。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "あなたの声は——あなたに拒絶された。この場所に置き去りにされた。十年間、一人で待ち続けた。迎えが来ると信じて。でも、誰も来なかった",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "narration",
+          "text": "女の姿。二十代半ばくらいの、若い女。澄香に——よく似た、顔。十年前の蒼井澄香の顔。だが、その目には光がなく、口元には冷たい笑みが浮かんでいた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "帰って",
+          "emotion": "cold",
+          "voice_note": "歌うような、不気味に歪んだ声"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "私はもう、あなたの『声』じゃない。あなたが捨てたから。いらないって言ったから",
+          "emotion": "resentful"
+        }
+      ]
+    },
+    {
+      "id": "ep2_sc015",
+      "title": "怪異の攻撃",
+      "location": "livehouse",
+      "time": "03:10",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "ち、違う……私はただ……",
+          "emotion": "terrified"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "違わない。あなたは逃げた。夢から。父の形見から。私から。十年間、一度も振り返らなかった",
+          "emotion": "accusatory"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "辛いから逃げたんでしょう？　夢を諦めて、楽になりたかったんでしょう？",
+          "emotion": "mocking"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "私だって辛かった。ずっと歌い続けたかった。あなたと一緒に、夢を叶えたかった。でもあなたが——",
+          "emotion": "anguished"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "あなたが私を捨てた！",
+          "emotion": "furious"
+        },
+        {
+          "type": "narration",
+          "text": "黒い靄が、触手のように伸びた。それが——ユキに向かって襲いかかった。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ユキッ！",
+          "emotion": "alarmed"
+        },
+        {
+          "type": "narration",
+          "text": "黒い靄がユキを包み込み——彼女の中に、何かを流し込んだ。十年分の孤独と、絶望を。"
+        }
+      ]
+    }
+  ]
+}
