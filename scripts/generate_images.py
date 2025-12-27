@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_images.py - Imagen APIを使用して画像を生成
+generate_images.py - Gemini APIを使用して画像を生成
 
 使用方法:
     python scripts/generate_images.py [--dry-run] [--episode N] [--limit N]
@@ -11,8 +11,7 @@ generate_images.py - Imagen APIを使用して画像を生成
     --limit N    生成枚数を制限
 
 必要な環境変数:
-    GOOGLE_CLOUD_PROJECT  - GCPプロジェクトID
-    GOOGLE_APPLICATION_CREDENTIALS - サービスアカウントキーのパス
+    GEMINI_API_KEY - Gemini APIキー
 
 出力:
     outputs/images/episode{N}/scene_{id}_{index}.png
@@ -27,15 +26,21 @@ import hashlib
 from pathlib import Path
 from typing import Optional
 
-# Google Cloud AI Platform (Vertex AI) をインポート
+# Gemini APIをインポート
 try:
-    from google.cloud import aiplatform
-    from vertexai.preview.vision_models import ImageGenerationModel
-    VERTEX_AI_AVAILABLE = True
+    from google import genai
+    from google.genai import types
+    GENAI_AVAILABLE = True
 except ImportError:
-    VERTEX_AI_AVAILABLE = False
-    print("警告: google-cloud-aiplatform がインストールされていません")
-    print("      pip install google-cloud-aiplatform")
+    GENAI_AVAILABLE = False
+    print("警告: google-genai がインストールされていません")
+    print("      pip install google-genai")
+
+# 設定
+GEMINI_MODEL = "gemini-2.0-flash-exp"  # 画像生成対応モデル
+WAIT_BETWEEN_IMAGES = 10  # 画像間の待機秒数（レート制限対策）
+MAX_RETRIES = 3  # 最大リトライ回数
+RETRY_WAIT = 30  # リトライ時の待機秒数
 
 
 def load_json(filepath: Path) -> dict:
@@ -57,43 +62,80 @@ def compute_prompt_hash(prompt: str, negative_prompt: str) -> str:
     return hashlib.md5(content.encode()).hexdigest()[:12]
 
 
-def generate_image_vertex_ai(
+def build_gemini_prompt(prompt: str, negative_prompt: str, style: str = "") -> str:
+    """Gemini用のプロンプトを構築"""
+    full_prompt = f"""Generate a single high-quality anime illustration.
+
+CRITICAL RULES:
+- NO speech bubbles, NO text, NO words, NO letters anywhere in the image
+- Fully rendered detailed background (NOT white/blank background)
+- Rich colors and shading
+- Professional anime art quality
+
+QUALITY: High detail, vibrant colors, fully colored illustration, detailed background art, professional anime production quality, 4K resolution
+
+STYLE: Japanese anime/manga style, clean bold lineart, expressive faces, aspect ratio 16:9
+{style}
+
+SCENE DESCRIPTION:
+{prompt}
+
+AVOID: {negative_prompt}
+"""
+    return full_prompt
+
+
+def generate_image_gemini(
+    client,
     prompt: str,
     negative_prompt: str,
+    style: str,
     output_path: Path,
-    model_name: str = "imagegeneration@006",
 ) -> bool:
-    """Vertex AI Imagen APIで画像を生成"""
-    if not VERTEX_AI_AVAILABLE:
-        print("  エラー: Vertex AI SDKが利用できません")
-        return False
+    """Gemini APIで画像を生成（リトライ機能付き）"""
+    full_prompt = build_gemini_prompt(prompt, negative_prompt, style)
 
-    try:
-        model = ImageGenerationModel.from_pretrained(model_name)
+    for attempt in range(MAX_RETRIES):
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=full_prompt,
+                config=types.GenerateContentConfig(
+                    response_modalities=["TEXT", "IMAGE"]
+                )
+            )
 
-        response = model.generate_images(
-            prompt=prompt,
-            negative_prompt=negative_prompt,
-            number_of_images=1,
-            aspect_ratio="16:9",  # ワイドスクリーン
-            safety_filter_level="block_few",
-            person_generation="allow_adult",
-        )
+            # レスポンスから画像データを抽出
+            for part in response.candidates[0].content.parts:
+                if part.inline_data is not None:
+                    # 画像を保存
+                    output_path.parent.mkdir(parents=True, exist_ok=True)
+                    with open(output_path, "wb") as f:
+                        f.write(part.inline_data.data)
+                    return True
 
-        if response.images:
-            output_path.parent.mkdir(parents=True, exist_ok=True)
-            response.images[0].save(str(output_path))
-            return True
-        else:
             print("  警告: 画像が生成されませんでした")
             return False
 
-    except Exception as e:
-        print(f"  エラー: {e}")
-        return False
+        except Exception as e:
+            error_msg = str(e)
+            print(f"  試行 {attempt + 1}/{MAX_RETRIES} 失敗: {error_msg}")
+
+            # レート制限エラーの場合は長めに待機
+            if "429" in error_msg or "quota" in error_msg.lower() or "rate" in error_msg.lower():
+                print(f"  レート制限検知。{RETRY_WAIT}秒待機中...")
+                time.sleep(RETRY_WAIT)
+            elif attempt < MAX_RETRIES - 1:
+                print(f"  {RETRY_WAIT}秒後にリトライ...")
+                time.sleep(RETRY_WAIT)
+            else:
+                return False
+
+    return False
 
 
 def process_episode(
+    client,
     prompts_path: Path,
     output_dir: Path,
     manifest_path: Path,
@@ -126,6 +168,7 @@ def process_episode(
         beat_index = prompt_data.get("beat_index", 0)
         prompt = prompt_data.get("prompt", "")
         negative_prompt = prompt_data.get("negative_prompt", "")
+        style = prompt_data.get("style", "")
 
         # 出力ファイル名
         filename = f"{scene_id}_{beat_index:03d}.png"
@@ -151,9 +194,11 @@ def process_episode(
             continue
 
         # 画像生成
-        success = generate_image_vertex_ai(
+        success = generate_image_gemini(
+            client=client,
             prompt=prompt,
             negative_prompt=negative_prompt,
+            style=style,
             output_path=output_path,
         )
 
@@ -167,17 +212,20 @@ def process_episode(
                 "beat_index": beat_index,
             }
             save_json(manifest_path, manifest)
+            print(f"    保存完了: {output_path}")
         else:
             failed += 1
 
         # レート制限対策
-        time.sleep(1)
+        if i < len(prompts) - 1:
+            print(f"    {WAIT_BETWEEN_IMAGES}秒待機中...")
+            time.sleep(WAIT_BETWEEN_IMAGES)
 
     return generated, skipped, failed
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Imagen APIで画像を生成")
+    parser = argparse.ArgumentParser(description="Gemini APIで画像を生成")
     parser.add_argument("--dry-run", action="store_true", help="APIを呼び出さずに確認")
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--limit", type=int, help="生成枚数の上限")
@@ -188,24 +236,29 @@ def main():
     output_dir = base_dir / "outputs" / "images"
     manifest_path = output_dir / "manifest.json"
 
-    # GCP設定確認
+    client = None
+
+    # APIキー確認
     if not args.dry_run:
-        project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
-        if not project_id:
-            print("エラー: GOOGLE_CLOUD_PROJECT 環境変数を設定してください")
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            print("エラー: GEMINI_API_KEY 環境変数を設定してください")
             print()
             print("例:")
-            print("  export GOOGLE_CLOUD_PROJECT=your-project-id")
-            print("  export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json")
+            print("  export GEMINI_API_KEY=your-api-key")
+            print()
+            print("または:")
+            print("  GEMINI_API_KEY=your-api-key python scripts/generate_images.py")
             sys.exit(1)
 
-        if VERTEX_AI_AVAILABLE:
-            aiplatform.init(project=project_id, location="us-central1")
-            print(f"GCPプロジェクト: {project_id}")
-        else:
-            print("エラー: Vertex AI SDKをインストールしてください")
-            print("  pip install google-cloud-aiplatform")
+        if not GENAI_AVAILABLE:
+            print("エラー: google-genai をインストールしてください")
+            print("  pip install google-genai")
             sys.exit(1)
+
+        # クライアント初期化
+        client = genai.Client(api_key=api_key)
+        print("Gemini API クライアント初期化完了")
 
     print()
     print("画像生成を開始します...")
@@ -230,6 +283,7 @@ def main():
         print(f"エピソード{episode_num}:")
 
         generated, skipped, failed = process_episode(
+            client=client,
             prompts_path=prompts_path,
             output_dir=output_dir,
             manifest_path=manifest_path,
