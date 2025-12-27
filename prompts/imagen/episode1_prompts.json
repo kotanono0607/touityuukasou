@@ -1,0 +1,197 @@
+{
+  "episode": 1,
+  "prompts": [
+    {
+      "scene_id": "ep1_sc001",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, rain falling",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "00:13"
+    },
+    {
+      "scene_id": "ep1_sc001",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, rain falling, looking through window",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "00:13"
+    },
+    {
+      "scene_id": "ep1_sc001",
+      "beat_index": 3,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, looking through window",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "00:13"
+    },
+    {
+      "scene_id": "ep1_sc002",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, heavy rain, stormy, water puddles, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, rain falling",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_heavy",
+      "time": "00:47"
+    },
+    {
+      "scene_id": "ep1_sc002",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, heavy rain, stormy, water puddles, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_heavy",
+      "time": "00:47"
+    },
+    {
+      "scene_id": "ep1_sc003",
+      "beat_index": 6,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, heavy rain, stormy, water puddles, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_heavy",
+      "time": "00:50"
+    },
+    {
+      "scene_id": "ep1_sc004",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "thunderstorm",
+      "time": "00:55"
+    },
+    {
+      "scene_id": "ep1_sc004",
+      "beat_index": 8,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, looking through window",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "thunderstorm",
+      "time": "00:55"
+    },
+    {
+      "scene_id": "ep1_sc005",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "01:20"
+    },
+    {
+      "scene_id": "ep1_sc005",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "01:20"
+    },
+    {
+      "scene_id": "ep1_sc007",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "01:35"
+    },
+    {
+      "scene_id": "ep1_sc007",
+      "beat_index": 3,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, rain falling",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "01:35"
+    },
+    {
+      "scene_id": "ep1_sc007",
+      "beat_index": 4,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, rainy night, wet surfaces, rain drops, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain",
+      "time": "01:35"
+    }
+  ]
+}

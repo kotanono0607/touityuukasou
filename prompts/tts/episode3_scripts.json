@@ -1,0 +1,876 @@
+{
+  "episode": 3,
+  "scripts": [
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 0,
+      "speaker": null,
+      "text": "ユキの悲鳴が、夜の空気を切り裂いた。いや——悲鳴ではなかった。声にならない、喉の奥から絞り出されるような、苦悶の音。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 1,
+      "speaker": "ren",
+      "text": "ユキ！",
+      "emotion": "alarmed",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 2,
+      "speaker": "voice_entity",
+      "text": "邪魔しないで。この子には、私の記憶を見せてあげているだけ。十年分の——孤独と、絶望を",
+      "emotion": "cold",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 3,
+      "speaker": "yuki",
+      "text": "やめ……やめて……",
+      "emotion": "agonized",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-B",
+        "pitch": 2.0,
+        "speaking_rate": 1.05
+      }
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 4,
+      "speaker": "yuki",
+      "text": "夢なんて……叶わない……頑張っても……頑張っても……",
+      "emotion": "despairing",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-B",
+        "pitch": 2.0,
+        "speaking_rate": 1.05
+      }
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 5,
+      "speaker": "sumika",
+      "text": "やめて！　その子を巻き込まないで！",
+      "emotion": "desperate",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 6,
+      "speaker": "voice_entity",
+      "text": "どうして？　あなたが私を捨てたから、こうなったのに",
+      "emotion": "mocking",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 0,
+      "speaker": "ren",
+      "text": "うるさい",
+      "emotion": "cold",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 1,
+      "speaker": null,
+      "text": "レンは黒い靄の前に立ち、口に咥えていたアロマスティックを地面に落とした。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 2,
+      "speaker": "ren",
+      "text": "話が長い",
+      "emotion": "dismissive",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 3,
+      "speaker": "voice_entity",
+      "text": "……何？",
+      "emotion": "surprised",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 4.0,
+        "speaking_rate": 0.9774999999999999
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 4,
+      "speaker": null,
+      "text": "レンはポケットから錆びた鍵を取り出した。その表面には、かすかに文字が刻まれている。『忘れないで』",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 5,
+      "speaker": "ren",
+      "text": "お前の言い分は分かった。十年間、一人で待ち続けて、寂しかった。辛かった。恨んでいた。それは——まあ、そうだろうな",
+      "emotion": "understanding",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 6,
+      "speaker": "voice_entity",
+      "text": "分かるなら——",
+      "emotion": "hopeful",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 7,
+      "speaker": "ren",
+      "text": "分かるさ。俺も——待たせた側だからな",
+      "emotion": "pained",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 0,
+      "speaker": "ren",
+      "text": "だが、それとこれとは話が別だ。お前は今、うちの職員に手を出した。これは業務妨害だ",
+      "emotion": "stern",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 1,
+      "speaker": "voice_entity",
+      "text": "……面白いことを言う。あなたに、私を止められると思っているの？",
+      "emotion": "defiant",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 2,
+      "speaker": "ren",
+      "text": "さあな。ただ——お前程度の怪異なら、何度も相手にしてきた",
+      "emotion": "confident",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 3,
+      "speaker": null,
+      "text": "錆びた鍵が、かすかに光を放った。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 4,
+      "speaker": "voice_entity",
+      "text": "その鍵……何？",
+      "emotion": "wary",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 5,
+      "speaker": "ren",
+      "text": "仕事道具だ。遺失物取扱所には、落とし物を『回収』する権限がある。この鍵は、『閉じ込める』ためのものだ。暴れる怪異を鎮め、本来の形に戻す",
+      "emotion": "explaining",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 6,
+      "speaker": "voice_entity",
+      "text": "私を……閉じ込める気？",
+      "emotion": "fearful",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 7,
+      "speaker": "ren",
+      "text": "うちの職員を傷つけた落とし前は、つけてもらう",
+      "emotion": "threatening",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 0,
+      "speaker": "voice_entity",
+      "text": "来ないで！",
+      "emotion": "panicked",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 1,
+      "speaker": null,
+      "text": "黒い靄が膨れ上がり、レンに向かって襲いかかった。だが——レンは動じなかった。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 2,
+      "speaker": "ren",
+      "text": "開錠",
+      "emotion": "focused",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 3,
+      "speaker": null,
+      "text": "鍵が眩い光を放った。その光は、黒い靄の中心に向かって真っ直ぐに伸び、靄が弾け飛んだ。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 4,
+      "speaker": "voice_entity",
+      "text": "あ——っ！",
+      "emotion": "agonized",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 5,
+      "speaker": null,
+      "text": "人の形を保っていた靄が、急速に崩れ始める。腕が、足が、顔が——霧のように溶けていく。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 6,
+      "speaker": "ren",
+      "text": "……無理やり、戻すこともできる。強制的に元の形に戻して、保管庫に閉じ込める。そうすれば、お前はもう誰も傷つけない。永遠に",
+      "emotion": "cold",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 0,
+      "speaker": "ren",
+      "text": "崩れかけた顔。そこには恐怖と、悲しみと、そしてどこか安堵のような色が浮かんでいた。消えてしまいたい——そう願っているような、諦めの表情。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 1,
+      "speaker": null,
+      "text": "レンは——その表情を、知っていた。かつて、鏡の中で見た顔だった。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 2,
+      "speaker": "ren",
+      "text": "——本当に、それでいいのか？",
+      "emotion": "questioning",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 3,
+      "speaker": "ren",
+      "text": "お前は確かに捨てられた。それは辛かっただろう。だが、お前がここで暴れ続けても、何も変わらない",
+      "emotion": "matter_of_fact",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 4,
+      "speaker": "ren",
+      "text": "消えてしまえば楽になると思うか？　そうはならない。俺は——知っている",
+      "emotion": "pained",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 5,
+      "speaker": "ren",
+      "text": "お前に選択肢をやる。一つ、このまま俺に鎮められて、強制的に元の形に戻る。二つ——",
+      "emotion": "offering",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 6,
+      "speaker": "ren",
+      "text": "持ち主と、話をする",
+      "emotion": "serious",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 0,
+      "speaker": "ren",
+      "text": "蒼井さん。来てください",
+      "emotion": "calm",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -3.0,
+        "speaking_rate": 0.855
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 1,
+      "speaker": null,
+      "text": "澄香は、怪異の前に立った。崩れかけた顔が、澄香を見つめていた。二十四歳の、若い自分。まだ夢を諦めていなかった頃の、自分。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 2,
+      "speaker": "sumika",
+      "text": "……ごめんなさい。私……あなたを、捨てた",
+      "emotion": "remorseful",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 3,
+      "speaker": "sumika",
+      "text": "辛かったから。諦めたかったから。これ以上傷つきたくなかったから——あなたを、いらないって、思った",
+      "emotion": "tearful",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -2.0,
+        "speaking_rate": 0.8075
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 4,
+      "speaker": "sumika",
+      "text": "でも……本当は……あなたがいなくなって、ずっと寂しかった。歌いたかった。また歌いたいって……ずっと、思ってた",
+      "emotion": "confessing",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 5,
+      "speaker": "voice_entity",
+      "text": "……嘘",
+      "emotion": "disbelieving",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 6,
+      "speaker": "sumika",
+      "text": "嘘じゃない。十年間……一日も忘れたことなんてなかった",
+      "emotion": "earnest",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 0,
+      "speaker": "voice_entity",
+      "text": "……なら、どうして。どうして、迎えに来てくれなかったの",
+      "emotion": "pleading",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 1,
+      "speaker": "sumika",
+      "text": "……怖かったの。あの日の自分を思い出すのが。失敗した自分を認めるのが",
+      "emotion": "honest",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 2,
+      "speaker": "voice_entity",
+      "text": "十年も、私を一人にした。ずっと待ってた。雨の日も、雪の日も。寂しかった。寂しかったよ",
+      "emotion": "heartbroken",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 3,
+      "speaker": "sumika",
+      "text": "……ごめんなさい",
+      "emotion": "sobbing",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 4,
+      "speaker": "voice_entity",
+      "text": "でも——本当は、恨みたくなんかなかった。ただ……もう一度、一緒に歌いたかっただけなのに……",
+      "emotion": "vulnerable",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 5,
+      "speaker": "sumika",
+      "text": "だから、謝らせて。ちゃんと。十年前、私はあなたを捨てた。でも——それは間違いだった",
+      "emotion": "resolute",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 6,
+      "speaker": "sumika",
+      "text": "あなたは私の一部だった。夢を追いかけていた頃の、一番大切な部分。それを——自分で捨てたのは、私",
+      "emotion": "accepting",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 0,
+      "speaker": "sumika",
+      "text": "ごめんなさい。本当に——ごめんなさい",
+      "emotion": "tearful",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -2.0,
+        "speaking_rate": 0.8075
+      }
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 1,
+      "speaker": null,
+      "text": "怪異の目から、黒い涙が——透明な涙に変わった。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 2,
+      "speaker": null,
+      "text": "澄香は、怪異を抱きしめた。かつての自分を。夢を諦められなかった自分を。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 3,
+      "speaker": "sumika",
+      "text": "おかえり",
+      "emotion": "warm",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 4,
+      "speaker": null,
+      "text": "雨が止んでいた。雲の切れ間から、月明かりが差し込んでいた。怪異の形が、ゆっくりと変わり始めた。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 5,
+      "speaker": null,
+      "text": "人の姿が崩れ、黒い靄が収束し——やがて、一つの形に落ち着いた。古い、錆びたマイク。そして——そのスタンドには、銀色のピックが、まだ貼り付いていた。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 0,
+      "speaker": "yuki",
+      "text": "——っは",
+      "emotion": "gasping",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-B",
+        "pitch": 2.0,
+        "speaking_rate": 1.05
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 1,
+      "speaker": "ren",
+      "text": "大丈夫か",
+      "emotion": "concerned",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 2,
+      "speaker": "yuki",
+      "text": "だ、大丈夫……です……多分……すごい記憶でした。でも——最後に、変わりました",
+      "emotion": "exhausted",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-B",
+        "pitch": 2.0,
+        "speaking_rate": 1.05
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 3,
+      "speaker": "yuki",
+      "text": "『ただいま』って。そう言ってました。最後に。あなたの声……許してくれたみたいです",
+      "emotion": "gentle_smile",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-B",
+        "pitch": 2.0,
+        "speaking_rate": 1.05
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 4,
+      "speaker": "ren",
+      "text": "回収完了。遺失物番号、ゼロゼロ三七二。蒼井澄香の『声』、および付属品。十年越しの発見だ",
+      "emotion": "professional",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 5,
+      "speaker": null,
+      "text": "レンはマイクを澄香に差し出した。ピックが、かすかに揺れる。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 6,
+      "speaker": "ren",
+      "text": "あなたの落とし物、いや、あなたが捨てたものだ。声と、夢と、父の形見",
+      "emotion": "matter_of_fact",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 7,
+      "speaker": "sumika",
+      "text": "……受け取って、いいんでしょうか",
+      "emotion": "hesitant",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 8,
+      "speaker": "ren",
+      "text": "それを決めるのは、あなただ。俺たちの仕事は、落とし物を見つけて保管することだ。受け取るかどうかは——持ち主の自由だ",
+      "emotion": "neutral",
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9
+      }
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 9,
+      "speaker": null,
+      "text": "銀色のピックが、月明かりの中で静かに光っている。父の夢。母の想い。そして——自分自身の声。全てが、そこにあった。",
+      "emotion": null,
+      "voice_settings": {
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -1,
+        "speaking_rate": 0.95
+      }
+    }
+  ]
+}
