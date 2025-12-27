@@ -1,0 +1,775 @@
+{
+  "episode": 4,
+  "title": "保管期限は三ヶ月",
+  "title_en": "Storage Period: Three Months",
+  "scenes": [
+    {
+      "id": "ep4_sc001",
+      "title": "遺失物取扱所に戻る",
+      "location": "lost_and_found",
+      "time": "04:30",
+      "weather": "dawn",
+      "characters_present": ["ren", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "午前四時三十分。遺失物取扱所に戻った時、空は少しずつ白み始めていた。"
+        },
+        {
+          "type": "narration",
+          "text": "蒼井澄香はカウンターの向かい側に座っていた。その目の前には、錆びたマイクが置かれている。スタンドには、銀色のピックがまだ貼り付いたままだ。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "受け取らないんですか",
+          "emotion": "neutral"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……分かりません。受け取って、どうすればいいのか……分からないんです",
+          "emotion": "uncertain"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "歌えばいいんじゃないですか。あなたが探していたのは、歌う声でしょう",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……歌手は、もう。十年経ちました。もう、若くない",
+          "emotion": "resigned"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "だったら、受け取る必要はないかもしれないですね。失くしたものを取り戻しても、それを使わないなら——意味がない",
+          "emotion": "blunt"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc002",
+      "title": "預かりの依頼",
+      "location": "lost_and_found",
+      "time": "04:45",
+      "weather": "dawn",
+      "characters_present": ["ren", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "持っているだけで安心することもある。使わなくても、そこにあるというだけで——前に進める人もいる",
+          "emotion": "philosophical"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "俺はただの遺失物係だ。受け取るか受け取らないかは——あなたが決めることだ",
+          "emotion": "neutral"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……預かっていてください。このマイク——私の声を。もう少しだけ",
+          "emotion": "resolute"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……どういうことですか",
+          "emotion": "surprised"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "今の私には——まだ、これを受け取る資格がないと思うんです",
+          "emotion": "honest"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "十年間、逃げてきました。自分の声から。自分の夢から。——そして、母から。母には、まだ何も話していないんです",
+          "emotion": "confessing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "だから——次は、母と向き合いたい。ちゃんと話して、謝って。それができてから——この声を受け取りたいんです",
+          "emotion": "determined"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc003",
+      "title": "保管期限",
+      "location": "lost_and_found",
+      "time": "05:00",
+      "weather": "sunrise",
+      "characters_present": ["ren", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——分かりました",
+          "emotion": "accepting"
+        },
+        {
+          "type": "narration",
+          "text": "レンはマイクを手に取り、カウンターの後ろにある棚に向かった。一番奥に置かれた古い写真立てを一瞬だけ見て、目を逸らした。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "保管期限は三ヶ月です。三ヶ月以内に受け取りに来なければ、処分することになる。決まりなので",
+          "emotion": "professional"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "分かりました。——必ず、取りに来ます",
+          "emotion": "promising"
+        },
+        {
+          "type": "narration",
+          "text": "そして——彼女は、遺失物取扱所を後にした。外では、雨が完全に止んでいた。東の空が、薄いオレンジ色に染まり始めている。"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc004",
+      "title": "レンの過去",
+      "location": "lost_and_found",
+      "time": "05:15",
+      "weather": "sunrise",
+      "characters_present": ["ren", "yuki"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "澄香が去った後、レンは窓際に立っていた。雨上がりの空は澄んでいて、遠くにかすかに虹が見える。"
+        },
+        {
+          "type": "internal",
+          "speaker": "ren",
+          "text": "棚には、三ヶ月をとっくに過ぎた「落とし物」がいくつも残っている。持ち主が来ないまま、何年も眠り続けているもの。"
+        },
+        {
+          "type": "narration",
+          "text": "一番奥の写真立て。そこに写っているのは若い女性だった。その首元には、今レンが持っているのと同じ錆びた鍵がペンダントのように下げられている。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "灰谷さん……蒼井さんは？",
+          "emotion": "curious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "帰った。マイクは預かることになった",
+          "emotion": "tired"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "蒼井さん、来た時と——顔が違いましたよね。憑き物が落ちたっていうか",
+          "emotion": "observant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "失くしたものは、必ずしも戻ってくるわけじゃない。でも——向き合うことで、前に進めることもあるんですね",
+          "emotion": "reflective"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc005",
+      "title": "回想：実家への帰省",
+      "location": "station_bench",
+      "time": null,
+      "weather": "clear",
+      "is_flashback": true,
+      "flashback_context": "三ヶ月前から一週間後",
+      "characters_present": ["sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "それは、三ヶ月前のあの夜から一週間後のことだった。澄香は実家の最寄り駅で降りてから、三十分も歩けずにいた。"
+        },
+        {
+          "type": "internal",
+          "speaker": "sumika",
+          "text": "行かなければ。分かっている。あの夜、自分の「声」と向き合えたのだから。次は母と向き合う番だ。"
+        },
+        {
+          "type": "narration",
+          "text": "十年間、一度も帰らなかった。電話も、年に数回、事務的なやり取りをするだけ。歌えなくなったことも、ピックを失くしたことも、何も話していない。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は深く息を吸い、立ち上がった。済む話かどうかは、母が決めることだ。自分にできるのは、正直に話すことだけ。"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc006",
+      "title": "回想：玄関",
+      "location": "mother_house_entrance",
+      "time": null,
+      "weather": "clear",
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "実家までの道は、驚くほど変わっていなかった。表札は昔と同じ。「蒼井」の文字が、少し色褪せている。"
+        },
+        {
+          "type": "narration",
+          "text": "インターホンを押す指が震えていた。しばらくして、足音が聞こえた。ゆっくりとした、重い足音。ドアが開いた。"
+        },
+        {
+          "type": "narration",
+          "text": "母が立っていた。白髪が増えていた。顔の皺も深くなっていた。背中が少し丸くなり、澄香より小さく見えた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "……澄香",
+          "emotion": "shocked"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "お母さん。……話があるの",
+          "emotion": "nervous"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "……上がりなさい",
+          "emotion": "quiet"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc007",
+      "title": "回想：リビングでの対話",
+      "location": "mother_house",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "リビングは、ほとんど変わっていなかった。見覚えのあるソファ。色褪せた家族写真。父の遺影。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "……久しぶりね。十年ぶりかしら。顔を見るのは",
+          "emotion": "distant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "電話では元気そうだったけど。実際に見ると——やつれたわね",
+          "emotion": "concerned"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "仕事は順調なんでしょう？　電話ではそう言ってたわよね",
+          "emotion": "testing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "嘘でしょう。分かるのよ。あなたの嘘は、昔から下手だったから",
+          "emotion": "knowing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "歌は、まだ続けているの？",
+          "emotion": "probing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "話があるんでしょう？　聞くわ。何でも",
+          "emotion": "open"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc008",
+      "title": "回想：告白",
+      "location": "mother_house",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "澄香は、全てを話した。十年前、最後のステージに立ったこと。二曲目で声が出なくなり、逃げ出したこと。父のピックを置いてきてしまったこと。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "それから、歌えなくなった。声は出るのに、歌おうとすると——何も出てこない。心因性だって",
+          "emotion": "confessing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "十年間、嘘をついてた。でも本当は——何もかも諦めて、ただ生きてるだけだった",
+          "emotion": "broken"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "ごめんなさい。お父さんの形見なのに。お母さんがくれたものなのに。私——捨てて逃げた",
+          "emotion": "ashamed"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "……馬鹿ね。本当に、馬鹿な子",
+          "emotion": "trembling"
+        },
+        {
+          "type": "narration",
+          "text": "母は泣いていた。声を殺して、静かに涙を流していた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "十年よ。十年も、一人で抱え込んで。どうして——どうして言ってくれなかったの",
+          "emotion": "anguished"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc009",
+      "title": "回想：母の告白",
+      "location": "mother_house",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "私が——反対ばかりしてたから。言えなかったのよね",
+          "emotion": "self_blame"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "でも本当は——怖かっただけなの",
+          "emotion": "vulnerable"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "お父さんはね、私と出会った時、まだミュージシャンを目指してたの。才能はあったのよ。本当に。でも——売れなかった。何年経っても",
+          "emotion": "nostalgic_sad"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "お父さんが病気だって分かった時——もう、歌う体力も残ってなかった。最後の数ヶ月、ずっと悔しがってた",
+          "emotion": "pained"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "私は——ずっと、辛かった。待ち続けて、信じ続けて、でも何も報われなくて",
+          "emotion": "bitter"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "だからあなたが——お父さんと同じ道を歩もうとした時、怖かったの。あなたを——失いたくなかったから",
+          "emotion": "loving"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc010",
+      "title": "回想：和解",
+      "location": "mother_house",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "だから——ピックを渡したの。反対してたくせに、結局——送り出してしまった",
+          "emotion": "conflicted"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "あなたがピックを失くしたって聞いても、私は怒れない。あなたに渡したのは、私だから",
+          "emotion": "accepting"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "違う——違うよ、お母さん。私が勝手に出ていったの。お母さんのせいじゃない",
+          "emotion": "protesting"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "……馬鹿ね。私たち——馬鹿みたい。二人とも、自分のせいだって思い込んで。十年も、すれ違って",
+          "emotion": "rueful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "ごめんね、澄香",
+          "emotion": "apologetic"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "ごめんね、お母さん",
+          "emotion": "tearful"
+        },
+        {
+          "type": "narration",
+          "text": "そして——二人は、抱き合った。十年分の涙を流しながら。"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc011",
+      "title": "回想：母の励まし",
+      "location": "mother_house",
+      "time": null,
+      "weather": null,
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "辛かったね。一人で、頑張ったね",
+          "emotion": "comforting"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "頑張れなかった……逃げてばかりだった……",
+          "emotion": "sobbing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "それでも——生きてた。ちゃんと、生きてくれてた。それだけで——十分よ",
+          "emotion": "gentle"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "また歌って。歌いたいなら。誰のためでもなく、あなた自身のために",
+          "emotion": "encouraging"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "でも、私——もう三十四で——",
+          "emotion": "hesitant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "関係ないわよ、年なんて。歌うことに、遅いも早いもないの。歌いたいって思った時が、始める時よ",
+          "emotion": "firm_loving"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "私ね——あなたが歌ってるの、また聴きたいの。昔みたいに",
+          "emotion": "hopeful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……うん。また——歌う。いつか、お母さんに聴かせる",
+          "emotion": "promising"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc012",
+      "title": "回想：帰り際",
+      "location": "mother_house_entrance",
+      "time": null,
+      "weather": "clear",
+      "is_flashback": true,
+      "characters_present": ["sumika", "mother"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "また来なさい。いつでも",
+          "emotion": "warm"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "お母さん。ありがとう。——ピックをくれて",
+          "emotion": "grateful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "mother",
+          "text": "あなたが持っていてくれて、よかった。たとえ——失くしてしまったとしても。あれがあなたと一緒にいた時間は、無駄じゃなかったわ",
+          "emotion": "accepting"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は空を見上げた。晴れていた。雲ひとつない、青い空。十年ぶりに——本当に、晴れた気がした。"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc013",
+      "title": "三ヶ月後：再訪",
+      "location": "lost_and_found",
+      "time": "00:05",
+      "weather": "rain_light",
+      "characters_present": ["ren", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "——それから三ヶ月後。深夜零時を少し過ぎた頃。遺失物取扱所のガラス戸が、静かに開いた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "いらっしゃいませ",
+          "emotion": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": "そこに立っていたのは、三ヶ月前とは明らかに違う蒼井澄香だった。髪は短く切られ、服装も明るい色。何より、その目に宿る光が違っていた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……来たんですか",
+          "emotion": "slightly_surprised"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "はい。受け取りに来ました。私の声を",
+          "emotion": "confident"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "何かあったんですか。顔が違う。三ヶ月前とは別人だ",
+          "emotion": "observant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "母と、話しました。全部、打ち明けたんです",
+          "emotion": "peaceful"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc014",
+      "title": "声を受け取る",
+      "location": "lost_and_found",
+      "time": "00:15",
+      "weather": "rain_light",
+      "characters_present": ["ren", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "母が本当に望んでいたのは、私が幸せでいることだった。歌手になるかどうかなんて、どうでもよかったんです",
+          "emotion": "understanding"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "だから——もう、誰かに認めてもらうために歌わなくていいって、思えたんです。私が歌いたいから、歌う。それでいいんだって",
+          "emotion": "liberated"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "蒼井澄香さんの遺失物。受け取りですね。お間違いないですか",
+          "emotion": "professional"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……お間違いありません",
+          "emotion": "certain"
+        },
+        {
+          "type": "narration",
+          "text": "澄香はゆっくりと手を伸ばした。今度は、躊躇わなかった。マイクを手に取った瞬間——何かが、澄香の中に流れ込んできた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……ただいま",
+          "emotion": "emotional",
+          "voice_note": "十年ぶりに、自分自身に向けた言葉"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc015",
+      "title": "感謝",
+      "location": "lost_and_found",
+      "time": "00:20",
+      "weather": "rain_light",
+      "characters_present": ["ren", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "ありがとうございました。あなたのおかげで——私は、私を取り戻せました",
+          "emotion": "grateful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "俺は何もしてない。落とし物を見つけて、保管しただけだ",
+          "emotion": "dismissive"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "それでも——ありがとうございます",
+          "emotion": "sincere"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "お気をつけて。また何か落としたら、届けに来てください。深夜零時以降なら、いつでも受け付けてます",
+          "emotion": "professional_warm"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頷いて、遺失物取扱所を後にした。ガラス戸が閉まる音が、静かに響いた。"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc016",
+      "title": "エピローグ",
+      "location": "lost_and_found",
+      "time": "00:30",
+      "weather": "rain_stopping",
+      "characters_present": ["ren", "yuki"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "灰谷さん、蒼井さんは——",
+          "emotion": "curious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "受け取って帰った",
+          "emotion": "neutral"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "蒼井さん、すごく嬉しそうでしたよね。泣いてたけど、笑ってた",
+          "emotion": "happy"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "灰谷さんも、少し嬉しそうでしたよ",
+          "emotion": "teasing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "気のせいだ",
+          "emotion": "deflecting"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……ユキ。お前は、なんでこの仕事を始めたんだ",
+          "emotion": "curious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "……私も、失くしたことがあるんです。大切な人を。——会いに行けないまま、失くしてしまった。だから、他の人には——同じ思いをしてほしくないって",
+          "emotion": "sad_honest"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "俺も——待たせたまま、失くした人がいる。だから——せめて、他の誰かの『声』は、届けてやりたいと思った。……それだけだ",
+          "emotion": "vulnerable"
+        }
+      ]
+    },
+    {
+      "id": "ep4_sc017",
+      "title": "深夜零時の遺失物係",
+      "location": "lost_and_found",
+      "time": "00:00",
+      "weather": "clearing",
+      "characters_present": ["ren"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "窓の外では、雨が少しずつ弱くなっていた。雲の切れ間から、かすかに星が見える。"
+        },
+        {
+          "type": "narration",
+          "text": "遺失物取扱所の棚には、まだたくさんの「落とし物」が眠っている。持ち主が来るのを、待ち続けて。いつか届けられる日を、信じて。"
+        },
+        {
+          "type": "narration",
+          "text": "深夜零時。また誰かが、何かを探しにやってくる。失くしたものを。忘れたものを。——そして、捨ててしまったものを。"
+        },
+        {
+          "type": "narration",
+          "text": "灰谷レンは、今夜もカウンターに座っている。口には、ラベンダーとセージのアロマスティック。ポケットには、『忘れないで』と刻まれた錆びた鍵。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——面倒だ",
+          "emotion": "resigned_fond"
+        },
+        {
+          "type": "narration",
+          "text": "呟きながら、それでも——彼は待っている。誰かの声が、届くのを。誰かの想いが、帰ってくるのを。深夜零時の遺失物係は、今夜も営業中。"
+        }
+      ]
+    }
+  ]
+}

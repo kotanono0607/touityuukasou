@@ -1,0 +1,472 @@
+{
+  "episode": 3,
+  "title": "路地裏の怪異",
+  "title_en": "The Entity in the Alley",
+  "scenes": [
+    {
+      "id": "ep3_sc001",
+      "title": "ユキへの攻撃",
+      "location": "livehouse",
+      "time": "03:10",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "ユキの悲鳴が、夜の空気を切り裂いた。いや——悲鳴ではなかった。声にならない、喉の奥から絞り出されるような、苦悶の音。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ユキ！",
+          "emotion": "alarmed"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "邪魔しないで。この子には、私の記憶を見せてあげているだけ。十年分の——孤独と、絶望を",
+          "emotion": "cold"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "やめ……やめて……",
+          "emotion": "agonized",
+          "voice_note": "澄香の声で話している"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "夢なんて……叶わない……頑張っても……頑張っても……",
+          "emotion": "despairing",
+          "voice_note": "澄香の絶望が溢れ出している"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "やめて！　その子を巻き込まないで！",
+          "emotion": "desperate"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "どうして？　あなたが私を捨てたから、こうなったのに",
+          "emotion": "mocking"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc002",
+      "title": "レンの介入",
+      "location": "livehouse",
+      "time": "03:15",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "うるさい",
+          "emotion": "cold"
+        },
+        {
+          "type": "narration",
+          "text": "レンは黒い靄の前に立ち、口に咥えていたアロマスティックを地面に落とした。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "話が長い",
+          "emotion": "dismissive"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "……何？",
+          "emotion": "surprised"
+        },
+        {
+          "type": "narration",
+          "text": "レンはポケットから錆びた鍵を取り出した。その表面には、かすかに文字が刻まれている。『忘れないで』"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "お前の言い分は分かった。十年間、一人で待ち続けて、寂しかった。辛かった。恨んでいた。それは——まあ、そうだろうな",
+          "emotion": "understanding"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "分かるなら——",
+          "emotion": "hopeful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "分かるさ。俺も——待たせた側だからな",
+          "emotion": "pained",
+          "voice_note": "一瞬だけ声が揺らぐ"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc003",
+      "title": "鍵の力",
+      "location": "livehouse",
+      "time": "03:18",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "だが、それとこれとは話が別だ。お前は今、うちの職員に手を出した。これは業務妨害だ",
+          "emotion": "stern"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "……面白いことを言う。あなたに、私を止められると思っているの？",
+          "emotion": "defiant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "さあな。ただ——お前程度の怪異なら、何度も相手にしてきた",
+          "emotion": "confident"
+        },
+        {
+          "type": "narration",
+          "text": "錆びた鍵が、かすかに光を放った。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "その鍵……何？",
+          "emotion": "wary"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "仕事道具だ。遺失物取扱所には、落とし物を『回収』する権限がある。この鍵は、『閉じ込める』ためのものだ。暴れる怪異を鎮め、本来の形に戻す",
+          "emotion": "explaining"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "私を……閉じ込める気？",
+          "emotion": "fearful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "うちの職員を傷つけた落とし前は、つけてもらう",
+          "emotion": "threatening"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc004",
+      "title": "開錠",
+      "location": "livehouse",
+      "time": "03:20",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "来ないで！",
+          "emotion": "panicked"
+        },
+        {
+          "type": "narration",
+          "text": "黒い靄が膨れ上がり、レンに向かって襲いかかった。だが——レンは動じなかった。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "開錠",
+          "emotion": "focused"
+        },
+        {
+          "type": "narration",
+          "text": "鍵が眩い光を放った。その光は、黒い靄の中心に向かって真っ直ぐに伸び、靄が弾け飛んだ。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "あ——っ！",
+          "emotion": "agonized"
+        },
+        {
+          "type": "narration",
+          "text": "人の形を保っていた靄が、急速に崩れ始める。腕が、足が、顔が——霧のように溶けていく。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……無理やり、戻すこともできる。強制的に元の形に戻して、保管庫に閉じ込める。そうすれば、お前はもう誰も傷つけない。永遠に",
+          "emotion": "cold"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc005",
+      "title": "選択肢",
+      "location": "livehouse",
+      "time": "03:22",
+      "weather": "rain_stopping",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "internal",
+          "speaker": "ren",
+          "text": "崩れかけた顔。そこには恐怖と、悲しみと、そしてどこか安堵のような色が浮かんでいた。消えてしまいたい——そう願っているような、諦めの表情。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは——その表情を、知っていた。かつて、鏡の中で見た顔だった。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——本当に、それでいいのか？",
+          "emotion": "questioning"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "お前は確かに捨てられた。それは辛かっただろう。だが、お前がここで暴れ続けても、何も変わらない",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "消えてしまえば楽になると思うか？　そうはならない。俺は——知っている",
+          "emotion": "pained"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "お前に選択肢をやる。一つ、このまま俺に鎮められて、強制的に元の形に戻る。二つ——",
+          "emotion": "offering"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "持ち主と、話をする",
+          "emotion": "serious"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc006",
+      "title": "澄香の謝罪",
+      "location": "livehouse",
+      "time": "03:25",
+      "weather": "rain_stopping",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "蒼井さん。来てください",
+          "emotion": "calm"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、怪異の前に立った。崩れかけた顔が、澄香を見つめていた。二十四歳の、若い自分。まだ夢を諦めていなかった頃の、自分。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……ごめんなさい。私……あなたを、捨てた",
+          "emotion": "remorseful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "辛かったから。諦めたかったから。これ以上傷つきたくなかったから——あなたを、いらないって、思った",
+          "emotion": "tearful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "でも……本当は……あなたがいなくなって、ずっと寂しかった。歌いたかった。また歌いたいって……ずっと、思ってた",
+          "emotion": "confessing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "……嘘",
+          "emotion": "disbelieving"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "嘘じゃない。十年間……一日も忘れたことなんてなかった",
+          "emotion": "earnest"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc007",
+      "title": "和解",
+      "location": "livehouse",
+      "time": "03:30",
+      "weather": "clearing",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "……なら、どうして。どうして、迎えに来てくれなかったの",
+          "emotion": "pleading"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……怖かったの。あの日の自分を思い出すのが。失敗した自分を認めるのが",
+          "emotion": "honest"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "十年も、私を一人にした。ずっと待ってた。雨の日も、雪の日も。寂しかった。寂しかったよ",
+          "emotion": "heartbroken"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……ごめんなさい",
+          "emotion": "sobbing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "voice_entity",
+          "text": "でも——本当は、恨みたくなんかなかった。ただ……もう一度、一緒に歌いたかっただけなのに……",
+          "emotion": "vulnerable"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "だから、謝らせて。ちゃんと。十年前、私はあなたを捨てた。でも——それは間違いだった",
+          "emotion": "resolute"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あなたは私の一部だった。夢を追いかけていた頃の、一番大切な部分。それを——自分で捨てたのは、私",
+          "emotion": "accepting"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc008",
+      "title": "おかえり",
+      "location": "livehouse",
+      "time": "03:35",
+      "weather": "moonlight",
+      "characters_present": ["ren", "yuki", "sumika", "voice_entity"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "ごめんなさい。本当に——ごめんなさい",
+          "emotion": "tearful"
+        },
+        {
+          "type": "narration",
+          "text": "怪異の目から、黒い涙が——透明な涙に変わった。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、怪異を抱きしめた。かつての自分を。夢を諦められなかった自分を。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "おかえり",
+          "emotion": "warm"
+        },
+        {
+          "type": "narration",
+          "text": "雨が止んでいた。雲の切れ間から、月明かりが差し込んでいた。怪異の形が、ゆっくりと変わり始めた。"
+        },
+        {
+          "type": "narration",
+          "text": "人の姿が崩れ、黒い靄が収束し——やがて、一つの形に落ち着いた。古い、錆びたマイク。そして——そのスタンドには、銀色のピックが、まだ貼り付いていた。"
+        }
+      ]
+    },
+    {
+      "id": "ep3_sc009",
+      "title": "回収完了",
+      "location": "livehouse",
+      "time": "03:40",
+      "weather": "moonlight",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "——っは",
+          "emotion": "gasping",
+          "action": "大きく息を吸い込む"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "大丈夫か",
+          "emotion": "concerned"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "だ、大丈夫……です……多分……すごい記憶でした。でも——最後に、変わりました",
+          "emotion": "exhausted"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "『ただいま』って。そう言ってました。最後に。あなたの声……許してくれたみたいです",
+          "emotion": "gentle_smile"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "回収完了。遺失物番号、ゼロゼロ三七二。蒼井澄香の『声』、および付属品。十年越しの発見だ",
+          "emotion": "professional"
+        },
+        {
+          "type": "narration",
+          "text": "レンはマイクを澄香に差し出した。ピックが、かすかに揺れる。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "あなたの落とし物、いや、あなたが捨てたものだ。声と、夢と、父の形見",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……受け取って、いいんでしょうか",
+          "emotion": "hesitant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "それを決めるのは、あなただ。俺たちの仕事は、落とし物を見つけて保管することだ。受け取るかどうかは——持ち主の自由だ",
+          "emotion": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": "銀色のピックが、月明かりの中で静かに光っている。父の夢。母の想い。そして——自分自身の声。全てが、そこにあった。"
+        }
+      ]
+    }
+  ]
+}

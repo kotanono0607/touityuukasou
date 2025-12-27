@@ -1,0 +1,524 @@
+{
+  "episode": 1,
+  "title": "雨と依頼人",
+  "title_en": "Rain and the Client",
+  "scenes": [
+    {
+      "id": "ep1_sc001",
+      "title": "深夜の遺失物取扱所",
+      "location": "lost_and_found",
+      "time": "00:13",
+      "weather": "rain",
+      "characters_present": ["ren", "yuki"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "雨が降っている。それも、傘を差すのが馬鹿らしくなるような、執拗で静かな雨だ。"
+        },
+        {
+          "type": "narration",
+          "text": "深夜零時十三分。灰谷レンは、遺失物取扱所の窓口カウンターに頬杖をつきながら、ガラス窓を流れ落ちる雨粒をぼんやりと眺めていた。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……面倒だ",
+          "emotion": "apathetic",
+          "action": "アロマスティックを咥えて呟く"
+        },
+        {
+          "type": "narration",
+          "text": "古びた駅舎の片隅にあるこの遺失物取扱所は、昼間は普通の落とし物窓口として機能している。だが、日付が変わり、終電が去った後、この場所は少しだけ違う顔を見せる。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "灰谷さん、お茶入りましたよ",
+          "emotion": "cheerful",
+          "action": "マグカップを持って現れる"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ありがとう。そこ置いといて",
+          "emotion": "tired"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "……また寝てたんですか？",
+          "emotion": "exasperated"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "寝てない。瞑想してた",
+          "emotion": "deadpan"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "目、開いてましたけど",
+          "emotion": "skeptical"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "今日は静かですね",
+          "emotion": "relaxed",
+          "action": "カウンターの隣に腰を下ろす"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "雨の日は関係ない。来る時は来る",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "……灰谷さんって、本当にやる気ないですよね",
+          "emotion": "exasperated"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "無駄な力を使わないだけだ",
+          "emotion": "indifferent",
+          "action": "ほうじ茶を啜りながら窓の外を見る"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc002",
+      "title": "濡れた依頼人",
+      "location": "lost_and_found",
+      "time": "00:47",
+      "weather": "rain_heavy",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "深夜零時四十七分。雨脚が少し強くなった頃、ガラス戸が開いた。"
+        },
+        {
+          "type": "narration",
+          "text": "湿った夜気とともに入ってきたのは、一人の女だった。三十代半ばだろうか。濡れそぼった髪が頬に張り付き、全身がずぶ濡れだった。"
+        },
+        {
+          "type": "internal",
+          "speaker": "ren",
+          "text": "普通の落とし物の届け出なら、こんな時間には来ない。この女の目には、何かを探している人間特有の、焦りと縋るような光がある。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "……いらっしゃいませ",
+          "emotion": "nervous",
+          "action": "慌てて立ち上がる"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あの……ここは、遺失物取扱所、ですよね",
+          "emotion": "hesitant",
+          "voice_note": "掠れた声"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "ええ、そうですが",
+          "emotion": "confused"
+        },
+        {
+          "type": "narration",
+          "text": "女は一度、深く息を吸った。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "私、落としてしまったんです",
+          "emotion": "pained"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "何をですか？",
+          "emotion": "curious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "——私の『声』を、落としてしまったんです",
+          "emotion": "desperate",
+          "voice_note": "涙が滲んでいる"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc003",
+      "title": "ユキの読み取り",
+      "location": "lost_and_found",
+      "time": "00:50",
+      "weather": "rain_heavy",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "声、ですか……？",
+          "emotion": "confused"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "はい。私の……歌う声を。どこかに、落としてしまって",
+          "emotion": "sorrowful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——ここは警察じゃないですよ",
+          "emotion": "dismissive"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "灰谷さんっ",
+          "emotion": "reproachful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "声を落とした、ってのは比喩ですか。それとも本当に、何か物を失くしたんですか。どっちにしても、うちは普通の遺失物取扱所です",
+          "emotion": "blunt"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "——灰谷さん",
+          "emotion": "serious",
+          "voice_note": "妙に硬い声"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは女の方を真っ直ぐに見つめていた。その目が、かすかに潤んでいる。レンは内心で舌打ちした。ユキの「読み取り」が、勝手に発動したのだ。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "この人……本当に、落としてるんです",
+          "emotion": "shaken",
+          "voice_note": "震える声"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "声を。本当に。私には……聞こえます。この人の中に、あるべきものが、ない。空洞みたいに……ぽっかりと",
+          "emotion": "tearful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あなた……私の中が、見えるの……？",
+          "emotion": "shocked"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "見えるっていうか……感じる、というか……物には、持ち主の想いが宿るんです。強い想いほど、深く",
+          "emotion": "emotional"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc004",
+      "title": "届出の受理",
+      "location": "lost_and_found",
+      "time": "00:55",
+      "weather": "thunderstorm",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "internal",
+          "speaker": "ren",
+          "text": "面倒だ。本当に、面倒だ。だが——ユキがこうなってしまった以上、追い返すわけにもいかない。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは椅子から立ち上がり、カウンターの下から一枚の紙を取り出した。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——名前は",
+          "emotion": "resigned"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "え……",
+          "emotion": "surprised"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "届出書です。名前と連絡先、それから、落とした物の詳細を書いてもらいます",
+          "emotion": "businesslike"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あ、あの、でも、私が落としたのは——",
+          "emotion": "flustered"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "『声』でしょう。分かってます",
+          "emotion": "calm"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ここは確かに遺失物取扱所です。ただし",
+          "emotion": "serious"
+        },
+        {
+          "type": "narration",
+          "text": "窓の外で、稲光が一瞬だけ世界を白く染めた。遠雷が、地響きのように腹の底を揺らす。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "深夜零時以降は、少し管轄が広がる",
+          "emotion": "mysterious"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "届出を受理したら、捜索を開始します。見つかる保証はない。見つかっても、戻したくないと言われることもある。それでもいいなら——",
+          "emotion": "matter_of_fact"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——書いてください。〈遺失物届〉",
+          "emotion": "formal"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc005",
+      "title": "蒼井澄香の告白",
+      "location": "lost_and_found",
+      "time": "01:20",
+      "weather": "rain",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "午前一時二十分。女は震える手で書類を書き終えた。名前は「蒼井澄香」。三十四歳。職業欄は空白。緊急連絡先も、空白。"
+        },
+        {
+          "type": "narration",
+          "text": "「遺失物の詳細」の欄には、こう書かれていた。『私の歌声。十年前に、どこかに置いてきてしまいました』"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——十年前？",
+          "emotion": "surprised"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "はい",
+          "emotion": "quiet"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "今まで気づかなかったってことですか。十年も",
+          "emotion": "skeptical"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "気づいていました。ただ……探す気力が、なかったんです。でも最近になって、どうしても見つけたくなって",
+          "emotion": "melancholic"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "十年前に何があったか、訊いてもいいですか",
+          "emotion": "probing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "——歌手を、目指していたんです",
+          "emotion": "nostalgic"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "小さなライブハウスで歌ったり、オーディションを受けたり。二十代の頃は、それだけが生きがいでした。でも、全然うまくいかなくて",
+          "emotion": "sad"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "ある日、喉が動かなくなったんです。病院に行っても、どこも悪くないって言われて。心因性だって。要するに、心が歌うことを拒否したんですね",
+          "emotion": "bitter"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "それで、声を『落とした』と",
+          "emotion": "understanding"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "おかしいですよね。でも、そうとしか言えないんです。あの日から、私の中には、歌う声がない",
+          "emotion": "self_deprecating"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc006",
+      "title": "同行の申し出",
+      "location": "lost_and_found",
+      "time": "01:30",
+      "weather": "rain",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "……分かりました。届出は受理します",
+          "emotion": "resigned"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "十年前、声が出なくなったのはいつですか。季節は。場所は",
+          "emotion": "businesslike"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "……秋でした。十月の終わり頃。場所は——この街の、どこかのライブハウス。最後のステージに立った日に、声が出なくなったので",
+          "emotion": "recalling"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ライブハウスの名前は",
+          "emotion": "probing"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "覚えていません。小さな店で、もう潰れていると思います",
+          "emotion": "uncertain"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——分かりました。こちらで調査を進めます",
+          "emotion": "professional"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "あの……私も、一緒に探してはいけませんか",
+          "emotion": "hopeful"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "依頼人が同行するのは、あまり……",
+          "emotion": "reluctant"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "sumika",
+          "text": "お願いします。十年間、逃げてきたんです。自分の声から。自分の夢から。だから——今度は、自分で見つけたいんです",
+          "emotion": "determined"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "——勝手にしてください。ただし、危険な目に遭っても責任は取りませんよ",
+          "emotion": "warning"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "あ、あの、私もついていきます！",
+          "emotion": "eager"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "お前は留守番だ",
+          "emotion": "blunt"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "えっ、なんでですか！",
+          "emotion": "protesting"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "泣くから",
+          "emotion": "deadpan"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "泣きませんっ",
+          "emotion": "indignant"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc007",
+      "title": "出発",
+      "location": "lost_and_found",
+      "time": "01:35",
+      "weather": "rain",
+      "characters_present": ["ren", "yuki", "sumika"],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "レンはユキを無視して、壁に掛けてあった古いコートを取った。ポケットに手を入れると、冷たい金属の感触がある。錆びた鍵。この仕事を始めた時から持ち歩いている、仕事道具のひとつ。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "yuki",
+          "text": "雨、まだ降ってますね",
+          "emotion": "worried"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ren",
+          "text": "ああ。雨の日は、落とし物が見つかりやすい",
+          "emotion": "knowing"
+        },
+        {
+          "type": "narration",
+          "text": "雨は記憶を呼び覚ます。悲しみも、後悔も、雨音とともに蘇ってくる。そして、想いが強くなれば、それに宿った怪異も姿を現しやすくなる。"
+        },
+        {
+          "type": "narration",
+          "text": "ガラス戸を開けると、湿った夜気が流れ込んできた。遠くで、終電を告げる放送が——もうとっくに終わったはずの——幻のように響いていた。"
+        }
+      ]
+    }
+  ]
+}
