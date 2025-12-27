@@ -154,6 +154,8 @@ def create_scene_video(
             text=True,
             timeout=60,
         )
+        if result.returncode != 0:
+            print(f"    ffmpegエラー: {result.stderr[:300]}")
         return result.returncode == 0
     except Exception as e:
         print(f"    エラー: {e}")
@@ -192,6 +194,8 @@ def concatenate_videos(video_list: list, output_path: Path, dry_run: bool = Fals
             cwd=output_path.parent,
             timeout=300,
         )
+        if result.returncode != 0:
+            print(f"  結合エラー: {result.stderr[:500]}")
         # リストファイル削除
         list_file.unlink(missing_ok=True)
         return result.returncode == 0
