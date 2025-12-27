@@ -46,7 +46,7 @@ except ImportError:
     print("      pip install Pillow")
 
 # 設定
-GEMINI_MODEL = "gemini-2.0-flash-exp"  # 画像生成対応モデル
+GEMINI_MODEL = "gemini-2.5-flash-image"  # 画像生成対応モデル（旧称: ナノバナナプロ）
 WAIT_BETWEEN_IMAGES = 10  # 画像間の待機秒数（レート制限対策）
 MAX_RETRIES = 3  # 最大リトライ回数
 RETRY_WAIT = 30  # リトライ時の待機秒数
