@@ -182,6 +182,43 @@ def create_scene_video(
         return False
 
 
+def burn_subtitles(video_path: Path, srt_path: Path, output_path: Path, dry_run: bool = False) -> bool:
+    """字幕を動画に焼き付け"""
+    if not video_path.exists() or not srt_path.exists():
+        return False
+
+    # SRTパスをスラッシュに変換（ffmpegのsubtitlesフィルター用）
+    srt_escaped = str(srt_path.absolute()).replace('\\', '/').replace(':', '\\:')
+
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", str(video_path),
+        "-vf", f"subtitles='{srt_escaped}':force_style='FontSize=24,FontName=Yu Gothic,PrimaryColour=&HFFFFFF,OutlineColour=&H000000,Outline=2'",
+        "-c:a", "copy",
+        str(output_path)
+    ]
+
+    if dry_run:
+        print(f"  [DRY-RUN] 字幕焼き付け: {output_path.name}")
+        return True
+
+    try:
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=600,
+        )
+        if result.returncode != 0:
+            error_lines = result.stderr.strip().split('\n')
+            last_lines = '\n'.join(error_lines[-5:])
+            print(f"  字幕焼き付けエラー:\n{last_lines}")
+        return result.returncode == 0
+    except Exception as e:
+        print(f"  字幕焼き付けエラー: {e}")
+        return False
+
+
 def concatenate_videos(video_list: list, output_path: Path, dry_run: bool = False) -> bool:
     """複数の動画を結合"""
     if not video_list:
@@ -233,6 +270,7 @@ def process_episode(
     episode_num: int,
     base_dir: Path,
     dry_run: bool = False,
+    burn_subs: bool = False,
 ) -> bool:
     """1エピソードの動画を生成"""
 
@@ -308,11 +346,23 @@ def process_episode(
         success = concatenate_videos(scene_videos, output_path, dry_run)
 
         if success:
-            print(f"  完成: {output_path}")
+            print(f"  結合完了: {output_path}")
             # 一時ファイル削除
             if not dry_run:
                 for v in scene_videos:
                     v.unlink(missing_ok=True)
+
+            # 字幕焼き付け
+            if burn_subs:
+                subtitled_path = video_dir / f"episode{episode_num}_subtitled.mp4"
+                print(f"  字幕焼き付け中...")
+                if burn_subtitles(output_path, srt_path, subtitled_path, dry_run):
+                    print(f"  完成: {subtitled_path}")
+                else:
+                    print(f"  字幕焼き付け失敗")
+            else:
+                print(f"  完成: {output_path}")
+
             return True
 
     return False
@@ -322,6 +372,7 @@ def main():
     parser = argparse.ArgumentParser(description="画像と音声から動画を生成")
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--dry-run", action="store_true", help="ffmpegを実行せずに確認")
+    parser.add_argument("--burn-subtitles", action="store_true", help="字幕を動画に焼き付け")
     args = parser.parse_args()
 
     base_dir = Path(__file__).parent.parent
@@ -342,6 +393,8 @@ def main():
     print("動画生成を開始します...")
     if args.dry_run:
         print("(ドライラン: ffmpegは実行しません)")
+    if args.burn_subtitles:
+        print("(字幕を動画に焼き付けます)")
     print()
 
     for episode_num in range(1, 5):
@@ -349,7 +402,7 @@ def main():
             continue
 
         print(f"エピソード{episode_num}:")
-        success = process_episode(episode_num, base_dir, args.dry_run)
+        success = process_episode(episode_num, base_dir, args.dry_run, args.burn_subtitles)
         if success:
             print(f"  完了")
         else:
