@@ -72,11 +72,15 @@ def compute_prompt_hash(prompt: str, negative_prompt: str, ref_images: List[str]
     return hashlib.md5(content.encode()).hexdigest()[:12]
 
 
-def load_reference_image(image_path: Path) -> Optional[Image.Image]:
+def load_reference_image(image_path: Path, debug: bool = False) -> Optional[Image.Image]:
     """参照画像を読み込む"""
     if not PIL_AVAILABLE:
+        if debug:
+            print(f"    [DEBUG] PIL not available")
         return None
     if not image_path.exists():
+        if debug:
+            print(f"    [DEBUG] Image not found: {image_path}")
         return None
     try:
         img = Image.open(image_path)
@@ -97,28 +101,37 @@ def get_reference_images(
     characters_data: dict,
     locations_data: dict,
     base_dir: Path,
+    debug: bool = False,
 ) -> List[tuple[str, Image.Image]]:
     """プロンプトに対応する参照画像を取得"""
     ref_images = []
 
     # キャラクター参照画像
     characters = prompt_data.get("characters", [])
+    if debug:
+        print(f"    [DEBUG] Characters in prompt: {characters}")
     for char_id in characters[:2]:  # 最大2キャラまで
         char_info = characters_data.get("characters", {}).get(char_id, {})
         ref_path = char_info.get("reference_image")
+        if debug:
+            print(f"    [DEBUG] {char_id} -> ref_path: {ref_path}")
         if ref_path:
-            img = load_reference_image(base_dir / ref_path)
+            img = load_reference_image(base_dir / ref_path, debug)
             if img:
                 char_name = char_info.get("name", char_id)
                 ref_images.append((f"Character: {char_name}", img))
 
     # 背景参照画像
     location_id = prompt_data.get("location", "")
+    if debug:
+        print(f"    [DEBUG] Location: {location_id}")
     location_info = locations_data.get("locations", {}).get(location_id, {})
 
     # 複数の参照画像がある場合（天候/時間帯で選択）
     ref_images_dict = location_info.get("reference_images", {})
     weather = prompt_data.get("weather", "")
+    if debug:
+        print(f"    [DEBUG] Location ref_images_dict: {ref_images_dict}")
 
     if ref_images_dict:
         # 天候に応じた画像を選択
@@ -134,11 +147,15 @@ def get_reference_images(
         ref_path = location_info.get("reference_image")
 
     if ref_path:
-        img = load_reference_image(base_dir / ref_path)
+        if debug:
+            print(f"    [DEBUG] Background ref_path: {ref_path}")
+        img = load_reference_image(base_dir / ref_path, debug)
         if img:
             loc_name = location_info.get("name", location_id)
             ref_images.append((f"Background: {loc_name}", img))
 
+    if debug:
+        print(f"    [DEBUG] Total ref_images loaded: {len(ref_images)}")
     return ref_images
 
 
@@ -244,6 +261,7 @@ def process_episode(
     dry_run: bool = False,
     limit: Optional[int] = None,
     use_references: bool = True,
+    debug: bool = False,
 ) -> tuple[int, int, int]:
     """1つのエピソードの画像を生成"""
 
@@ -282,7 +300,7 @@ def process_episode(
         ref_paths = []
         if use_references and PIL_AVAILABLE:
             ref_images = get_reference_images(
-                prompt_data, characters_data, locations_data, base_dir
+                prompt_data, characters_data, locations_data, base_dir, debug
             )
             ref_paths = [label for label, _ in ref_images]
 
@@ -344,6 +362,7 @@ def main():
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--limit", type=int, help="生成枚数の上限")
     parser.add_argument("--no-reference", action="store_true", help="参照画像を使用しない")
+    parser.add_argument("--debug", action="store_true", help="デバッグ出力を表示")
     args = parser.parse_args()
 
     base_dir = Path(__file__).parent.parent
@@ -389,6 +408,9 @@ def main():
         print("(参照画像モード: キャラクター/背景画像を使用)")
     else:
         print("(参照画像なし)")
+    if args.debug:
+        print(f"[DEBUG] base_dir: {base_dir}")
+        print(f"[DEBUG] PIL_AVAILABLE: {PIL_AVAILABLE}")
     print()
 
     total_generated = 0
@@ -418,6 +440,7 @@ def main():
             dry_run=args.dry_run,
             limit=args.limit,
             use_references=use_references,
+            debug=args.debug,
         )
 
         total_generated += generated
