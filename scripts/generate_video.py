@@ -169,11 +169,13 @@ def concatenate_videos(video_list: list, output_path: Path, dry_run: bool = Fals
     if not video_list:
         return False
 
-    # 結合リストファイル作成
+    # 結合リストファイル作成（絶対パスを使用）
     list_file = output_path.parent / "concat_list.txt"
     with open(list_file, "w", encoding="utf-8") as f:
         for video in video_list:
-            f.write(f"file '{video.name}'\n")
+            # Windowsパスのバックスラッシュをスラッシュに変換
+            video_path = str(video.absolute()).replace('\\', '/')
+            f.write(f"file '{video_path}'\n")
 
     cmd = [
         "ffmpeg", "-y",
