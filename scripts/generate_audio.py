@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_audio.py - Gemini APIを使用して音声を生成
+generate_audio.py - Gemini TTS APIを使用して音声を生成
 
 使用方法:
     python scripts/generate_audio.py [--dry-run] [--episode N] [--limit N]
@@ -37,22 +37,23 @@ except ImportError:
     print("      pip install google-genai")
 
 # 設定
-GEMINI_MODEL = "gemini-2.0-flash-exp"
-WAIT_BETWEEN_AUDIO = 3  # 音声間の待機秒数
+GEMINI_MODEL = "gemini-2.5-flash-preview-tts"
+WAIT_BETWEEN_AUDIO = 2
 MAX_RETRIES = 3
 RETRY_WAIT = 30
 
-# キャラクター別の読み上げ指示
-CHARACTER_VOICE_PROMPTS = {
-    "ren": "疲れた感じの落ち着いた男性の声で、少し投げやりに",
-    "yuki": "明るく元気な若い女性の声で、ハキハキと",
-    "sumika": "大人の女性の声で、感情を抑えながらも切なく",
-    "sumika_young": "若い女性の声で、夢を追う情熱を込めて",
-    "mother": "年配の女性の声で、優しく穏やかに",
-    "mother_young": "中年女性の声で、厳しくも愛情を込めて",
-    "father": "年配の男性の声で、温かく",
-    "voice_entity": "不気味で歪んだ声で、エコーがかかったように",
-    "narrator": "落ち着いたナレーターの声で、淡々と",
+# キャラクター別の音声設定
+# 利用可能な音声: Aoede, Charon, Fenrir, Kore, Puck, etc.
+CHARACTER_VOICES = {
+    "ren": {"voice": "Orus", "style": "疲れた感じで少し投げやりに"},
+    "yuki": {"voice": "Kore", "style": "明るく元気にハキハキと"},
+    "sumika": {"voice": "Aoede", "style": "感情を抑えながらも切なく"},
+    "sumika_young": {"voice": "Kore", "style": "夢を追う情熱を込めて"},
+    "mother": {"voice": "Aoede", "style": "優しく穏やかに"},
+    "mother_young": {"voice": "Aoede", "style": "厳しくも愛情を込めて"},
+    "father": {"voice": "Charon", "style": "温かく"},
+    "voice_entity": {"voice": "Fenrir", "style": "不気味に歪んだ感じで"},
+    "narrator": {"voice": "Puck", "style": "落ち着いて淡々と"},
 }
 
 
@@ -75,23 +76,6 @@ def compute_script_hash(text: str, speaker: str) -> str:
     return hashlib.md5(content.encode()).hexdigest()[:12]
 
 
-def build_voice_prompt(text: str, speaker: str, emotion: str = "") -> str:
-    """Gemini音声生成用のプロンプトを構築"""
-    voice_instruction = CHARACTER_VOICE_PROMPTS.get(speaker, CHARACTER_VOICE_PROMPTS["narrator"])
-
-    emotion_note = ""
-    if emotion:
-        emotion_note = f"（{emotion}の感情を込めて）"
-
-    prompt = f"""以下のセリフを{voice_instruction}読んでください。{emotion_note}
-
-「{text}」
-
-※自然な日本語の抑揚で、感情を込めて読み上げてください。"""
-
-    return prompt
-
-
 def generate_audio_gemini(
     client,
     text: str,
@@ -99,8 +83,16 @@ def generate_audio_gemini(
     emotion: str,
     output_path: Path,
 ) -> bool:
-    """Gemini APIで音声を生成（リトライ機能付き）"""
-    prompt = build_voice_prompt(text, speaker, emotion)
+    """Gemini TTS APIで音声を生成（リトライ機能付き）"""
+
+    # キャラクターの音声設定を取得
+    voice_config = CHARACTER_VOICES.get(speaker, CHARACTER_VOICES["narrator"])
+    voice_name = voice_config["voice"]
+    style = voice_config["style"]
+
+    # 感情を含めたプロンプト
+    emotion_note = f"（{emotion}）" if emotion else ""
+    prompt = f"{style}{emotion_note}読んでください: {text}"
 
     for attempt in range(MAX_RETRIES):
         try:
@@ -108,14 +100,20 @@ def generate_audio_gemini(
                 model=GEMINI_MODEL,
                 contents=prompt,
                 config=types.GenerateContentConfig(
-                    response_modalities=["AUDIO"]
+                    response_modalities=["AUDIO"],
+                    speech_config=types.SpeechConfig(
+                        voice_config=types.VoiceConfig(
+                            prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                                voice_name=voice_name,
+                            )
+                        )
+                    ),
                 )
             )
 
             # レスポンスから音声データを抽出
             for part in response.candidates[0].content.parts:
                 if part.inline_data is not None:
-                    # 音声を保存
                     output_path.parent.mkdir(parents=True, exist_ok=True)
                     with open(output_path, "wb") as f:
                         f.write(part.inline_data.data)
@@ -154,7 +152,6 @@ def process_episode(
     episode_num = data.get("episode", 1)
     scripts = data.get("scripts", [])
 
-    # マニフェスト読み込み
     manifest = {}
     if manifest_path.exists():
         manifest = load_json(manifest_path)
@@ -179,11 +176,9 @@ def process_episode(
         if not text:
             continue
 
-        # 出力ファイル名
         filename = f"{scene_id}_{beat_index:03d}.wav"
         output_path = episode_output_dir / filename
 
-        # ハッシュでキャッシュ確認
         script_hash = compute_script_hash(text, speaker)
         manifest_key = f"ep{episode_num}_{scene_id}_{beat_index}"
 
@@ -193,15 +188,14 @@ def process_episode(
                 skipped += 1
                 continue
 
-        print(f"  [{i+1}/{len(scripts)}] {filename} ({speaker})")
+        voice_name = CHARACTER_VOICES.get(speaker, CHARACTER_VOICES["narrator"])["voice"]
+        print(f"  [{i+1}/{len(scripts)}] {filename} ({speaker} -> {voice_name})")
 
         if dry_run:
             print(f"    テキスト: {text[:50]}...")
-            print(f"    話者: {speaker}")
             generated += 1
             continue
 
-        # 音声生成
         success = generate_audio_gemini(
             client=client,
             text=text,
@@ -212,21 +206,20 @@ def process_episode(
 
         if success:
             generated += 1
-            # マニフェスト更新
             manifest[manifest_key] = {
                 "path": str(output_path.relative_to(output_dir.parent)),
                 "script_hash": script_hash,
                 "scene_id": scene_id,
                 "beat_index": beat_index,
                 "speaker": speaker,
+                "voice": voice_name,
             }
             save_json(manifest_path, manifest)
             print(f"    保存完了: {output_path}")
         else:
             failed += 1
 
-        # レート制限対策
-        if i < len(scripts) - 1:
+        if i < len(scripts) - 1 and not dry_run:
             print(f"    {WAIT_BETWEEN_AUDIO}秒待機中...")
             time.sleep(WAIT_BETWEEN_AUDIO)
 
@@ -234,7 +227,7 @@ def process_episode(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Gemini APIで音声を生成")
+    parser = argparse.ArgumentParser(description="Gemini TTS APIで音声を生成")
     parser.add_argument("--dry-run", action="store_true", help="APIを呼び出さずに確認")
     parser.add_argument("--episode", type=int, help="指定エピソードのみ処理")
     parser.add_argument("--limit", type=int, help="生成数の上限")
@@ -247,7 +240,6 @@ def main():
 
     client = None
 
-    # APIキー確認
     if not args.dry_run:
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
@@ -255,9 +247,6 @@ def main():
             print()
             print("例:")
             print("  export GEMINI_API_KEY=your-api-key")
-            print()
-            print("または:")
-            print("  GEMINI_API_KEY=your-api-key python scripts/generate_audio.py")
             sys.exit(1)
 
         if not GENAI_AVAILABLE:
@@ -265,7 +254,6 @@ def main():
             print("  pip install google-genai")
             sys.exit(1)
 
-        # クライアント初期化
         client = genai.Client(api_key=api_key)
         print("Gemini API クライアント初期化完了")
 
@@ -279,7 +267,6 @@ def main():
     total_skipped = 0
     total_failed = 0
 
-    # エピソード処理
     for episode_num in range(1, 5):
         if args.episode and episode_num != args.episode:
             continue
@@ -311,7 +298,6 @@ def main():
     print(f"合計: 生成={total_generated}, スキップ={total_skipped}, 失敗={total_failed}")
     print()
     print(f"出力ディレクトリ: {output_dir}")
-    print(f"マニフェスト: {manifest_path}")
 
 
 if __name__ == "__main__":
