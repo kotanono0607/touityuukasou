@@ -1,0 +1,2473 @@
+{
+  "episode": 4,
+  "title": "保管期限は三ヶ月",
+  "title_en": "",
+  "scenes": [
+    {
+      "id": "ep1_sc001",
+      "title": "シーン1",
+      "location": "lost_and_found",
+      "characters_present": [
+        "ren",
+        "voice_entity",
+        "mother",
+        "sumika",
+        "yuki"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "午前四時三十分。"
+        },
+        {
+          "type": "narration",
+          "text": "遺失物取扱所に戻った時、空は少しずつ白み始めていた。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは窓口のカウンターに腰を下ろし、新しいアロマスティックに香りを立たせる呪をかけて口に咥えた。ラベンダーとセージの匂いが、疲れた体に染み渡る。"
+        },
+        {
+          "type": "narration",
+          "text": "ユキはスタッフルームで休んでいる。怪異から受けた精神的なダメージは小さくなく、しばらくは安静が必要だろう。"
+        },
+        {
+          "type": "narration",
+          "text": "そして——"
+        },
+        {
+          "type": "narration",
+          "text": "蒼井澄香は、カウンターの向かい側に座っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "その目の前には、錆びたマイクが置かれている。スタンドには、銀色のピックがまだ貼り付いたままだ。父の形見。十年間、雨風にさらされながらも——ずっとそこにあった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、マイクを見つめ続けていた。"
+        },
+        {
+          "type": "narration",
+          "text": "もう三十分以上、そうしている。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは何も言わなかった。ただ、ほうじ茶を淹れて、澄香の前に置いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……ありがとうございます",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香が小さく礼を言った。だが、お茶には手をつけなかった。"
+        },
+        {
+          "type": "narration",
+          "text": "沈黙が続いた。"
+        },
+        {
+          "type": "narration",
+          "text": "窓の外で、始発電車の音が遠くに聞こえた。世界が少しずつ、目を覚まし始めている。"
+        },
+        {
+          "type": "dialogue",
+          "text": "受け取らないんですか",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "レンが尋ねた。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、ゆっくりと首を横に振った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……分かりません",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "その声は、かすかに震えていた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "受け取って、どうすればいいのか……分からないんです",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "歌えばいいんじゃないですか",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンは淡々と言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたが探していたのは、歌う声でしょう。これを受け取れば——また歌えるようになる。多分",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "多分？",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "保証はできない。怪異化した想いを元に戻しても、完全に元通りになるとは限らない。声が戻るかもしれないし、戻らないかもしれない",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は黙った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "それに——",
+          "speaker": "voice_entity"
+        },
+        {
+          "type": "narration",
+          "text": "レンはアロマスティックを咥え直した。"
+        },
+        {
+          "type": "dialogue",
+          "text": "声が戻ったとして、あなたがどうするかは——あなた次第だ。また歌手を目指すのか、趣味で歌うのか、それとも——何もしないのか",
+          "speaker": "voice_entity"
+        },
+        {
+          "type": "dialogue",
+          "text": "……歌手は、もう",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香が言葉を切った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年経ちました。もう、若くない。今さら夢を追いかけても——",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "だったら、受け取る必要はないかもしれないですね",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンの言葉は、冷たくはなかった。ただ——事実を述べているだけだった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "失くしたものを取り戻しても、それを使わないなら——意味がない",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は唇を噛んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……そうですよね",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "そうとは限りませんけど",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは肩をすくめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "持っているだけで安心することもある。使わなくても、そこにあるというだけで——前に進める人もいる",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香が顔を上げた。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは窓の外を見ていた。空が、薄紫色に染まり始めている。夜明け前の、一番静かな時間。"
+        },
+        {
+          "type": "dialogue",
+          "text": "俺はただの遺失物係だ。落とし物を見つけて、保管して、持ち主に返す。それだけが仕事だ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは澄香を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "受け取るか受け取らないかは——あなたが決めることだ。俺がどうこう言う権利はない",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "沈黙が流れた。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、マイクを見つめた。"
+        },
+        {
+          "type": "narration",
+          "text": "十年間、待ち続けていたマイク。十年間、自分が捨てたまま放置していたもの。そして——父の形見のピック。"
+        },
+        {
+          "type": "narration",
+          "text": "手を伸ばせば、届く距離にある。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……預かっていてください",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、静かに言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "え？",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "このマイク——私の声を。もう少しだけ、ここで預かっていてください",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "レンは眉をひそめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……どういうことですか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "今の私には——まだ、これを受け取る資格がないと思うんです",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は立ち上がった。"
+        },
+        {
+          "type": "narration",
+          "text": "その表情は、来た時とは少し違っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "絶望でも、諦めでもない。どこか——穏やかで、それでいて芯のある顔。"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年間、逃げてきました。自分の声から。自分の夢から。父の形見から。——そして、母から",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は窓の外を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "母には、まだ何も話していないんです。ピックを失くしたことも、歌えなくなったことも。ずっと——嘘をついて生きてきた",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "今日、やっと——向き合えた気がします。自分の声と。過去の自分と",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は微笑んだ。それは、今夜初めて見せた、本当の笑顔だった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから——次は、母と向き合いたい。ちゃんと話して、謝って。それができてから——この声を受け取りたいんです",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "レンは澄香を見つめた。"
+        },
+        {
+          "type": "narration",
+          "text": "その目には、もう迷いがなかった。恐れもなかった。十年分の重荷を下ろした人間の、晴れやかな目。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは小さくため息を吐いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——分かりました",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "レンはマイクを手に取り、カウンターの後ろにある棚に向かった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "落とし物",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "色褪せた手紙の束。片方だけの子供用の靴。弦の切れたギター。"
+        },
+        {
+          "type": "narration",
+          "text": "レンは一番奥に置かれた古い写真立てを一瞬だけ見て、目を逸らした。"
+        },
+        {
+          "type": "narration",
+          "text": "マイクを棚の一角に置く。ピックが、かすかに揺れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "保管期限は三ヶ月です",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "振り返らずに、レンは言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "三ヶ月以内に受け取りに来なければ、処分することになる。決まりなので",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "……三ヶ月",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "ええ。それまでに決めてください",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頷いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "分かりました。——必ず、取りに来ます",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "そして——彼女は、遺失物取扱所を後にした。"
+        },
+        {
+          "type": "narration",
+          "text": "ガラス戸が閉まる音が、静かに響いた。"
+        },
+        {
+          "type": "narration",
+          "text": "外では、雨が完全に止んでいた。東の空が、薄いオレンジ色に染まり始めている。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc002",
+      "title": "シーン2",
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "yuki",
+        "mother",
+        "sumika"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "澄香が去った後、レンは窓際に立っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "外はすっかり明るくなっていた。雨上がりの空は澄んでいて、遠くにかすかに虹が見える。七色の橋が、夜と朝を繋いでいるように。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……三ヶ月、か",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "独り言のように呟いた。"
+        },
+        {
+          "type": "narration",
+          "text": "三ヶ月。それは遺失物の保管期限として定められた期間だ。だが——"
+        },
+        {
+          "type": "narration",
+          "text": "レンはちらりと棚を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "落とし物",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "一番奥の写真立て。"
+        },
+        {
+          "type": "narration",
+          "text": "そこに写っているのは若い女性だった。レンと同じくらいの年齢の、笑顔の女性。その首元には、今レンが持っているのと同じ錆びた鍵がペンダントのように下げられている。"
+        },
+        {
+          "type": "narration",
+          "text": "『忘れないで』"
+        },
+        {
+          "type": "narration",
+          "text": "鍵に刻まれた言葉が、レンの脳裏に蘇る。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……面倒だ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは呟いて、椅子に深く腰を下ろした。"
+        },
+        {
+          "type": "narration",
+          "text": "スタッフルームのドアが開いて、ユキが顔を出した。"
+        },
+        {
+          "type": "dialogue",
+          "text": "灰谷さん……蒼井さんは？",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "帰った",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "マイクは……？",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "預かることになった",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは安堵したように息を吐いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "そう……ですか。よかった",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "何がいいんだか",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンはアロマスティックを咥え直した。"
+        },
+        {
+          "type": "dialogue",
+          "text": "結局、俺たちの仕事が増えただけだ。三ヶ月後にまた来るかどうかも分からないのに",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも——",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキはカウンターに歩み寄った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "蒼井さん、来た時と——顔が違いましたよね",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンは答えなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "憑き物が落ちたっていうか……なんか、すっきりした顔してました。目が、違った",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "……そうか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "声を取り戻せなくても、向き合えたことが大事だったのかもしれませんね",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは窓の外を見た。虹が、少しずつ薄くなっていく。"
+        },
+        {
+          "type": "dialogue",
+          "text": "失くしたものは、必ずしも戻ってくるわけじゃない。でも——向き合うことで、前に進めることもあるんですね",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは黙っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "ただ——その口元が、かすかに緩んでいたことに、ユキは気づかなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……さて",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは立ち上がった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "もうすぐ朝だ。昼間の担当者が来る前に、報告書を書かないといけない",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "私も手伝います",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "お前は休んでろ。さっきまで泣いてたくせに",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "泣いてません！　……ちょっと涙が出ただけです",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "同じだろ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは棚に向かって歩きながら、ちらりとマイクを見た。"
+        },
+        {
+          "type": "narration",
+          "text": "錆びた、古いマイク。銀色のピックが、朝日を受けてきらりと光っている。"
+        },
+        {
+          "type": "narration",
+          "text": "十年間、一人で待ち続けた——誰かの声。"
+        },
+        {
+          "type": "narration",
+          "text": "そして、父から娘へ、母から娘へと受け継がれた——夢の欠片。"
+        },
+        {
+          "type": "dialogue",
+          "text": "三ヶ月だ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは小さく呟いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "それまでに、ちゃんと決めてこい",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "マイクは、何も答えなかった。"
+        },
+        {
+          "type": "narration",
+          "text": "ただ——朝日を受けて、かすかに歌っているように見えた。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc003",
+      "title": "シーン3",
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "yuki",
+        "mother",
+        "sumika"
+      ],
+      "beats": [
+        {
+          "type": "dialogue",
+          "text": "それから三ヶ月後。",
+          "emotion": "emphasized"
+        },
+        {
+          "type": "narration",
+          "text": "深夜零時を少し過ぎた頃。"
+        },
+        {
+          "type": "narration",
+          "text": "遺失物取扱所のガラス戸が、静かに開いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "いらっしゃいませ"
+        },
+        {
+          "type": "narration",
+          "text": "レンは顔を上げた。"
+        },
+        {
+          "type": "narration",
+          "text": "そこに立っていたのは、三ヶ月前とは明らかに違う蒼井澄香だった。"
+        },
+        {
+          "type": "narration",
+          "text": "髪は短く切られ、肩の辺りで軽やかに揺れている。服装も以前より明るい色——淡いブルーのワンピースに、白いカーディガン。"
+        },
+        {
+          "type": "narration",
+          "text": "何より、その目に宿る光が違っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "迷いがない。恐れがない。"
+        },
+        {
+          "type": "narration",
+          "text": "自分自身を、受け入れた人間の目だった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……来たんですか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "はい",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、カウンターの前に立った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "受け取りに来ました。私の声を",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは少しの間、澄香を見つめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "何かあったんですか",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "……どうしてですか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "顔が違う。三ヶ月前とは別人だ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は微笑んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "母と、話しました",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "全部、打ち明けたんです",
+          "speaker": "ren"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc004",
+      "title": "シーン4",
+      "location": "mother_house",
+      "weather": "clearing",
+      "characters_present": [
+        "mother",
+        "sumika"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "それは、三ヶ月前のあの夜から一週間後のことだった。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は実家の最寄り駅で降りてから、三十分も歩けずにいた。"
+        },
+        {
+          "type": "narration",
+          "text": "駅前のベンチに座り、何度も立ち上がろうとしては、また座り直す。通り過ぎる人々が不審そうな目を向けるのにも気づかなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "行かなければ。",
+          "emotion": "emphasized"
+        },
+        {
+          "type": "dialogue",
+          "text": "声"
+        },
+        {
+          "type": "narration",
+          "text": "だが、足が動かない。"
+        },
+        {
+          "type": "narration",
+          "text": "十年間、一度も帰らなかった。電話も、年に数回、事務的なやり取りをするだけだった。元気かと訊かれれば元気だと答え、仕事はどうかと訊かれれば順調だと嘘をついた。"
+        },
+        {
+          "type": "narration",
+          "text": "歌えなくなったことも、ピックを失くしたことも、何も話していない。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ごめんなさい"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は深く息を吸い、立ち上がった。"
+        },
+        {
+          "type": "narration",
+          "text": "済む話かどうかは、母が決めることだ。自分にできるのは、正直に話すことだけ。"
+        },
+        {
+          "type": "narration",
+          "text": "実家までの道は、驚くほど変わっていなかった。角の煙草屋は潰れてコンビニになっていたが、それ以外はほとんど記憶のままだった。十年という時間が嘘のように思えた。"
+        },
+        {
+          "type": "narration",
+          "text": "玄関の前に立つ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "蒼井"
+        },
+        {
+          "type": "narration",
+          "text": "インターホンを押す指が震えていた。"
+        },
+        {
+          "type": "narration",
+          "text": "ピンポーン、という音が、やけに大きく響いた。"
+        },
+        {
+          "type": "narration",
+          "text": "しばらくして、足音が聞こえた。ゆっくりとした、重い足音。"
+        },
+        {
+          "type": "narration",
+          "text": "ドアが開いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——"
+        },
+        {
+          "type": "narration",
+          "text": "母が立っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "白髪が増えていた。顔の皺も深くなっていた。背中が少し丸くなり、澄香より小さく見えた。"
+        },
+        {
+          "type": "narration",
+          "text": "十年という時間が、確かにそこにあった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……澄香",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母の声も、かすれていた。驚きと、戸惑いと、何か別の感情が混ざった声。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん。……話があるの",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は何も言わず、ただ澄香を見つめていた。その目には、複雑な光が浮かんでいた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……上がりなさい",
+          "speaker": "mother"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc005",
+      "title": "シーン5",
+      "location": "mother_house",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "sumika",
+        "mother"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "リビングは、ほとんど変わっていなかった。"
+        },
+        {
+          "type": "narration",
+          "text": "見覚えのあるソファ。色褪せた家族写真。父の遺影。"
+        },
+        {
+          "type": "narration",
+          "text": "ただ、全体的に古びていた。時間が止まったまま、少しずつ朽ちていくような——そんな空気が漂っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "母がお茶を淹れてくれた。湯呑みを受け取る手が震える。"
+        },
+        {
+          "type": "narration",
+          "text": "二人は向かい合って座った。"
+        },
+        {
+          "type": "narration",
+          "text": "沈黙が重い。時計の秒針の音だけが、やけに大きく聞こえる。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……久しぶりね",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母が口を開いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年ぶりかしら。顔を見るのは",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "……うん",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "電話では元気そうだったけど。実際に見ると——",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母の目が、澄香の顔をじっと見つめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——やつれたわね",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は何も言えなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "仕事は順調なんでしょう？　電話ではそう言ってたわよね",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "それは——",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "嘘でしょう",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母の声は、静かだった。責めるような調子ではなかった。ただ、事実を確認しているような、淡々とした声。"
+        },
+        {
+          "type": "dialogue",
+          "text": "分かるのよ。あなたの嘘は、昔から下手だったから",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は唇を噛んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん、私——",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "歌は、まだ続けているの？",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "その問いに、澄香の心臓が跳ねた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "続けているなら、それでいいの。続けていないなら——それも、あなたが決めたことだから",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母はお茶を啜った。その手が、かすかに震えていることに澄香は気づいた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年間、何も聞かなかったわ。聞きたくなかったのかもしれない。聞いたら——",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母の声が、少し詰まった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "聞いたら、何か辛いことがあったって分かってしまいそうで",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の目から、涙が溢れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん——",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "話があるんでしょう？",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は澄香を真っ直ぐに見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "聞くわ。何でも",
+          "speaker": "mother"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc006",
+      "title": "シーン6",
+      "location": "mother_house",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "mother",
+        "mother_young",
+        "sumika"
+      ],
+      "is_flashback": true,
+      "beats": [
+        {
+          "type": "narration",
+          "text": "澄香は、全てを話した。"
+        },
+        {
+          "type": "narration",
+          "text": "十年前、最後のステージに立ったこと。プロデューサーが見に来ていて、緊張で頭が真っ白になったこと。二曲目で声が出なくなり、逃げ出したこと。"
+        },
+        {
+          "type": "narration",
+          "text": "そして——父のピックを、マイクスタンドに貼り付けたまま、置いてきてしまったこと。"
+        },
+        {
+          "type": "dialogue",
+          "text": "取りに戻ろうと思った。何度も。でも——できなかった。あの場所に行くのが怖くて。あの日の自分を思い出すのが辛くて"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は膝の上で手を握りしめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "それから、歌えなくなった。声は出るのに、歌おうとすると——何も出てこない。病院に行っても、どこも悪くないって。心因性だって",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母は黙って聞いていた。"
+        },
+        {
+          "type": "narration",
+          "text": "その表情からは、何も読み取れなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年間、嘘をついてた。仕事は順調だって。歌は続けてるって。でも本当は——何もかも諦めて、ただ生きてるだけだった",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頭を下げた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ごめんなさい。お父さんの形見なのに。お母さんがくれたものなのに。私——捨てて逃げた",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "沈黙が流れた。"
+        },
+        {
+          "type": "narration",
+          "text": "長い、長い沈黙。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は顔を上げられなかった。母がどんな顔をしているのか、見る勇気がなかった。"
+        },
+        {
+          "type": "narration",
+          "text": "やがて——"
+        },
+        {
+          "type": "dialogue",
+          "text": "……馬鹿ね",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母の声が聞こえた。"
+        },
+        {
+          "type": "narration",
+          "text": "それは——澄香が予想していたどんな反応とも違っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "怒りでもなく、失望でもなく、優しさでもなく。"
+        },
+        {
+          "type": "dialogue",
+          "text": "呆れと、悲しみと、そして何か、自分を責めるような響き。",
+          "speaker": "ren",
+          "emotion": "emphasized"
+        },
+        {
+          "type": "dialogue",
+          "text": "本当に、馬鹿な子",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香が顔を上げると、母は泣いていた。"
+        },
+        {
+          "type": "narration",
+          "text": "声を殺して、静かに涙を流していた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん……？",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "十年よ。十年も、一人で抱え込んで",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母の声が震えていた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "どうして——どうして言ってくれなかったの",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "だって——",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "言えなかった？　私が怖かった？　怒られると思った？",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母の目が、澄香を射抜いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "そうよね。そう思うわよね。私は——反対ばかりしてたから",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は自分の顔を手で覆った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたが歌手になりたいって言った時、反対した。無理だって言った。才能がないって——ひどいことも、言った",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも本当は——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母の声が、嗚咽で途切れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "本当は、怖かっただけなの",
+          "speaker": "mother"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc007",
+      "title": "シーン7",
+      "location": "mother_house",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "sumika",
+        "mother"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "母は、ゆっくりと顔を上げた。"
+        },
+        {
+          "type": "narration",
+          "text": "涙で濡れた顔。皺の刻まれた頬。白髪の混じった髪。"
+        },
+        {
+          "type": "narration",
+          "text": "十年という時間が、母を老けさせていた。そして——その十年間、母もまた何かを抱えていたのだと、澄香は初めて気づいた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんはね"
+        },
+        {
+          "type": "narration",
+          "text": "母は父の遺影を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私と出会った時、まだミュージシャンを目指してたの。ギターを抱えて、小さなライブハウスを回って。売れない歌を歌い続けてた"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は黙って聞いていた。父のことを、母の口から聞くのは初めてだった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "才能はあったのよ。本当に。いい声をしてた。曲も、歌詞も、素晴らしかった。でも——"
+        },
+        {
+          "type": "narration",
+          "text": "母は小さく息を吐いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "売れなかった。何年経っても。どんなに頑張っても"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "私は、待ったわ。いつか売れるって、信じて待った。お父さんもそう信じてた。でも——結局、その『いつか』は来なかった",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母の手が、膝の上で握りしめられた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんが病気だって分かった時——もう、歌う体力も残ってなかった。声も、出なくなってた",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の胸が、締め付けられるように痛んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "最後の数ヶ月、お父さんはずっと悔しがってた。『もっと歌いたかった』『夢を叶えたかった』って。でも——",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母の声が、かすれた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私には、違って見えたの。お父さんは——夢を追いかけて、燃え尽きたように見えた。幸せだったのかもしれない。でも——残された私は",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "涙が、母の頬を伝い落ちた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私は——ずっと、辛かった。待ち続けて、信じ続けて、でも何も報われなくて。お父さんを看取った後も——ずっと",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、初めて知った。"
+        },
+        {
+          "type": "narration",
+          "text": "母の苦しみを。母の悲しみを。"
+        },
+        {
+          "type": "dialogue",
+          "text": "だからあなたが——お父さんと同じ道を歩もうとした時、怖かったの。また同じことになるんじゃないかって。あなたも——燃え尽きてしまうんじゃないかって",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は澄香を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "反対したのは、あなたを信じてなかったからじゃない。あなたを——失いたくなかったから",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん……",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも、反対したって、止められないって分かってた。あなたはお父さんに似てるから。夢を追いかけずにはいられない人だって",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母は父の遺影の横に置かれた小さな箱を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから——ピックを渡したの",
+          "speaker": "sumika"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc008",
+      "title": "シーン8",
+      "location": "mother_house",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "sumika",
+        "mother"
+      ],
+      "beats": [
+        {
+          "type": "dialogue",
+          "text": "あのピックはね"
+        },
+        {
+          "type": "narration",
+          "text": "母は立ち上がり、遺影の横に歩み寄った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんが最後まで使ってたものなの。ボロボロで、欠けてて。でも——お父さんは、あれじゃないと駄目だって言って、ずっと使い続けてた"
+        },
+        {
+          "type": "narration",
+          "text": "母は振り返った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんが亡くなった後、私はあれを捨てようと思った。見るたびに、辛いことを思い出すから。でも——捨てられなかった"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたが家を出る時、渡したわよね。『お守りにしなさい』って",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頷いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あの時、本当は——複雑な気持ちだったの",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母の声が、かすかに震えた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "反対してるのに、渡すなんて矛盾してる。でも——あなたがお父さんみたいに、夢を追いかけたいなら、せめてお父さんの形見を持っていてほしいって思った。お父さんの代わりに、あなたを見守ってくれるように",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は窓の外を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あれを渡した時——私は、あなたを送り出したの。反対してたくせに、結局——送り出してしまった",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "長い沈黙が流れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから——",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は振り返り、澄香を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたがピックを失くしたって聞いても、私は怒れない",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "え……",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "だって——あなたに渡したのは、私だから。あなたが辛い目に遭ったのは、私が送り出したからだから",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母の目から、また涙がこぼれた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "むしろ——ごめんなさい。私こそ、あなたを苦しめた",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "違う——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は立ち上がった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "違うよ、お母さん。私が勝手に出ていったの。私が自分で選んだの。お母さんのせいじゃない",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "ピックを失くしたのも、声を失くしたのも、全部——私の問題なの。お母さんは何も悪くない",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "二人は、互いを見つめ合った。"
+        },
+        {
+          "type": "narration",
+          "text": "十年分の距離を挟んで。十年分の後悔を抱えて。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……馬鹿ね",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母が呟いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私たち——馬鹿みたい。二人とも、自分のせいだって思い込んで。十年も、すれ違って",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の目から、涙が溢れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "本当に——馬鹿だよね",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "電話一本で、済んだ話なのに",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "……うん",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "会いに来てくれれば、よかったのに",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "……ごめん",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "私も——会いに行けばよかった",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母が一歩、前に出た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ごめんね、澄香",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "澄香も一歩、前に出た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ごめんね、お母さん",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "そして——二人は、抱き合った。"
+        },
+        {
+          "type": "narration",
+          "text": "十年分の涙を流しながら。十年分の言葉を呑み込みながら。"
+        },
+        {
+          "type": "narration",
+          "text": "母の体は、記憶より小さくなっていた。痩せて、骨ばって、いつの間にか澄香より華奢になっていた。"
+        },
+        {
+          "type": "narration",
+          "text": "でも——その腕の温かさは、子供の頃と同じだった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "辛かったね",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母が囁いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "辛かった……",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "一人で、頑張ったね",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "頑張れなかった……逃げてばかりだった……",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "それでも——生きてた。ちゃんと、生きてくれてた",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母の手が、澄香の背中を撫でた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "それだけで——十分よ",
+          "speaker": "sumika"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc009",
+      "title": "シーン9",
+      "location": "mother_house",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "sumika",
+        "mother"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "どれくらい、そうしていただろう。"
+        },
+        {
+          "type": "narration",
+          "text": "ようやく涙が落ち着いた頃、二人はソファに座り直した。"
+        },
+        {
+          "type": "narration",
+          "text": "母がまたお茶を淹れてくれた。今度は、温かさがちゃんと伝わった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ねえ、澄香",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母が言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ピックのこと——本当に、気にしなくていいのよ",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも——",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんも、怒ってないと思う。むしろ——",
+          "speaker": "mother"
+        },
+        {
+          "type": "narration",
+          "text": "母は父の遺影を見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "喜んでるんじゃないかしら。あなたが、夢を追いかけてくれたこと。たとえ途中で挫けても——お父さんと同じ道を歩こうとしてくれたこと",
+          "speaker": "mother"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんはね、よく言ってたの。『澄香には歌の才能がある』って。『いつか、俺より上手くなる』って",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の胸が、熱くなった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私は信じなかったけど——お父さんは、本気でそう思ってた。あなたの歌を、本当に愛してた",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さん……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから——",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "母は澄香の手を握った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "また歌って。歌いたいなら。誰のためでもなく、あなた自身のために",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも、私——もう三十四で——今さら——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "関係ないわよ、年なんて",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母は微笑んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お父さんは、死ぬ直前まで歌いたがってた。声が出なくなっても、歌いたいって——そう言い続けてた",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "歌うことに、遅いも早いもないの。歌いたいって思った時が、始める時よ",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は俯いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……分からない。また歌えるかどうか",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "いいのよ、分からなくて",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母の手が、澄香の頬を撫でた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "分からないまま、始めればいい。上手くいくかどうかなんて、やってみないと分からないんだから",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "その言葉は——十年前、澄香が家を出る時に、母が言いたくて言えなかった言葉のように聞こえた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん……",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "私ね——",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母は少し照れたように笑った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたが歌ってるの、また聴きたいの。昔みたいに",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "澄香の目から、また涙がこぼれた。"
+        },
+        {
+          "type": "narration",
+          "text": "だが——今度は、悲しみの涙ではなかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……うん",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頷いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "また——歌う。いつか、お母さんに聴かせる",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母は微笑んだ。"
+        },
+        {
+          "type": "narration",
+          "text": "それは——十年ぶりに見る、母の本当の笑顔だった。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc010",
+      "title": "シーン10",
+      "location": "mother_house_entrance",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "sumika",
+        "mother"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "帰り際、母が玄関まで見送ってくれた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "また来なさい。いつでも"
+        },
+        {
+          "type": "dialogue",
+          "text": "うん。——必ず"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は一歩踏み出し、そして振り返った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お母さん",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "何？",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "ありがとう。——ピックをくれて",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "母は目を細めた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたが持っていてくれて、よかった。たとえ——失くしてしまったとしても",
+          "speaker": "sumika"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "あれがあなたと一緒にいた時間は、無駄じゃなかったわ。きっと——お父さんの代わりに、あなたを見守ってくれてた",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頷いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "うん。——そう思う",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "そして——彼女は、実家を後にした。"
+        },
+        {
+          "type": "narration",
+          "text": "十年ぶりの帰省。十年分の涙。十年分の、和解。"
+        },
+        {
+          "type": "narration",
+          "text": "全てが終わったわけではない。まだ、歌えるかどうかも分からない。"
+        },
+        {
+          "type": "narration",
+          "text": "でも——一つだけ、確かなことがあった。"
+        },
+        {
+          "type": "narration",
+          "text": "もう、一人じゃない。"
+        },
+        {
+          "type": "narration",
+          "text": "母がいる。父の想いがある。そして——自分自身の声がある。"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は空を見上げた。"
+        },
+        {
+          "type": "narration",
+          "text": "晴れていた。雲ひとつない、青い空。"
+        },
+        {
+          "type": "narration",
+          "text": "十年ぶりに——本当に、晴れた気がした。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc011",
+      "title": "シーン11",
+      "location": "mother_house_entrance",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "yuki",
+        "sumika",
+        "mother"
+      ],
+      "beats": [
+        {
+          "type": "dialogue",
+          "text": "母は、泣いてくれたんです"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は微笑んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "『辛かったね』って。『一人で抱え込んで、辛かったね』って"
+        },
+        {
+          "type": "narration",
+          "text": "レンは黙って聞いていた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "私、ずっと母に認めてもらいたかったんです。歌手になって、父みたいになって、母に『やっぱりあなたは正しかった』って言わせたかった",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は胸に手を当てた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも、母が本当に望んでいたのは、私が幸せでいることだった。歌手になるかどうかなんて、どうでもよかったんです。ただ、私が笑っていてくれれば",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "窓の外で、また雨が降り始めていた。静かな、優しい雨。"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから——もう、誰かに認めてもらうために歌わなくていいって、思えたんです。私が歌いたいから、歌う。それでいいんだって",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "レンは立ち上がり、棚に向かった。"
+        },
+        {
+          "type": "narration",
+          "text": "三ヶ月間、そこに置かれていたマイクを手に取る。ピックが、かすかに揺れた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "蒼井澄香さんの遺失物。受け取りですね",
+          "speaker": "sumika"
+        },
+        {
+          "type": "narration",
+          "text": "レンはマイクをカウンターに置いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お間違いないですか",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "澄香はマイクを見つめた。"
+        },
+        {
+          "type": "narration",
+          "text": "錆びているが、温かみがあった。十年間、ずっと——待っていてくれた。"
+        },
+        {
+          "type": "narration",
+          "text": "そして——銀色のピック。父の形見。母がくれた、お守り。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……お間違いありません",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は、ゆっくりと手を伸ばした。"
+        },
+        {
+          "type": "narration",
+          "text": "今度は、躊躇わなかった。"
+        },
+        {
+          "type": "narration",
+          "text": "マイクを手に取った瞬間——"
+        },
+        {
+          "type": "narration",
+          "text": "何かが、澄香の中に流れ込んできた。"
+        },
+        {
+          "type": "narration",
+          "text": "温かくて、懐かしくて、少しだけ寂しい、そんな感覚。"
+        },
+        {
+          "type": "narration",
+          "text": "十年間、待ち続けた声が、ようやく持ち主のもとに帰ってきた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……ただいま",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は小さく呟いた。"
+        },
+        {
+          "type": "narration",
+          "text": "それは——十年ぶりに、自分自身に向けた言葉だった。"
+        },
+        {
+          "type": "narration",
+          "text": "マイクを胸に抱きしめると、澄香の目から涙が溢れた。"
+        },
+        {
+          "type": "narration",
+          "text": "だが、それは悲しみの涙ではなかった。"
+        },
+        {
+          "type": "narration",
+          "text": "喜びの涙。再会の涙。そして、感謝の涙。"
+        },
+        {
+          "type": "dialogue",
+          "text": "ありがとうございました",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香はレンを見た。"
+        },
+        {
+          "type": "dialogue",
+          "text": "あなたのおかげで——私は、私を取り戻せました",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは肩をすくめた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "俺は何もしてない。落とし物を見つけて、保管しただけだ",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "それでも",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は微笑んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "それでも——ありがとうございます",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは黙っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "だが、その表情がほんの少しだけ柔らかくなっていたことに、澄香は気づいた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "お気をつけて",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "また何か落としたら、届けに来てください。深夜零時以降なら、いつでも受け付けてます",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "はい",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "澄香は頷いて、遺失物取扱所を後にした。"
+        },
+        {
+          "type": "narration",
+          "text": "ガラス戸が閉まる音が、静かに響いた。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc012",
+      "title": "シーン12",
+      "location": "mother_house_entrance",
+      "weather": "clearing",
+      "characters_present": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "澄香が去った後、レンは窓際に立っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "雨が、静かに降り続けている。ガラス窓を伝う雫が、街灯の光を反射して小さく光る。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……行ったか",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "独り言のように呟いた。"
+        },
+        {
+          "type": "narration",
+          "text": "スタッフルームから、ユキが顔を出した。"
+        },
+        {
+          "type": "dialogue",
+          "text": "灰谷さん、蒼井さんは——",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "受け取って帰った",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "そうですか",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは安堵したように息を吐いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "よかった。——本当に、よかった",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "何がいいんだか",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンはアロマスティックを咥え直した。"
+        },
+        {
+          "type": "dialogue",
+          "text": "俺たちはただ、仕事をしただけだ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "でも——",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキはカウンターに歩み寄った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "蒼井さん、すごく嬉しそうでしたよね。泣いてたけど、笑ってた",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "……そうか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "灰谷さんも、少し嬉しそうでしたよ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "気のせいだ",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンは窓の外を見た。"
+        },
+        {
+          "type": "narration",
+          "text": "雨は、まだ降り続けている。だが、どこか——優しい雨だった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……ユキ",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "はい？",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "お前は、なんでこの仕事を始めたんだ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは少し驚いたような顔をした。"
+        },
+        {
+          "type": "narration",
+          "text": "レンが、自分のことを訊いてくるのは珍しかった。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……私も、失くしたことがあるんです",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは静かに言った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "大切な人を。——会いに行けないまま、失くしてしまった",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "……",
+          "speaker": "yuki"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから、他の人には——同じ思いをしてほしくないって。失くしたものを、ちゃんと届けてあげたいって。そう思って、この仕事を選びました",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "レンは黙っていた。"
+        },
+        {
+          "type": "narration",
+          "text": "長い沈黙の後、小さく呟いた。"
+        },
+        {
+          "type": "dialogue",
+          "text": "……そうか",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "灰谷さんは——",
+          "speaker": "yuki"
+        },
+        {
+          "type": "narration",
+          "text": "ユキが言いかけた時、レンは棚の方を向いた。"
+        },
+        {
+          "type": "narration",
+          "text": "一番奥に置かれた、古い写真立て。"
+        },
+        {
+          "type": "dialogue",
+          "text": "俺も——待たせたまま、失くした人がいる",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは息を呑んだ。"
+        },
+        {
+          "type": "dialogue",
+          "text": "だから——せめて、他の誰かの『声』は、届けてやりたいと思った",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンはポケットの鍵に触れた。"
+        },
+        {
+          "type": "narration",
+          "text": "『忘れないで』"
+        },
+        {
+          "type": "dialogue",
+          "text": "……それだけだ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "レンは振り返った。"
+        },
+        {
+          "type": "dialogue",
+          "text": "さて、報告書を書くか。——お前も手伝え",
+          "speaker": "ren"
+        },
+        {
+          "type": "dialogue",
+          "text": "は、はい",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "ユキは慌てて頷いた。"
+        },
+        {
+          "type": "narration",
+          "text": "だが——レンの背中が、いつもより少しだけ軽く見えたことに、気づいていた。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc013",
+      "title": "シーン13",
+      "location": "mother_house_entrance",
+      "weather": "clearing",
+      "characters_present": [
+        "ren"
+      ],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "窓の外では、雨が少しずつ弱くなっていた。"
+        },
+        {
+          "type": "narration",
+          "text": "雲の切れ間から、かすかに星が見える。"
+        },
+        {
+          "type": "dialogue",
+          "text": "落とし物"
+        },
+        {
+          "type": "narration",
+          "text": "持ち主が来るのを、待ち続けて。"
+        },
+        {
+          "type": "narration",
+          "text": "いつか届けられる日を、信じて。"
+        },
+        {
+          "type": "narration",
+          "text": "深夜零時。"
+        },
+        {
+          "type": "narration",
+          "text": "また誰かが、何かを探しにやってくる。"
+        },
+        {
+          "type": "narration",
+          "text": "失くしたものを。"
+        },
+        {
+          "type": "narration",
+          "text": "忘れたものを。"
+        },
+        {
+          "type": "dialogue",
+          "text": "そして、捨ててしまったものを。",
+          "emotion": "emphasized"
+        },
+        {
+          "type": "narration",
+          "text": "灰谷レンは、今夜もカウンターに座っている。"
+        },
+        {
+          "type": "narration",
+          "text": "口には、ラベンダーとセージのアロマスティック。"
+        },
+        {
+          "type": "narration",
+          "text": "ポケットには、『忘れないで』と刻まれた錆びた鍵。"
+        },
+        {
+          "type": "dialogue",
+          "text": "——面倒だ",
+          "speaker": "ren"
+        },
+        {
+          "type": "narration",
+          "text": "呟きながら、それでも——彼は待っている。"
+        },
+        {
+          "type": "narration",
+          "text": "誰かの声が、届くのを。"
+        },
+        {
+          "type": "narration",
+          "text": "誰かの想いが、帰ってくるのを。"
+        },
+        {
+          "type": "narration",
+          "text": "深夜零時の遺失物係は、今夜も営業中。"
+        }
+      ]
+    },
+    {
+      "id": "ep1_sc015",
+      "title": "シーン15",
+      "location": "mother_house_entrance",
+      "weather": "clearing",
+      "characters_present": [],
+      "beats": [
+        {
+          "type": "narration",
+          "text": "**——完——**"
+        }
+      ]
+    }
+  ]
+}
