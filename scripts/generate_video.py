@@ -42,6 +42,20 @@ def get_audio_duration(audio_path: Path) -> float:
         return 3.0  # デフォルト3秒
 
 
+# キャラクター名の日本語マッピング
+SPEAKER_NAMES = {
+    "ren": "灰谷",
+    "yuki": "雪",
+    "sumika": "澄香",
+    "sumika_young": "澄香（若）",
+    "mother": "母",
+    "mother_young": "母（若）",
+    "father": "父",
+    "voice_entity": "声の怪異",
+    "narrator": "ナレーション",
+}
+
+
 def format_srt_time(seconds: float) -> str:
     """秒をSRT形式の時間に変換 (HH:MM:SS,mmm)"""
     hours = int(seconds // 3600)
@@ -77,8 +91,12 @@ def generate_srt(scripts: list, audio_dir: Path, output_path: Path) -> list:
         start_time = current_time
         end_time = current_time + duration
 
-        # SRTエントリ作成
-        speaker_prefix = f"【{speaker}】" if speaker and speaker != "narrator" else ""
+        # SRTエントリ作成（日本語キャラクター名を使用）
+        speaker_name = SPEAKER_NAMES.get(speaker, speaker) if speaker else ""
+        if speaker_name:
+            speaker_prefix = f"【{speaker_name}】"
+        else:
+            speaker_prefix = ""
         srt_lines.append(f"{subtitle_index}")
         srt_lines.append(f"{format_srt_time(start_time)} --> {format_srt_time(end_time)}")
         srt_lines.append(f"{speaker_prefix}{text}")
