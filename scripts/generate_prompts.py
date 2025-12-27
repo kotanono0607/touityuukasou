@@ -69,6 +69,58 @@ class TTSScript:
         }
 
 
+# 動画では冗長になるナレーションパターン（フィルタ対象）
+REDUNDANT_NARRATION_PATTERNS = [
+    # 情景描写（画像で表現可能）
+    "雨が降っている", "雨が降り", "雨音", "雨脚",
+    "窓の外", "ガラス窓", "蛍光灯",
+    "薄暗い", "暗闘", "月明かり",
+    # 時刻（テロップで表現可能）
+    "深夜零時", "午前", "午後", "時を回",
+    # 動作説明（画像で表現可能）
+    "立ち上がり", "座って", "歩いて", "振り返",
+    "目を向け", "視線を", "見つめ",
+    # 天候・環境（画像で表現可能）
+    "稲光", "雷", "風が", "湿った",
+]
+
+# 残すべきナレーションパターン（優先）
+KEEP_NARRATION_PATTERNS = [
+    # 内面描写
+    "内心", "心の中", "思った", "感じた", "気づいた",
+    # 設定・説明
+    "という", "とは", "ことだ", "のだ",
+    "かつて", "以前", "十年前", "昔",
+    # 怪異関連
+    "怪異", "管轄", "遺失物",
+    # 重要な状態変化
+    "変わった", "消えた", "現れた",
+]
+
+
+def should_keep_narration(text: str) -> bool:
+    """ナレーションを動画に含めるべきか判定"""
+    # 短すぎるテキストは除外
+    if len(text) < 15:
+        return False
+
+    # 残すべきパターンがあれば優先的に残す
+    for pattern in KEEP_NARRATION_PATTERNS:
+        if pattern in text:
+            return True
+
+    # 冗長パターンが多く含まれていれば除外
+    redundant_count = sum(1 for p in REDUNDANT_NARRATION_PATTERNS if p in text)
+    if redundant_count >= 2:
+        return False
+
+    # 文が短くて情景描写っぽければ除外
+    if len(text) < 40 and redundant_count >= 1:
+        return False
+
+    return True
+
+
 def load_json(filepath: Path) -> dict:
     """JSONファイルを読み込む"""
     with open(filepath, "r", encoding="utf-8") as f:
@@ -199,6 +251,7 @@ def generate_tts_script(
     beat: dict,
     beat_index: int,
     characters_data: dict,
+    filter_narration: bool = True,
 ) -> Optional[TTSScript]:
     """ビートからTTSスクリプトを生成"""
 
@@ -211,6 +264,11 @@ def generate_tts_script(
     scene_id = scene.get("id", "unknown")
     speaker = beat.get("speaker")
     emotion = beat.get("emotion")
+
+    # ナレーション（speaker=None）のフィルタリング
+    if filter_narration and not speaker and beat_type == "narration":
+        if not should_keep_narration(text):
+            return None
 
     # 音声設定を取得
     voice_settings = {}
@@ -264,14 +322,16 @@ def process_episode(
     characters_data: dict,
     locations_data: dict,
     output_dir: Path,
-) -> tuple[int, int]:
-    """1つのエピソードを処理"""
+    filter_narration: bool = True,
+) -> tuple[int, int, int]:
+    """1つのエピソードを処理。(画像数, TTS数, フィルタ数)を返す"""
 
     episode_data = load_json(episode_path)
     episode_num = episode_data.get("episode", 1)
 
     image_prompts = []
     tts_scripts = []
+    filtered_count = 0
 
     for scene in episode_data.get("scenes", []):
         for beat_index, beat in enumerate(scene.get("beats", [])):
@@ -284,10 +344,13 @@ def process_episode(
 
             # TTSスクリプト生成
             tts_script = generate_tts_script(
-                scene, beat, beat_index, characters_data
+                scene, beat, beat_index, characters_data, filter_narration
             )
             if tts_script:
                 tts_scripts.append(tts_script.to_dict())
+            elif beat.get("type") == "narration" and beat.get("text") and not beat.get("speaker"):
+                # フィルタされたナレーションをカウント
+                filtered_count += 1
 
     # 画像プロンプト出力
     imagen_dir = output_dir / "imagen"
@@ -309,11 +372,19 @@ def process_episode(
             "scripts": tts_scripts,
         }, f, ensure_ascii=False, indent=2)
 
-    return len(image_prompts), len(tts_scripts)
+    return len(image_prompts), len(tts_scripts), filtered_count
 
 
 def main():
     """メイン処理"""
+    import argparse
+    parser = argparse.ArgumentParser(description="シーンデータからAPI用プロンプトを生成")
+    parser.add_argument("--no-filter", action="store_true",
+                        help="ナレーションフィルタを無効化（小説朗読モード）")
+    args = parser.parse_args()
+
+    filter_narration = not args.no_filter
+
     base_dir = Path(__file__).parent.parent
     scenes_dir = base_dir / "data" / "scenes"
     output_dir = base_dir / "prompts"
@@ -323,10 +394,15 @@ def main():
     locations_data = load_json(base_dir / "data" / "locations.json")
 
     print("シーンデータからプロンプトを生成中...")
+    if filter_narration:
+        print("（動画モード: 冗長なナレーションをフィルタリング）")
+    else:
+        print("（朗読モード: すべてのナレーションを含む）")
     print()
 
     total_images = 0
     total_tts = 0
+    total_filtered = 0
 
     # 手動作成したシーンファイルを優先、なければ自動抽出版を使用
     for i in range(1, 5):
@@ -343,20 +419,25 @@ def main():
             print(f"  エピソード{i}: ファイルなし、スキップ")
             continue
 
-        img_count, tts_count = process_episode(
-            episode_path, characters_data, locations_data, output_dir
+        img_count, tts_count, filtered_count = process_episode(
+            episode_path, characters_data, locations_data, output_dir, filter_narration
         )
         total_images += img_count
         total_tts += tts_count
+        total_filtered += filtered_count
 
         print(f"  エピソード{i} ({source})")
         print(f"    画像プロンプト: {img_count}")
         print(f"    TTSスクリプト: {tts_count}")
+        if filtered_count > 0:
+            print(f"    フィルタ済み: {filtered_count}")
 
     print()
     print(f"合計:")
     print(f"  画像プロンプト: {total_images}")
     print(f"  TTSスクリプト: {total_tts}")
+    if total_filtered > 0:
+        print(f"  フィルタ済みナレーション: {total_filtered}")
     print()
     print("出力ディレクトリ:")
     print(f"  prompts/imagen/  - 画像生成用プロンプト")
