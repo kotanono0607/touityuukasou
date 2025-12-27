@@ -5,37 +5,26 @@ on:
     branches:
       - 'claude/**'
       - 'feature/**'
-  pull_request:
-    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  auto-merge-pr:
-    name: Auto Merge Pull Request
+  direct-merge:
+    name: Direct Merge to Main
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Enable auto-merge for PR
-        run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  create-and-merge:
-    name: Create PR and Merge
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Get default branch
         id: default-branch
@@ -45,41 +34,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Check if PR exists
-        id: check-pr
+      - name: Merge to default branch
         run: |
-          PR_EXISTS=$(gh pr list --head "${{ github.ref_name }}" --json number -q '.[0].number' || echo "")
-          echo "pr_number=$PR_EXISTS" >> $GITHUB_OUTPUT
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create Pull Request
-        id: create-pr
-        if: steps.check-pr.outputs.pr_number == ''
-        run: |
-          PR_URL=$(gh pr create \
-            --title "Auto-merge: ${{ github.ref_name }}" \
-            --body "$(cat <<'EOF'
-          ## 自動マージ
-
-          このPRは `${{ github.ref_name }}` ブランチへのプッシュにより自動作成されました。
-
-          ### 変更内容
-          ${{ github.event.head_commit.message }}
-          EOF
-          )" \
-            --base "${{ steps.default-branch.outputs.branch }}" \
-            --head "${{ github.ref_name }}")
-          echo "pr_url=$PR_URL" >> $GITHUB_OUTPUT
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Enable auto-merge
-        run: |
-          if [ -n "${{ steps.create-pr.outputs.pr_url }}" ]; then
-            gh pr merge --auto --merge "${{ steps.create-pr.outputs.pr_url }}"
-          elif [ -n "${{ steps.check-pr.outputs.pr_number }}" ]; then
-            gh pr merge --auto --merge "${{ steps.check-pr.outputs.pr_number }}"
-          fi
+          git fetch origin ${{ steps.default-branch.outputs.branch }}
+          git checkout ${{ steps.default-branch.outputs.branch }}
+          git merge origin/${{ github.ref_name }} --no-ff -m "Merge ${{ github.ref_name }} into ${{ steps.default-branch.outputs.branch }}"
+          git push origin ${{ steps.default-branch.outputs.branch }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
