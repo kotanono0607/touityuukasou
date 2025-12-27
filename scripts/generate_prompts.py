@@ -165,16 +165,23 @@ def generate_image_prompt(
     beat_index: int,
     characters_data: dict,
     locations_data: dict,
+    speaker_change_mode: bool = False,
+    current_speaker: Optional[str] = None,
 ) -> Optional[ImagePrompt]:
-    """ビートから画像生成プロンプトを生成"""
+    """ビートから画像生成プロンプトを生成
 
-    # ナレーションビートのみ画像生成対象
-    if beat.get("type") != "narration":
-        return None
+    speaker_change_mode=False: ナレーションビートのみ画像生成（従来）
+    speaker_change_mode=True: 話者切替時に画像生成
+    """
 
-    # 短すぎるナレーションはスキップ
-    if len(beat.get("text", "")) < 20:
-        return None
+    if not speaker_change_mode:
+        # 従来モード: ナレーションビートのみ画像生成対象
+        if beat.get("type") != "narration":
+            return None
+        # 短すぎるナレーションはスキップ
+        if len(beat.get("text", "")) < 20:
+            return None
+    # speaker_change_modeの場合は呼び出し元で判定済み
 
     scene_id = scene.get("id", "unknown")
     location_id = scene.get("location", "lost_and_found")
@@ -191,11 +198,19 @@ def generate_image_prompt(
 
     # キャラクター情報を収集
     char_prompts = []
-    for char_id in chars_present[:2]:  # 最大2キャラまで
-        char_info = characters_data.get("characters", {}).get(char_id, {})
+    if speaker_change_mode and current_speaker:
+        # 話者切替モード: 現在の話者をメインに
+        char_info = characters_data.get("characters", {}).get(current_speaker, {})
         char_imagen = char_info.get("imagen_prompt", {})
         if char_imagen.get("base"):
-            char_prompts.append(char_imagen.get("base"))
+            char_prompts.append(char_imagen.get("base") + ", speaking, front view")
+    else:
+        # 従来モード: シーンにいるキャラクター
+        for char_id in chars_present[:2]:  # 最大2キャラまで
+            char_info = characters_data.get("characters", {}).get(char_id, {})
+            char_imagen = char_info.get("imagen_prompt", {})
+            if char_imagen.get("base"):
+                char_prompts.append(char_imagen.get("base"))
 
     # 天候・時刻の説明
     weather_desc = get_weather_description(weather)
@@ -323,6 +338,7 @@ def process_episode(
     locations_data: dict,
     output_dir: Path,
     filter_narration: bool = True,
+    speaker_change_mode: bool = False,
 ) -> tuple[int, int, int]:
     """1つのエピソードを処理。(画像数, TTS数, フィルタ数)を返す"""
 
@@ -334,13 +350,29 @@ def process_episode(
     filtered_count = 0
 
     for scene in episode_data.get("scenes", []):
+        last_speaker = None  # シーン開始時はリセット
+
         for beat_index, beat in enumerate(scene.get("beats", [])):
+            current_speaker = beat.get("speaker")
+
             # 画像プロンプト生成
-            img_prompt = generate_image_prompt(
-                scene, beat, beat_index, characters_data, locations_data
-            )
-            if img_prompt:
-                image_prompts.append(img_prompt.to_dict())
+            if speaker_change_mode:
+                # 話者切替モード: シーン最初 or 話者が変わったら画像生成
+                if last_speaker is None or current_speaker != last_speaker:
+                    img_prompt = generate_image_prompt(
+                        scene, beat, beat_index, characters_data, locations_data,
+                        speaker_change_mode=True, current_speaker=current_speaker
+                    )
+                    if img_prompt:
+                        image_prompts.append(img_prompt.to_dict())
+                last_speaker = current_speaker
+            else:
+                # 従来モード: ナレーションのみ
+                img_prompt = generate_image_prompt(
+                    scene, beat, beat_index, characters_data, locations_data
+                )
+                if img_prompt:
+                    image_prompts.append(img_prompt.to_dict())
 
             # TTSスクリプト生成
             tts_script = generate_tts_script(
@@ -381,9 +413,12 @@ def main():
     parser = argparse.ArgumentParser(description="シーンデータからAPI用プロンプトを生成")
     parser.add_argument("--no-filter", action="store_true",
                         help="ナレーションフィルタを無効化（小説朗読モード）")
+    parser.add_argument("--speaker-change", action="store_true",
+                        help="話者切替時に画像を生成（デフォルト: ナレーションのみ）")
     args = parser.parse_args()
 
     filter_narration = not args.no_filter
+    speaker_change_mode = args.speaker_change
 
     base_dir = Path(__file__).parent.parent
     scenes_dir = base_dir / "data" / "scenes"
@@ -398,6 +433,8 @@ def main():
         print("（動画モード: 冗長なナレーションをフィルタリング）")
     else:
         print("（朗読モード: すべてのナレーションを含む）")
+    if speaker_change_mode:
+        print("（話者切替モード: 話者が変わるたびに画像生成）")
     print()
 
     total_images = 0
@@ -420,7 +457,8 @@ def main():
             continue
 
         img_count, tts_count, filtered_count = process_episode(
-            episode_path, characters_data, locations_data, output_dir, filter_narration
+            episode_path, characters_data, locations_data, output_dir,
+            filter_narration, speaker_change_mode
         )
         total_images += img_count
         total_tts += tts_count
