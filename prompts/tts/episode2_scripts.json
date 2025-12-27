@@ -3,19 +3,6 @@
   "scripts": [
     {
       "scene_id": "ep2_sc001",
-      "beat_index": 0,
-      "speaker": null,
-      "text": "午前二時。雨は小降りになっていた。レンは傘も差さずに、夜の街を歩いていた。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
-      }
-    },
-    {
-      "scene_id": "ep2_sc001",
       "beat_index": 1,
       "speaker": "ren",
       "text": "……だから留守番しろって言ったのに",

@@ -17,6 +17,186 @@
       "time": "02:00"
     },
     {
+      "scene_id": "ep2_sc001",
+      "beat_index": 1,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 2,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 3,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 4,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 5,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 6,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 7,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc001",
+      "beat_index": 8,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:00"
+    },
+    {
+      "scene_id": "ep2_sc002",
+      "beat_index": 0,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view, standing figure",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:10"
+    },
+    {
+      "scene_id": "ep2_sc002",
+      "beat_index": 1,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:10"
+    },
+    {
+      "scene_id": "ep2_sc002",
+      "beat_index": 2,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:10"
+    },
+    {
+      "scene_id": "ep2_sc002",
+      "beat_index": 4,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:10"
+    },
+    {
       "scene_id": "ep2_sc003",
       "beat_index": 0,
       "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, looking through window",
@@ -70,6 +250,104 @@
     },
     {
       "scene_id": "ep2_sc004",
+      "beat_index": 0,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
+      "beat_index": 1,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
+      "beat_index": 2,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
+      "beat_index": 4,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
+      "beat_index": 5,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
+      "beat_index": 7,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
+      "beat_index": 8,
+      "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm but dim lighting, nostalgic tones",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "sumika_apartment",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc004",
       "beat_index": 9,
       "prompt": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow",
       "negative_prompt": "spacious, luxurious, modern, clean, low quality, blurry, distorted faces, extra limbs",
@@ -98,6 +376,20 @@
     },
     {
       "scene_id": "ep2_sc005",
+      "beat_index": 1,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
       "beat_index": 2,
       "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow",
       "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
@@ -112,8 +404,106 @@
     },
     {
       "scene_id": "ep2_sc005",
+      "beat_index": 3,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
+      "beat_index": 4,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
+      "beat_index": 5,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
+      "beat_index": 6,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
+      "beat_index": 7,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
       "beat_index": 8,
       "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
+      "beat_index": 9,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow, speaking, front view",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika_young",
+        "mother_young"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc005",
+      "beat_index": 12,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
       "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, warm soft lighting, muted nostalgic colors",
       "characters": [
@@ -165,6 +555,19 @@
     },
     {
       "scene_id": "ep2_sc006",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "sumika_young"
+      ],
+      "location": "livehouse",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc006",
       "beat_index": 4,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
@@ -180,6 +583,19 @@
       "scene_id": "ep2_sc006",
       "beat_index": 5,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "sumika_young"
+      ],
+      "location": "livehouse",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc006",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [
@@ -230,8 +646,34 @@
     },
     {
       "scene_id": "ep2_sc007",
+      "beat_index": 1,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "sumika_young"
+      ],
+      "location": "alley",
+      "weather": "night",
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc007",
       "beat_index": 2,
       "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "sumika_young"
+      ],
+      "location": "alley",
+      "weather": "night",
+      "time": null
+    },
+    {
+      "scene_id": "ep2_sc007",
+      "beat_index": 3,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, night time, late night, Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression, speaking, front view",
       "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
       "characters": [
@@ -268,9 +710,174 @@
       "time": null
     },
     {
+      "scene_id": "ep2_sc008",
+      "beat_index": 0,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:30"
+    },
+    {
+      "scene_id": "ep2_sc008",
+      "beat_index": 2,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:30"
+    },
+    {
+      "scene_id": "ep2_sc008",
+      "beat_index": 3,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:30"
+    },
+    {
+      "scene_id": "ep2_sc009",
+      "beat_index": 0,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:35"
+    },
+    {
+      "scene_id": "ep2_sc009",
+      "beat_index": 4,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:35"
+    },
+    {
+      "scene_id": "ep2_sc009",
+      "beat_index": 5,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:35"
+    },
+    {
+      "scene_id": "ep2_sc010",
+      "beat_index": 0,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:40"
+    },
+    {
       "scene_id": "ep2_sc010",
       "beat_index": 1,
       "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:40"
+    },
+    {
+      "scene_id": "ep2_sc010",
+      "beat_index": 2,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:40"
+    },
+    {
+      "scene_id": "ep2_sc010",
+      "beat_index": 4,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:40"
+    },
+    {
+      "scene_id": "ep2_sc010",
+      "beat_index": 5,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "alley",
+      "weather": "rain_light",
+      "time": "02:40"
+    },
+    {
+      "scene_id": "ep2_sc010",
+      "beat_index": 6,
+      "prompt": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
       "negative_prompt": "bright, cheerful, daytime, wide open space, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
       "characters": [
@@ -329,6 +936,36 @@
     },
     {
       "scene_id": "ep2_sc011",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view, standing figure",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:50"
+    },
+    {
+      "scene_id": "ep2_sc011",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:50"
+    },
+    {
+      "scene_id": "ep2_sc011",
       "beat_index": 5,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
@@ -341,6 +978,37 @@
       "location": "livehouse",
       "weather": "rain_light",
       "time": "02:50"
+    },
+    {
+      "scene_id": "ep2_sc011",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:50"
+    },
+    {
+      "scene_id": "ep2_sc012",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:55"
     },
     {
       "scene_id": "ep2_sc012",
@@ -359,6 +1027,118 @@
       "time": "02:55"
     },
     {
+      "scene_id": "ep2_sc012",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:55"
+    },
+    {
+      "scene_id": "ep2_sc012",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:55"
+    },
+    {
+      "scene_id": "ep2_sc012",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:55"
+    },
+    {
+      "scene_id": "ep2_sc012",
+      "beat_index": 7,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_light",
+      "time": "02:55"
+    },
+    {
+      "scene_id": "ep2_sc013",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:00"
+    },
+    {
+      "scene_id": "ep2_sc013",
+      "beat_index": 1,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:00"
+    },
+    {
+      "scene_id": "ep2_sc013",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:00"
+    },
+    {
       "scene_id": "ep2_sc013",
       "beat_index": 3,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
@@ -375,9 +1155,57 @@
       "time": "03:00"
     },
     {
+      "scene_id": "ep2_sc013",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:00"
+    },
+    {
+      "scene_id": "ep2_sc014",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:05"
+    },
+    {
       "scene_id": "ep2_sc014",
       "beat_index": 2,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:05"
+    },
+    {
+      "scene_id": "ep2_sc014",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [
@@ -407,9 +1235,73 @@
       "time": "03:05"
     },
     {
+      "scene_id": "ep2_sc014",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:05"
+    },
+    {
+      "scene_id": "ep2_sc015",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep2_sc015",
+      "beat_index": 1,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
       "scene_id": "ep2_sc015",
       "beat_index": 5,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep2_sc015",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [

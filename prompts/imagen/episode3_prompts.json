@@ -18,9 +18,137 @@
       "time": "03:10"
     },
     {
+      "scene_id": "ep3_sc001",
+      "beat_index": 1,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep3_sc001",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:10"
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:15"
+    },
+    {
       "scene_id": "ep3_sc002",
       "beat_index": 1,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:15"
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:15"
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [
@@ -50,9 +178,217 @@
       "time": "03:15"
     },
     {
+      "scene_id": "ep3_sc002",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:15"
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:15"
+    },
+    {
+      "scene_id": "ep3_sc002",
+      "beat_index": 7,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:15"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 1,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc003",
+      "beat_index": 7,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:18"
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:20"
+    },
+    {
       "scene_id": "ep3_sc004",
       "beat_index": 1,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:20"
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [
@@ -83,6 +419,22 @@
     },
     {
       "scene_id": "ep3_sc004",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:20"
+    },
+    {
+      "scene_id": "ep3_sc004",
       "beat_index": 5,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
@@ -96,6 +448,38 @@
       "location": "livehouse",
       "weather": "thunderstorm",
       "time": "03:20"
+    },
+    {
+      "scene_id": "ep3_sc004",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, thunderstorm, lightning, dramatic sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "thunderstorm",
+      "time": "03:20"
+    },
+    {
+      "scene_id": "ep3_sc005",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_stopping",
+      "time": "03:22"
     },
     {
       "scene_id": "ep3_sc005",
@@ -114,6 +498,38 @@
       "time": "03:22"
     },
     {
+      "scene_id": "ep3_sc005",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_stopping",
+      "time": "03:22"
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_stopping",
+      "time": "03:25"
+    },
+    {
       "scene_id": "ep3_sc006",
       "beat_index": 1,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, standing figure",
@@ -128,6 +544,166 @@
       "location": "livehouse",
       "weather": "rain_stopping",
       "time": "03:25"
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_stopping",
+      "time": "03:25"
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_stopping",
+      "time": "03:25"
+    },
+    {
+      "scene_id": "ep3_sc006",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, night time, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "rain_stopping",
+      "time": "03:25"
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, clouds parting, rainbow visible, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "clearing",
+      "time": "03:30"
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 1,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "clearing",
+      "time": "03:30"
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, clouds parting, rainbow visible, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view, rain falling",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "clearing",
+      "time": "03:30"
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "clearing",
+      "time": "03:30"
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, clouds parting, rainbow visible, late night, deep darkness, Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "clearing",
+      "time": "03:30"
+    },
+    {
+      "scene_id": "ep3_sc007",
+      "beat_index": 5,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "clearing",
+      "time": "03:30"
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:35"
     },
     {
       "scene_id": "ep3_sc008",
@@ -149,6 +725,22 @@
       "scene_id": "ep3_sc008",
       "beat_index": 2,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika",
+        "voice_entity"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:35"
+    },
+    {
+      "scene_id": "ep3_sc008",
+      "beat_index": 3,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [
@@ -195,8 +787,113 @@
     },
     {
       "scene_id": "ep3_sc009",
+      "beat_index": 0,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 1,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 2,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 4,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
       "beat_index": 5,
       "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 6,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 7,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, speaking, front view",
+      "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+      "characters": [
+        "ren",
+        "yuki",
+        "sumika"
+      ],
+      "location": "livehouse",
+      "weather": "moonlight",
+      "time": "03:40"
+    },
+    {
+      "scene_id": "ep3_sc009",
+      "beat_index": 8,
+      "prompt": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere, moonlit night, silver light, clear sky, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, speaking, front view",
       "negative_prompt": "large venue, modern, clean, bright audience, low quality, blurry, distorted faces, extra limbs",
       "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
       "characters": [

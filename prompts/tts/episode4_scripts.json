@@ -1316,19 +1316,6 @@
     },
     {
       "scene_id": "ep4_sc017",
-      "beat_index": 0,
-      "speaker": null,
-      "text": "窓の外では、雨が少しずつ弱くなっていた。雲の切れ間から、かすかに星が見える。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
-      }
-    },
-    {
-      "scene_id": "ep4_sc017",
       "beat_index": 1,
       "speaker": null,
       "text": "遺失物取扱所の棚には、まだたくさんの「落とし物」が眠っている。持ち主が来るのを、待ち続けて。いつか届けられる日を、信じて。",

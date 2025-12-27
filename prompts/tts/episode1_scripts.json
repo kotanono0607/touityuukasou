@@ -3,19 +3,6 @@
   "scripts": [
     {
       "scene_id": "ep1_sc001",
-      "beat_index": 0,
-      "speaker": null,
-      "text": "雨が降っている。それも、傘を差すのが馬鹿らしくなるような、執拗で静かな雨だ。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
-      }
-    },
-    {
-      "scene_id": "ep1_sc001",
       "beat_index": 1,
       "speaker": null,
       "text": "深夜零時十三分。灰谷レンは、遺失物取扱所の窓口カウンターに頬杖をつきながら、ガラス窓を流れ落ちる雨粒をぼんやりと眺めていた。",
@@ -172,19 +159,6 @@
     },
     {
       "scene_id": "ep1_sc002",
-      "beat_index": 0,
-      "speaker": null,
-      "text": "深夜零時四十七分。雨脚が少し強くなった頃、ガラス戸が開いた。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
-      }
-    },
-    {
-      "scene_id": "ep1_sc002",
       "beat_index": 1,
       "speaker": null,
       "text": "湿った夜気とともに入ってきたのは、一人の女だった。三十代半ばだろうか。濡れそぼった髪が頬に張り付き、全身がずぶ濡れだった。",
@@ -246,19 +220,6 @@
         "name": "ja-JP-Neural2-B",
         "pitch": 2.0,
         "speaking_rate": 1.05
-      }
-    },
-    {
-      "scene_id": "ep1_sc002",
-      "beat_index": 6,
-      "speaker": null,
-      "text": "女は一度、深く息を吸った。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
       }
     },
     {
@@ -458,19 +419,6 @@
     },
     {
       "scene_id": "ep1_sc004",
-      "beat_index": 1,
-      "speaker": null,
-      "text": "レンは椅子から立ち上がり、カウンターの下から一枚の紙を取り出した。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
-      }
-    },
-    {
-      "scene_id": "ep1_sc004",
       "beat_index": 2,
       "speaker": "ren",
       "text": "——名前は",
@@ -545,19 +493,6 @@
         "name": "ja-JP-Neural2-C",
         "pitch": -2.0,
         "speaking_rate": 0.9
-      }
-    },
-    {
-      "scene_id": "ep1_sc004",
-      "beat_index": 8,
-      "speaker": null,
-      "text": "窓の外で、稲光が一瞬だけ世界を白く染めた。遠雷が、地響きのように腹の底を揺らす。",
-      "emotion": null,
-      "voice_settings": {
-        "language": "ja-JP",
-        "name": "ja-JP-Neural2-C",
-        "pitch": -1,
-        "speaking_rate": 0.95
       }
     },
     {
