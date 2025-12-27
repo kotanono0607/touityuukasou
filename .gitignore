@@ -1,4 +1,8 @@
 
+# Python キャッシュ
+__pycache__/
+*.pyc
+
 # 参照画像（ローカル専用）
 images/characters/*.png
 images/backgrounds/*.png
