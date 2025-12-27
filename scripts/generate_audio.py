@@ -44,17 +44,18 @@ MAX_RETRIES = 3
 RETRY_WAIT = 30
 
 # キャラクター別の音声設定
-# 利用可能な音声: Aoede, Charon, Fenrir, Kore, Puck, etc.
+# 利用可能な音声: Aoede, Charon, Fenrir, Kore, Puck, Orus, etc.
+# pace: slow / normal / fast / energetic
 CHARACTER_VOICES = {
-    "ren": {"voice": "Orus", "style": "疲れた感じで少し投げやりに"},
-    "yuki": {"voice": "Kore", "style": "明るく元気にハキハキと"},
-    "sumika": {"voice": "Aoede", "style": "感情を抑えながらも切なく"},
-    "sumika_young": {"voice": "Kore", "style": "夢を追う情熱を込めて"},
-    "mother": {"voice": "Aoede", "style": "優しく穏やかに"},
-    "mother_young": {"voice": "Aoede", "style": "厳しくも愛情を込めて"},
-    "father": {"voice": "Charon", "style": "温かく"},
-    "voice_entity": {"voice": "Fenrir", "style": "不気味に歪んだ感じで"},
-    "narrator": {"voice": "Puck", "style": "落ち着いて淡々と"},
+    "ren": {"voice": "Orus", "style": "疲れた感じで少し投げやりに", "pace": "normal"},
+    "yuki": {"voice": "Kore", "style": "明るく元気にハキハキと", "pace": "fast"},
+    "sumika": {"voice": "Aoede", "style": "感情を抑えながらも切なく", "pace": "normal"},
+    "sumika_young": {"voice": "Kore", "style": "夢を追う情熱を込めて", "pace": "energetic"},
+    "mother": {"voice": "Aoede", "style": "優しく穏やかに", "pace": "slow"},
+    "mother_young": {"voice": "Aoede", "style": "厳しくも愛情を込めて", "pace": "normal"},
+    "father": {"voice": "Charon", "style": "温かく", "pace": "slow"},
+    "voice_entity": {"voice": "Fenrir", "style": "不気味に歪んだ感じで", "pace": "slow"},
+    "narrator": {"voice": "Puck", "style": "落ち着いて淡々と", "pace": "normal"},
 }
 
 
@@ -100,10 +101,20 @@ def generate_audio_gemini(
     voice_config = CHARACTER_VOICES.get(speaker, CHARACTER_VOICES["narrator"])
     voice_name = voice_config["voice"]
     style = voice_config["style"]
+    pace = voice_config.get("pace", "normal")
+
+    # ペース指示を日本語に変換
+    pace_map = {
+        "slow": "ゆっくりと",
+        "normal": "自然なペースで",
+        "fast": "テンポよく速めに",
+        "energetic": "エネルギッシュに素早く",
+    }
+    pace_instruction = pace_map.get(pace, "自然なペースで")
 
     # 感情を含めたプロンプト
     emotion_note = f"（{emotion}）" if emotion else ""
-    prompt = f"{style}{emotion_note}読んでください: {text}"
+    prompt = f"{pace_instruction}、{style}{emotion_note}読んでください: {text}"
 
     for attempt in range(MAX_RETRIES):
         try:
