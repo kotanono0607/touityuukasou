@@ -48,9 +48,9 @@ RETRY_WAIT = 30
 # pace: slow / normal / fast / energetic
 CHARACTER_VOICES = {
     "ren": {"voice": "Orus", "style": "疲れた感じで少し投げやりに", "pace": "normal"},
-    "yuki": {"voice": "Kore", "style": "明るく元気にハキハキと", "pace": "fast"},
-    "sumika": {"voice": "Aoede", "style": "感情を抑えながらも切なく", "pace": "normal"},
-    "sumika_young": {"voice": "Kore", "style": "夢を追う情熱を込めて", "pace": "energetic"},
+    "yuki": {"voice": "Kore", "style": "おっとりと柔らかく、ゆったりと", "pace": "slow"},
+    "sumika": {"voice": "Aoede", "style": "感情を抑えながらも切なく、静かに", "pace": "slow"},
+    "sumika_young": {"voice": "Kore", "style": "若々しく、少し緊張しながら", "pace": "normal"},
     "mother": {"voice": "Aoede", "style": "優しく穏やかに", "pace": "slow"},
     "mother_young": {"voice": "Aoede", "style": "厳しくも愛情を込めて", "pace": "normal"},
     "father": {"voice": "Charon", "style": "温かく", "pace": "slow"},
