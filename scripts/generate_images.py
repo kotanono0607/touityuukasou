@@ -164,10 +164,21 @@ def build_gemini_prompt(prompt: str, negative_prompt: str, style: str = "", has_
     ref_instruction = ""
     if has_references:
         ref_instruction = """
-REFERENCE IMAGES: I have provided reference images above. Please:
-- Match the character designs EXACTLY (face, hair, clothing, colors)
-- Match the background style and atmosphere
-- Maintain visual consistency with the references
+=== CRITICAL: CHARACTER CONSISTENCY ===
+I have provided reference images above. You MUST follow these rules STRICTLY:
+
+CHARACTER DESIGN (MANDATORY - DO NOT DEVIATE):
+- Copy the EXACT face shape, eye shape, and facial features from the reference
+- Copy the EXACT hair style, hair color, and hair length from the reference
+- Copy the EXACT clothing design, colors, and accessories from the reference
+- DO NOT improvise or change ANY aspect of the character's appearance
+- The character in the output MUST look like the SAME PERSON as the reference
+
+BACKGROUND:
+- Match the background style and color palette from the reference
+- Maintain the same atmosphere and lighting mood
+
+WARNING: If the output character looks different from the reference, it is a FAILURE.
 """
 
     full_prompt = f"""Generate a single high-quality anime illustration.
