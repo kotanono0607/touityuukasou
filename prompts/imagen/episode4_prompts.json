@@ -1,0 +1,361 @@
+{
+  "episode": 4,
+  "prompts": [
+    {
+      "scene_id": "ep4_sc001",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, pre-dawn, purple sky, first light, pre-dawn, dark with hints of light, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "dawn",
+      "time": "04:30"
+    },
+    {
+      "scene_id": "ep4_sc001",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, pre-dawn, purple sky, first light, pre-dawn, dark with hints of light, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, sitting figure",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "dawn",
+      "time": "04:30"
+    },
+    {
+      "scene_id": "ep4_sc003",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, sunrise, orange sky, morning light, pre-dawn, dark with hints of light, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "sunrise",
+      "time": "05:00"
+    },
+    {
+      "scene_id": "ep4_sc003",
+      "beat_index": 4,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, sunrise, orange sky, morning light, pre-dawn, dark with hints of light, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, rain falling",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "sunrise",
+      "time": "05:00"
+    },
+    {
+      "scene_id": "ep4_sc004",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, sunrise, orange sky, morning light, pre-dawn, dark with hints of light, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression, rain falling, looking through window, standing figure",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki"
+      ],
+      "location": "lost_and_found",
+      "weather": "sunrise",
+      "time": "05:15"
+    },
+    {
+      "scene_id": "ep4_sc004",
+      "beat_index": 2,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, sunrise, orange sky, morning light, pre-dawn, dark with hints of light, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "yuki"
+      ],
+      "location": "lost_and_found",
+      "weather": "sunrise",
+      "time": "05:15"
+    },
+    {
+      "scene_id": "ep4_sc005",
+      "beat_index": 0,
+      "prompt": "Japanese suburban train station plaza with bench, ordinary people walking by, station building in background, woman sitting alone on bench looking anxious, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "night, rain, empty, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, everyday atmosphere",
+      "characters": [
+        "sumika"
+      ],
+      "location": "station_bench",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc005",
+      "beat_index": 2,
+      "prompt": "Japanese suburban train station plaza with bench, ordinary people walking by, station building in background, woman sitting alone on bench looking anxious, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "night, rain, empty, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, everyday atmosphere",
+      "characters": [
+        "sumika"
+      ],
+      "location": "station_bench",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc005",
+      "beat_index": 3,
+      "prompt": "Japanese suburban train station plaza with bench, ordinary people walking by, station building in background, woman sitting alone on bench looking anxious, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "night, rain, empty, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, everyday atmosphere",
+      "characters": [
+        "sumika"
+      ],
+      "location": "station_bench",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc006",
+      "beat_index": 0,
+      "prompt": "Japanese house entrance, faded nameplate reading 'Aoi' in Japanese, old intercom button, aged gate, unchanged suburban neighborhood, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+      "negative_prompt": "night, rain, modern, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, slightly overexposed, nostalgic",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house_entrance",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc006",
+      "beat_index": 1,
+      "prompt": "Japanese house entrance, faded nameplate reading 'Aoi' in Japanese, old intercom button, aged gate, unchanged suburban neighborhood, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+      "negative_prompt": "night, rain, modern, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, slightly overexposed, nostalgic",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house_entrance",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc006",
+      "beat_index": 2,
+      "prompt": "Japanese house entrance, faded nameplate reading 'Aoi' in Japanese, old intercom button, aged gate, unchanged suburban neighborhood, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter, standing figure",
+      "negative_prompt": "night, rain, modern, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, slightly overexposed, nostalgic",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house_entrance",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc007",
+      "beat_index": 0,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc008",
+      "beat_index": 0,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter, standing figure",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc008",
+      "beat_index": 5,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc010",
+      "beat_index": 6,
+      "prompt": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still, night time, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+      "negative_prompt": "modern, new furniture, bright colors, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, warm soft lighting, muted nostalgic colors",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house",
+      "weather": null,
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc012",
+      "beat_index": 3,
+      "prompt": "Japanese house entrance, faded nameplate reading 'Aoi' in Japanese, old intercom button, aged gate, unchanged suburban neighborhood, clear weather, bright, late night, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+      "negative_prompt": "night, rain, modern, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, bright daylight, slightly overexposed, nostalgic",
+      "characters": [
+        "sumika",
+        "mother"
+      ],
+      "location": "mother_house_entrance",
+      "weather": "clear",
+      "time": null
+    },
+    {
+      "scene_id": "ep4_sc013",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_light",
+      "time": "00:05"
+    },
+    {
+      "scene_id": "ep4_sc013",
+      "beat_index": 2,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura, standing figure",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_light",
+      "time": "00:05"
+    },
+    {
+      "scene_id": "ep4_sc014",
+      "beat_index": 4,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_light",
+      "time": "00:15"
+    },
+    {
+      "scene_id": "ep4_sc015",
+      "beat_index": 4,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, light rain, drizzle, misty, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren",
+        "sumika"
+      ],
+      "location": "lost_and_found",
+      "weather": "rain_light",
+      "time": "00:20"
+    },
+    {
+      "scene_id": "ep4_sc017",
+      "beat_index": 0,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, rain falling, looking through window",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren"
+      ],
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "time": "00:00"
+    },
+    {
+      "scene_id": "ep4_sc017",
+      "beat_index": 1,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren"
+      ],
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "time": "00:00"
+    },
+    {
+      "scene_id": "ep4_sc017",
+      "beat_index": 2,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren"
+      ],
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "time": "00:00"
+    },
+    {
+      "scene_id": "ep4_sc017",
+      "beat_index": 3,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression, sitting figure",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren"
+      ],
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "time": "00:00"
+    },
+    {
+      "scene_id": "ep4_sc017",
+      "beat_index": 5,
+      "prompt": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere, clouds parting, rainbow visible, late night, deep darkness, Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression",
+      "negative_prompt": "modern, bright, clean, daytime, low quality, blurry, distorted faces, extra limbs",
+      "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+      "characters": [
+        "ren"
+      ],
+      "location": "lost_and_found",
+      "weather": "clearing",
+      "time": "00:00"
+    }
+  ]
+}
