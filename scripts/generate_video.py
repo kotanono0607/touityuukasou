@@ -155,7 +155,9 @@ def create_scene_video(
             timeout=60,
         )
         if result.returncode != 0:
-            print(f"    ffmpegエラー: {result.stderr[:300]}")
+            error_lines = result.stderr.strip().split('\n')
+            last_lines = '\n'.join(error_lines[-5:])
+            print(f"    ffmpegエラー:\n{last_lines}")
         return result.returncode == 0
     except Exception as e:
         print(f"    エラー: {e}")
@@ -195,7 +197,10 @@ def concatenate_videos(video_list: list, output_path: Path, dry_run: bool = Fals
             timeout=300,
         )
         if result.returncode != 0:
-            print(f"  結合エラー: {result.stderr[:500]}")
+            # エラーの最後の部分を表示（実際のエラー内容）
+            error_lines = result.stderr.strip().split('\n')
+            last_lines = '\n'.join(error_lines[-10:])
+            print(f"  結合エラー:\n{last_lines}")
         # リストファイル削除
         list_file.unlink(missing_ok=True)
         return result.returncode == 0
