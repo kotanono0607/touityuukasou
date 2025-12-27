@@ -1,0 +1,269 @@
+{
+  "$schema": "./schemas/characters.schema.json",
+  "version": "1.0.0",
+  "characters": {
+    "ren": {
+      "name": "灰谷レン",
+      "name_reading": "はいたに れん",
+      "name_en": "Ren Haitani",
+      "age": null,
+      "gender": "male",
+      "role": "protagonist",
+      "description": "遺失物取扱所の職員。無気力に見えるが、怪異化した「想い」を回収する能力を持つ。錆びた鍵を仕事道具として使う。",
+      "appearance": {
+        "hair": "黒髪、短め、無造作",
+        "eyes": "眠たげな目、黒",
+        "build": "やせ型",
+        "clothing": "くたびれた駅員風の制服、ネクタイは緩め",
+        "features": ["無精髭", "疲れた表情"],
+        "accessories": ["錆びた鍵（仕事道具）"]
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-C",
+        "pitch": -2.0,
+        "speaking_rate": 0.9,
+        "style": "低く落ち着いた声、感情を抑えた話し方"
+      },
+      "imagen_prompt": {
+        "base": "Japanese man in his late 20s to early 30s, short messy black hair, tired sleepy eyes, thin build, wearing worn-out station staff uniform with loose necktie, subtle stubble, apathetic expression",
+        "style": "anime style, soft lighting, muted colors",
+        "negative": "bright colors, energetic expression, smiling"
+      },
+      "personality": ["無気力", "皮肉屋", "観察眼が鋭い", "内心は優しい"],
+      "speech_patterns": ["……（沈黙が多い）", "短い返答", "敬語は使わない"]
+    },
+
+    "yuki": {
+      "name": "ユキ",
+      "name_reading": "ゆき",
+      "name_en": "Yuki",
+      "age": null,
+      "gender": "female",
+      "role": "supporting",
+      "description": "夜勤専門のアルバイト。物に残った「想い」を読み取る力があるが、すぐに感情移入して泣いてしまう。",
+      "appearance": {
+        "hair": "茶髪、肩までのボブカット",
+        "eyes": "大きな目、茶色、潤んでいることが多い",
+        "build": "小柄",
+        "clothing": "駅員風の制服、きちんと着ている",
+        "features": ["若々しい顔立ち", "表情豊か"],
+        "accessories": []
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-B",
+        "pitch": 2.0,
+        "speaking_rate": 1.05,
+        "style": "明るく柔らかい声、感情が声に出やすい"
+      },
+      "imagen_prompt": {
+        "base": "Young Japanese woman in her early 20s, shoulder-length brown bob hair, large expressive brown eyes often teary, petite build, wearing neat station staff uniform, youthful face, emotional expression",
+        "style": "anime style, soft lighting, warm tones",
+        "negative": "cold expression, stern face"
+      },
+      "personality": ["感受性豊か", "涙もろい", "素直", "一生懸命"],
+      "speech_patterns": ["敬語", "感嘆詞が多い", "語尾が柔らかい"]
+    },
+
+    "sumika": {
+      "name": "蒼井澄香",
+      "name_reading": "あおい すみか",
+      "name_en": "Sumika Aoi",
+      "age": 34,
+      "gender": "female",
+      "role": "client",
+      "description": "10年前に歌手の夢を諦め、自らの「歌う声」を捨てた女性。声を取り戻すため、深夜の遺失物取扱所を訪れる。",
+      "appearance": {
+        "hair": "黒髪ロング、濡れている（初登場時）",
+        "eyes": "疲れた目、暗い色",
+        "build": "細身、やつれ気味",
+        "clothing": "地味なコート、濡れた服（初登場時）",
+        "features": ["疲れた表情", "年齢より老けて見える"],
+        "accessories": []
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -1.0,
+        "speaking_rate": 0.95,
+        "style": "かすれた声、抑えた話し方、時々震える"
+      },
+      "imagen_prompt": {
+        "base": "Japanese woman, 34 years old, long black hair, tired dark eyes, thin and worn appearance, wearing plain coat, exhausted expression, looks older than her age, melancholic aura",
+        "style": "anime style, moody lighting, dark muted colors, rain",
+        "negative": "bright expression, vibrant colors, energetic"
+      },
+      "personality": ["諦念", "自己嫌悪", "過去に囚われている", "内に秘めた情熱"],
+      "speech_patterns": ["丁寧語", "言葉を選ぶ", "声が小さい"]
+    },
+
+    "sumika_young": {
+      "name": "蒼井澄香（24歳）",
+      "name_reading": "あおい すみか",
+      "name_en": "Sumika Aoi (Young)",
+      "age": 24,
+      "gender": "female",
+      "role": "flashback",
+      "description": "10年前の澄香。歌手を目指して奮闘していた頃。",
+      "appearance": {
+        "hair": "黒髪ロング、艶がある",
+        "eyes": "希望と不安が混じった目",
+        "build": "細身だが健康的",
+        "clothing": "シンプルな服、ステージ衣装（ライブ時）",
+        "features": ["若々しい", "緊張した表情"],
+        "accessories": ["父のピック（マイクスタンドに貼り付け）"]
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 0.5,
+        "speaking_rate": 1.0,
+        "style": "若々しい声、緊張で震えることがある"
+      },
+      "imagen_prompt": {
+        "base": "Young Japanese woman, 24 years old, long black shiny hair, eyes mixed with hope and anxiety, slim but healthy build, simple clothes or stage outfit, youthful, nervous expression",
+        "style": "anime style, dramatic lighting, nostalgic sepia tones",
+        "negative": "tired, worn out, old"
+      },
+      "personality": ["夢を追う", "不安", "必死", "純粋"],
+      "speech_patterns": ["カジュアル", "感情的になりやすい"]
+    },
+
+    "mother": {
+      "name": "澄香の母",
+      "name_reading": "すみかのはは",
+      "name_en": "Sumika's Mother",
+      "age": null,
+      "gender": "female",
+      "role": "supporting",
+      "description": "澄香の母。夫（澄香の父）を亡くした過去があり、娘の歌手への道に複雑な思いを抱えている。",
+      "appearance": {
+        "hair": "白髪混じり、まとめ髪",
+        "eyes": "疲れた目、複雑な感情",
+        "build": "やせ型、背中が少し丸い",
+        "clothing": "地味な家着",
+        "features": ["皺が深い", "澄香より小柄に見える"],
+        "accessories": []
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -3.0,
+        "speaking_rate": 0.85,
+        "style": "かすれた声、静かだが芯がある、時々震える"
+      },
+      "imagen_prompt": {
+        "base": "Elderly Japanese woman in her 60s, gray hair in a bun, tired eyes with complex emotions, thin build with slightly hunched back, wearing simple home clothes, deep wrinkles, looks smaller than her daughter",
+        "style": "anime style, soft warm lighting, muted colors",
+        "negative": "young, energetic, bright colors"
+      },
+      "personality": ["厳しさの裏に愛情", "過去の傷", "不器用", "芯が強い"],
+      "speech_patterns": ["落ち着いた口調", "断定的", "時々感情が漏れる"]
+    },
+
+    "mother_young": {
+      "name": "澄香の母（10年前）",
+      "name_reading": "すみかのはは",
+      "name_en": "Sumika's Mother (10 years ago)",
+      "age": null,
+      "gender": "female",
+      "role": "flashback",
+      "description": "10年前の母。娘の歌手への道を反対しつつも、複雑な思いでピックを渡した。",
+      "appearance": {
+        "hair": "黒髪に少し白髪、まとめ髪",
+        "eyes": "厳しいが悲しみを秘めた目",
+        "build": "細身",
+        "clothing": "地味な服",
+        "features": ["厳格な表情", "少し若い"],
+        "accessories": []
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": -2.0,
+        "speaking_rate": 0.9,
+        "style": "冷たく聞こえるが、内に感情を抑えている"
+      },
+      "imagen_prompt": {
+        "base": "Middle-aged Japanese woman in her 50s, mostly black hair with some gray in a bun, stern but sad eyes, slim build, plain clothes, strict expression hiding sorrow",
+        "style": "anime style, nostalgic lighting, muted tones",
+        "negative": "smiling, warm expression"
+      },
+      "personality": ["厳格", "心配性", "不器用な愛情"],
+      "speech_patterns": ["厳しい口調", "感情を抑える"]
+    },
+
+    "father": {
+      "name": "澄香の父",
+      "name_reading": "すみかのちち",
+      "name_en": "Sumika's Father",
+      "age": null,
+      "gender": "male",
+      "role": "deceased",
+      "description": "澄香が5歳の時に亡くなった父。ミュージシャンを目指していたが、夢半ばで病死。遺影と形見のピックのみ登場。",
+      "appearance": {
+        "hair": "黒髪",
+        "eyes": "優しい目",
+        "build": "普通",
+        "clothing": "カジュアル（遺影）",
+        "features": ["優しい顔立ち", "若い男性"],
+        "accessories": ["ギター", "銀色のピック"]
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-D",
+        "pitch": 0,
+        "speaking_rate": 1.0,
+        "style": "優しく温かい声（回想・ナレーションのみ）"
+      },
+      "imagen_prompt": {
+        "base": "Young Japanese man in his 30s, black hair, kind gentle eyes, average build, casual clothes, warm gentle face, holding guitar, silver guitar pick",
+        "style": "anime style, warm nostalgic lighting, sepia tones, slightly faded like old photograph",
+        "negative": "harsh, cold, modern"
+      },
+      "personality": ["夢追い人", "優しい", "情熱的"],
+      "speech_patterns": []
+    },
+
+    "voice_entity": {
+      "name": "澄香の「声」",
+      "name_reading": "すみかのこえ",
+      "name_en": "Sumika's Voice (Entity)",
+      "age": null,
+      "gender": "female",
+      "role": "entity",
+      "description": "澄香が10年前に捨てた「歌う声」が怪異化したもの。黒い靄のような姿で、澄香の若い頃の声で歌う。",
+      "appearance": {
+        "hair": null,
+        "eyes": null,
+        "build": "黒い靄、人型に見えることも",
+        "clothing": null,
+        "features": ["揺らめく影", "不定形", "時々澄香の輪郭"],
+        "accessories": ["銀色のピック（内部に浮かぶ）"]
+      },
+      "voice": {
+        "provider": "google",
+        "language": "ja-JP",
+        "name": "ja-JP-Neural2-A",
+        "pitch": 1.0,
+        "speaking_rate": 0.85,
+        "style": "エコーがかかった若い女性の声、悲しげ、歌声は美しい"
+      },
+      "imagen_prompt": {
+        "base": "Dark shadowy mist in humanoid shape, flickering ethereal form, sometimes showing outline of young woman, silver guitar pick floating inside, supernatural entity, ghostly presence",
+        "style": "anime style, dark atmospheric lighting, blue-black tones, glowing effects",
+        "negative": "solid form, bright, cheerful"
+      },
+      "personality": ["孤独", "悲しみ", "待ち続けている"],
+      "speech_patterns": ["詩的", "断片的", "歌のような"]
+    }
+  }
+}

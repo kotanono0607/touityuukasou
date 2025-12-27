@@ -1,0 +1,177 @@
+{
+  "$schema": "./schemas/locations.schema.json",
+  "version": "1.0.0",
+  "locations": {
+    "lost_and_found": {
+      "name": "遺失物取扱所",
+      "name_en": "Lost and Found Office",
+      "description": "深夜零時を過ぎると「少し管轄が広がる」古びた駅舎の窓口。普通の落とし物だけでなく、人々が失くした「想い」も届けられる。",
+      "time_of_day": ["night"],
+      "weather_default": "rain",
+      "atmosphere": "薄暗い、古びている、どこか非現実的",
+      "features": [
+        "古びたカウンター",
+        "錆びた棚",
+        "アロマスティック",
+        "ガラス戸",
+        "蛍光灯（ちらつく）"
+      ],
+      "imagen_prompt": {
+        "base": "Old Japanese train station lost and found office at night, dim flickering fluorescent lights, aged wooden counter, rusty metal shelves filled with forgotten items, glass door, aroma sticks burning, mysterious atmosphere",
+        "style": "anime style, moody dark lighting, blue and brown tones, rain visible through window",
+        "negative": "modern, bright, clean, daytime"
+      },
+      "sound_design": {
+        "ambient": ["雨音", "蛍光灯のハム音", "時計の秒針"],
+        "effects": ["ガラス戸の開閉", "棚のきしみ"]
+      }
+    },
+
+    "alley": {
+      "name": "路地裏",
+      "name_en": "Back Alley",
+      "description": "怪異化した「声」が潜んでいた場所。雨の夜、薄暗い路地。",
+      "time_of_day": ["night"],
+      "weather_default": "rain",
+      "atmosphere": "不気味、湿っている、閉塞感",
+      "features": [
+        "濡れたアスファルト",
+        "古いビルの壁",
+        "水たまり",
+        "非常階段",
+        "ゴミ箱"
+      ],
+      "imagen_prompt": {
+        "base": "Dark narrow Japanese back alley at night in rain, wet asphalt reflecting dim lights, old building walls, puddles, rusty emergency stairs, garbage bins, eerie atmosphere",
+        "style": "anime style, dark atmospheric, rain effects, blue-gray tones",
+        "negative": "bright, cheerful, daytime, wide open space"
+      },
+      "sound_design": {
+        "ambient": ["雨音", "水滴", "遠くの車"],
+        "effects": ["足音", "水たまりを踏む音"]
+      }
+    },
+
+    "livehouse": {
+      "name": "ライブハウス",
+      "name_en": "Live House",
+      "description": "10年前、澄香が最後のステージに立った小さなライブハウス。20人も入れば満員になる場所。",
+      "time_of_day": ["night"],
+      "weather_default": null,
+      "atmosphere": "薄暗い、煙草の煙、緊張感",
+      "features": [
+        "小さなステージ",
+        "マイクスタンド",
+        "安っぽいスピーカー",
+        "客席（暗い）",
+        "ステージライト"
+      ],
+      "imagen_prompt": {
+        "base": "Small Japanese underground live house, tiny stage with microphone stand, cheap speakers, dark audience area with about 20 seats, stage lights, cigarette smoke in air, tense atmosphere",
+        "style": "anime style, dramatic stage lighting, nostalgic sepia tones, flashback scene",
+        "negative": "large venue, modern, clean, bright audience"
+      },
+      "sound_design": {
+        "ambient": ["客のざわめき", "機材のハム音"],
+        "effects": ["マイクのハウリング", "拍手"]
+      }
+    },
+
+    "sumika_apartment": {
+      "name": "澄香のアパート（10年前）",
+      "name_en": "Sumika's Apartment (10 years ago)",
+      "description": "24歳の澄香が住んでいた六畳一間のアパート。壁には防音の毛布、窓際に小さなキーボード。",
+      "time_of_day": ["day", "night"],
+      "weather_default": null,
+      "atmosphere": "狭い、質素、夢を追う若者の部屋",
+      "features": [
+        "六畳一間",
+        "壁の古い毛布（防音用）",
+        "小さなキーボード",
+        "散らかった楽譜",
+        "古い電話"
+      ],
+      "imagen_prompt": {
+        "base": "Small 6-tatami Japanese apartment room, old blankets on walls for soundproofing, small keyboard by window, scattered sheet music, old phone, cramped but lived-in space of a young aspiring singer",
+        "style": "anime style, warm but dim lighting, nostalgic tones",
+        "negative": "spacious, luxurious, modern, clean"
+      },
+      "sound_design": {
+        "ambient": ["外の音（車、人声）", "時計"],
+        "effects": ["電話の音", "キーボードの音"]
+      }
+    },
+
+    "mother_house": {
+      "name": "実家",
+      "name_en": "Mother's House",
+      "description": "澄香の実家。10年間ほとんど変わらず、時間が止まったように古びている。父の遺影がある。",
+      "time_of_day": ["day"],
+      "weather_default": "clear",
+      "atmosphere": "懐かしい、古びている、時間が止まった",
+      "features": [
+        "玄関（蒼井の表札）",
+        "リビング",
+        "ソファ",
+        "父の遺影",
+        "色褪せた家族写真",
+        "時計"
+      ],
+      "imagen_prompt": {
+        "base": "Traditional Japanese house interior, living room with old sofa, father's memorial photo on shelf, faded family photos, ticking clock, aged furniture, atmosphere of time standing still",
+        "style": "anime style, warm soft lighting, muted nostalgic colors",
+        "negative": "modern, new furniture, bright colors"
+      },
+      "sound_design": {
+        "ambient": ["時計の秒針", "静寂"],
+        "effects": ["お茶を注ぐ音", "インターホン"]
+      }
+    },
+
+    "mother_house_entrance": {
+      "name": "実家の玄関前",
+      "name_en": "Mother's House Entrance",
+      "description": "実家の玄関前。色褪せた「蒼井」の表札。",
+      "time_of_day": ["day"],
+      "weather_default": "clear",
+      "atmosphere": "緊張、懐かしさ、変わらない風景",
+      "features": [
+        "色褪せた表札",
+        "インターホン",
+        "古い門"
+      ],
+      "imagen_prompt": {
+        "base": "Japanese house entrance, faded nameplate reading 'Aoi' in Japanese, old intercom button, aged gate, unchanged suburban neighborhood",
+        "style": "anime style, bright daylight, slightly overexposed, nostalgic",
+        "negative": "night, rain, modern"
+      },
+      "sound_design": {
+        "ambient": ["鳥の声", "遠くの車"],
+        "effects": ["インターホンの音", "ドアの開く音"]
+      }
+    },
+
+    "station_bench": {
+      "name": "駅前のベンチ",
+      "name_en": "Station Bench",
+      "description": "実家の最寄り駅前。澄香が30分も座って動けなかった場所。",
+      "time_of_day": ["day"],
+      "weather_default": "clear",
+      "atmosphere": "緊張、躊躇、日常の中の葛藤",
+      "features": [
+        "ベンチ",
+        "駅舎",
+        "通り過ぎる人々"
+      ],
+      "imagen_prompt": {
+        "base": "Japanese suburban train station plaza with bench, ordinary people walking by, station building in background, woman sitting alone on bench looking anxious",
+        "style": "anime style, bright daylight, everyday atmosphere",
+        "negative": "night, rain, empty"
+      },
+      "sound_design": {
+        "ambient": ["駅のアナウンス", "人々の足音", "電車の音"],
+        "effects": []
+      }
+    }
+  }
+}
