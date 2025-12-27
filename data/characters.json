@@ -10,6 +10,7 @@
       "gender": "male",
       "role": "protagonist",
       "description": "遺失物取扱所の職員。無気力に見えるが、怪異化した「想い」を回収する能力を持つ。錆びた鍵を仕事道具として使う。",
+      "reference_image": "images/characters/char_ren_haitani.png",
       "appearance": {
         "hair": "黒髪、短め、無造作",
         "eyes": "眠たげな目、黒",
@@ -43,6 +44,7 @@
       "gender": "female",
       "role": "supporting",
       "description": "夜勤専門のアルバイト。物に残った「想い」を読み取る力があるが、すぐに感情移入して泣いてしまう。",
+      "reference_image": "images/characters/char_yuki.png",
       "appearance": {
         "hair": "茶髪、肩までのボブカット",
         "eyes": "大きな目、茶色、潤んでいることが多い",
@@ -76,6 +78,8 @@
       "gender": "female",
       "role": "client",
       "description": "10年前に歌手の夢を諦め、自らの「歌う声」を捨てた女性。声を取り戻すため、深夜の遺失物取扱所を訪れる。",
+      "reference_image": "images/characters/char_sumika_aoi_first.png",
+      "reference_image_after": "images/characters/char_sumika_aoi_after.png",
       "appearance": {
         "hair": "黒髪ロング、濡れている（初登場時）",
         "eyes": "疲れた目、暗い色",
@@ -142,6 +146,7 @@
       "gender": "female",
       "role": "supporting",
       "description": "澄香の母。夫（澄香の父）を亡くした過去があり、娘の歌手への道に複雑な思いを抱えている。",
+      "reference_image": "images/characters/char_sumika_mother.png",
       "appearance": {
         "hair": "白髪混じり、まとめ髪",
         "eyes": "疲れた目、複雑な感情",
@@ -208,6 +213,7 @@
       "gender": "male",
       "role": "deceased",
       "description": "澄香が5歳の時に亡くなった父。ミュージシャンを目指していたが、夢半ばで病死。遺影と形見のピックのみ登場。",
+      "reference_image": "images/characters/char_sumika_father.png",
       "appearance": {
         "hair": "黒髪",
         "eyes": "優しい目",
@@ -241,6 +247,7 @@
       "gender": "female",
       "role": "entity",
       "description": "澄香が10年前に捨てた「歌う声」が怪異化したもの。黒い靄のような姿で、澄香の若い頃の声で歌う。",
+      "reference_image": "images/characters/char_sumika_apparition.png",
       "appearance": {
         "hair": null,
         "eyes": null,
