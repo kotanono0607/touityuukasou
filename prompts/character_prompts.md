@@ -38,19 +38,24 @@ realistic, photo, 3D, western cartoon, background, scenery, multiple people, bad
 - 無気力そうな目つき、気だるげな表情
 - ボサボサの黒髪
 - 茶色のPコート（くたびれた質感）
-- 口に咥えたスティック（煙草風アロマスティック）
-- グレーのフード付きパーカーをコートの下に着用
+- グレーのタートルネックをコートの下に着用
+- アロマスティックは携帯（特定シーンでのみ使用：考え事中、休憩中など）
 
 ### プロンプト
 
 **立ち絵（全身）:**
 ```
-light novel illustration style, full body turnaround, Japanese man, late 20s to early 30s, handsome tired face, messy black hair, half-lidded apathetic eyes, wearing brown pea coat over gray hoodie, cigarette-like stick in mouth, hands in pockets, attractive but unmotivated appearance, front view side view back view, facial expression closeup, white background, soft shading, detailed beautiful eyes, character design sheet
+light novel illustration style, full body turnaround, Japanese man, late 20s to early 30s, handsome tired face, messy black hair, half-lidded apathetic eyes, wearing brown pea coat over gray turtleneck sweater, hands in pockets, attractive but unmotivated appearance, mature calm adult man, front view side view back view, facial expression closeup, white background, soft shading, detailed beautiful eyes, character design sheet
 ```
 
 **Midjourney用:**
 ```
-/imagine light novel cover illustration, handsome Japanese man late 20s, tired apathetic expression, messy black hair, brown pea coat, gray hoodie, cigarette stick in mouth, attractive lazy appearance, multiple views front side back, white background, soft shading --niji 6 --ar 3:2
+/imagine light novel cover illustration, handsome Japanese man late 20s, tired apathetic expression, messy black hair, brown pea coat, gray turtleneck sweater, attractive lazy appearance, mature calm adult, multiple views front side back, white background, soft shading --niji 6 --ar 3:2
+```
+
+**アロマスティック使用シーン用（オプション）:**
+```
+/imagine light novel cover illustration, handsome Japanese man late 20s, tired thoughtful expression, messy black hair, brown pea coat, gray turtleneck, cigarette-like aroma stick in mouth, contemplating, resting moment, white background, soft shading --niji 6 --ar 2:3
 ```
 
 ---
