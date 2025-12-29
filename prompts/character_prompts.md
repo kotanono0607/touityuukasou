@@ -70,7 +70,7 @@ light novel illustration style, full body turnaround, Japanese man, late 20s to 
 - 性格: Kind, Anxious, Empathetic
 
 ### 外見的特徴
-- 黒縁眼鏡
+- シンプルな細フレーム眼鏡（銀縁or透明フレーム）
 - 肩丈のダークブラウンの髪
 - 真面目そうな瞳、やや不安げ
 - 黒いベスト＋白ブラウス＋紺プリーツスカート
@@ -79,12 +79,12 @@ light novel illustration style, full body turnaround, Japanese man, late 20s to 
 
 **立ち絵（全身）:**
 ```
-light novel illustration style, full body turnaround, cute young Japanese woman, early 20s, large expressive eyes, black-rimmed glasses, shoulder-length dark brown hair, gentle anxious expression, wearing black vest over white blouse, navy pleated skirt, soft cute face, front view side view back view, facial expression closeup, white background, soft shading, detailed beautiful eyes, character design sheet
+light novel illustration style, full body turnaround, cute young Japanese woman, early 20s, large expressive eyes, simple thin frame glasses, silver rim glasses, shoulder-length dark brown hair, gentle anxious expression, wearing black vest over white blouse, navy pleated skirt, soft cute face, front view side view back view, facial expression closeup, white background, soft shading, detailed beautiful eyes, character design sheet
 ```
 
 **Midjourney用:**
 ```
-/imagine light novel cover illustration, cute young Japanese woman 22 years old, big beautiful eyes, black-rimmed glasses, dark brown hair, gentle expression, black vest white blouse navy skirt, soft cute art style, multiple views, white background --niji 6 --ar 3:2
+/imagine light novel cover illustration, cute young Japanese woman 22 years old, big beautiful eyes, simple thin silver frame glasses, dark brown hair, gentle expression, black vest white blouse navy skirt, soft cute art style, multiple views, white background --niji 6 --ar 3:2
 ```
 
 ---
