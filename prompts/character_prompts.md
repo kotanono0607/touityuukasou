@@ -1,6 +1,23 @@
 # キャラクター画像生成プロンプト
 
-本ファイルは『深夜零時の遺失物係』の主要キャラクター3名の画像生成用プロンプトを収録。
+本ファイルは『深夜零時の遺失物係』の主要キャラクター画像生成用プロンプトを収録。
+
+**使用ツール:** ComfyUI（Stable Diffusion）
+**スタイル:** Light Novel Style（ラノベ表紙風・華やかで可愛い）
+
+---
+
+## 共通スタイル設定
+
+### 品質タグ（プロンプト先頭に追加）
+```
+masterpiece, best quality, high quality, detailed, light novel illustration style, soft shading, detailed beautiful eyes
+```
+
+### ネガティブプロンプト
+```
+realistic, photo, 3D, western cartoon, background, scenery, multiple people, bad anatomy, deformed, blurry, low quality, watermark, signature, worst quality, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, extra limbs, cloned face, disfigured
+```
 
 ---
 
@@ -8,37 +25,33 @@
 
 ### 基本情報
 - 性別: 男性
-- 年齢: 20代後半〜30代前半
+- 年齢: 30歳
+- 身長: 178cm
 - 職業: 遺失物取扱所職員（夜勤担当）
+- 性格: Apathetic, Sleepy, Secretly caring
 
-### 外見的特徴（小説より抽出）
-- 無気力そうな目つき
-- 口に咥えたスティック（煙草に見えるアロマスティック）
-- 古いコートを着用
-- ポケットに錆びた鍵を所持
+### 外見的特徴
+- 無気力そうな目つき、気だるげな表情
+- ボサボサの黒髪
+- 茶色のPコート（くたびれた質感）
+- グレーのタートルネックをコートの下に着用
+- アロマスティックは携帯（特定シーンでのみ使用：考え事中、休憩中など）
 
-### 画像生成プロンプト
+### プロンプト
 
-**English（推奨）:**
+**キャラクターシート（全身）:**
 ```
-A Japanese man in his late 20s to early 30s, tired and apathetic expression, messy dark hair, wearing a worn vintage coat over casual clothes, holding an incense stick in his mouth like a cigarette, standing behind a dimly lit counter in an old train station lost-and-found office, ambient lighting from a single desk lamp, moody atmosphere, night scene, anime style illustration, detailed character design
-```
-
-**日本語:**
-```
-20代後半から30代前半の日本人男性、疲れた無気力な表情、ボサボサの暗い髪、古びたヴィンテージコートを着用、煙草のように口にスティックを咥えている、古い駅舎の遺失物取扱所のカウンター奥に立っている、デスクランプの薄暗い照明、ムーディーな雰囲気、夜のシーン、アニメ風イラスト、詳細なキャラクターデザイン
+masterpiece, best quality, light novel illustration style, character design sheet, multiple views, front view, side view, back view, full body, Japanese man, late 20s to early 30s, handsome tired face, messy black hair, half-lidded apathetic eyes, wearing brown pea coat over gray turtleneck sweater, hands in pockets, attractive but unmotivated appearance, mature calm adult man, white background, soft shading, detailed beautiful eyes
 ```
 
-### バリエーション
-
-**立ち絵（全身）:**
+**バストアップ:**
 ```
-Full body shot, Japanese man late 20s, apathetic expression, dark messy hair, wearing long worn trench coat, hands in pockets holding a rusty key, incense stick in mouth, standing in a dimly lit old train station, rainy night atmosphere, anime character design, clean lineart, soft shadows
+masterpiece, best quality, light novel illustration style, portrait, upper body, Japanese man, late 20s, handsome tired face, messy black hair, half-lidded apathetic eyes, gray turtleneck sweater, brown pea coat, attractive lazy appearance, mature calm adult, soft shading, detailed beautiful eyes, white background
 ```
 
-**表情差分（真剣）:**
+**アロマスティック使用シーン用（オプション）:**
 ```
-Portrait, Japanese man late 20s, serious focused expression, sharp eyes, dark messy hair, slight frown, dramatic side lighting, noir atmosphere, anime style, detailed face
+masterpiece, best quality, light novel illustration style, portrait, Japanese man, late 20s, tired thoughtful expression, messy black hair, brown pea coat, gray turtleneck, cigarette-like aroma stick in mouth, contemplating, soft shading, detailed beautiful eyes, white background
 ```
 
 ---
@@ -47,37 +60,27 @@ Portrait, Japanese man late 20s, serious focused expression, sharp eyes, dark me
 
 ### 基本情報
 - 性別: 女性
-- 年齢: 20代前半
+- 年齢: 22歳
+- 身長: 160cm
 - 職業: 遺失物取扱所アルバイト（夜勤専門・新人）
+- 性格: Kind, Anxious, Empathetic
 
-### 外見的特徴（小説より抽出）
-- 黒縁眼鏡
-- 真面目そうな瞳
-- どこか思い詰めたような雰囲気
-- 感受性が豊かで涙もろい
+### 外見的特徴
+- シンプルな細フレーム眼鏡（銀縁or透明フレーム）
+- 肩丈のダークブラウンの髪
+- 真面目そうな瞳、やや不安げ
+- 黒いベスト＋白ブラウス＋紺プリーツスカート
 
-### 画像生成プロンプト
+### プロンプト
 
-**English（推奨）:**
+**キャラクターシート（全身）:**
 ```
-A young Japanese woman in her early 20s, black-rimmed glasses, earnest and slightly anxious expression, neat dark hair, wearing a simple work uniform or cardigan, standing in an old train station lost-and-found office, holding a mug of tea, soft indoor lighting, gentle and empathetic appearance, anime style illustration, detailed character design
-```
-
-**日本語:**
-```
-20代前半の日本人女性、黒縁眼鏡、真面目でやや不安げな表情、きちんとした暗い髪、シンプルな制服またはカーディガンを着用、古い駅舎の遺失物取扱所に立っている、お茶のマグカップを持っている、柔らかい室内照明、優しく共感的な外見、アニメ風イラスト、詳細なキャラクターデザイン
+masterpiece, best quality, light novel illustration style, character design sheet, multiple views, front view, side view, back view, full body, cute young Japanese woman, early 20s, large expressive eyes, simple thin frame glasses, silver rim glasses, shoulder-length dark brown hair, gentle anxious expression, wearing black vest over white blouse, navy pleated skirt, soft cute face, white background, soft shading, detailed beautiful eyes
 ```
 
-### バリエーション
-
-**立ち絵（全身）:**
+**バストアップ:**
 ```
-Full body shot, young Japanese woman early 20s, black-rimmed glasses, neat shoulder-length dark hair, wearing simple cardigan over blouse, holding clipboard, earnest expression, standing in dimly lit office, anime character design, clean lineart
-```
-
-**表情差分（泣き顔）:**
-```
-Portrait, young Japanese woman early 20s, black-rimmed glasses, tears streaming down face, emotionally moved expression, eyes glistening, soft lighting, anime style, detailed emotional expression
+masterpiece, best quality, light novel illustration style, portrait, upper body, cute young Japanese woman, 22 years old, big beautiful eyes, simple thin silver frame glasses, shoulder-length dark brown hair, gentle expression, black vest, white blouse, soft cute face, white background, soft shading, detailed beautiful eyes
 ```
 
 ---
@@ -87,84 +90,152 @@ Portrait, young Japanese woman early 20s, black-rimmed glasses, tears streaming 
 ### 基本情報
 - 性別: 女性
 - 年齢: 34歳
+- 身長: 163cm
 - 職業: 不明（元・歌手志望）
 
-### 外見的特徴（小説より抽出）
+---
 
-**初登場時（第1話〜第3話）:**
-- ずぶ濡れの髪が頬に張り付いている
-- 質は良いが手入れされていない服装
-- 化粧気がない
-- 爪は短く切られている
-- 右手薬指に指輪の跡
-- 乾いた涙、疲弊した様子
+### 3-A. 初登場（雨の夜・疲弊）
 
-**再登場時（第4話・3ヶ月後）:**
-- 髪を短くカット（肩の辺りで軽やかに揺れる）
-- 淡いブルーのワンピース、白いカーディガン
-- 明るく晴れやかな表情
-- 迷いのない目
+**性格:** Desperate, Hopeful, Haunted by past
 
-### 画像生成プロンプト
+**外見的特徴:**
+- 長い黒髪（濡れて頬に張り付く）
+- 疲弊した表情、目の下にクマ
+- ダークグレーのコート
+- 化粧気なし、青白い顔
 
-**English（初登場・雨の夜）:**
+**キャラクターシート（全身）:**
 ```
-A Japanese woman age 34, exhausted and desperate expression, wet hair clinging to her cheeks, wearing a quality but unkempt coat dripping with rain, no makeup, short unpainted nails, faint mark on ring finger where a ring used to be, standing at night in the rain outside an old train station, searching hopeful eyes, melancholic atmosphere, anime style illustration, detailed character design
+masterpiece, best quality, light novel illustration style, character design sheet, multiple views, front view, side view, back view, full body, beautiful Japanese woman, age 34, long wet messy black hair clinging to face, exhausted desperate expression, large emotional eyes with dark circles, wearing dark gray coat, pale tired but beautiful face, no makeup, hands clasped nervously in front, white background, soft shading, detailed beautiful eyes, melancholic beauty
 ```
 
-**日本語（初登場・雨の夜）:**
+**バストアップ:**
 ```
-34歳の日本人女性、疲弊して必死な表情、濡れた髪が頬に張り付いている、質は良いが手入れされていない雨に濡れたコート、化粧気がない、短く切られた爪、かつて指輪があった薬指にかすかな跡、夜の雨の中古い駅舎の外に立っている、何かを探す縋るような目、メランコリックな雰囲気、アニメ風イラスト、詳細なキャラクターデザイン
-```
-
-**English（3ヶ月後・再生）:**
-```
-A Japanese woman age 34, short hair at shoulder length moving lightly, bright and peaceful expression, clear eyes with no hesitation, wearing a light blue one-piece dress with white cardigan, confident posture, warm indoor lighting, sense of renewal and acceptance, anime style illustration, detailed character design
-```
-
-**日本語（3ヶ月後・再生）:**
-```
-34歳の日本人女性、肩で軽やかに揺れるショートヘア、明るく穏やかな表情、迷いのない澄んだ目、淡いブルーのワンピースに白いカーディガン、自信のある姿勢、温かい室内照明、再生と受容の雰囲気、アニメ風イラスト、詳細なキャラクターデザイン
-```
-
-### バリエーション
-
-**10年前の姿（怪異として登場）:**
-```
-A Japanese woman age 24, youthful singer appearance, holding a microphone, passionate but pained expression, wearing casual stage clothes, spotlight lighting, fading into black mist at the edges, ghostly ethereal effect, anime style, dramatic atmosphere
+masterpiece, best quality, light novel illustration style, portrait, upper body, beautiful Japanese woman, 34 years old, long wet black hair, exhausted desperate expression, large sad eyes with dark circles, gray coat, pale beautiful face, melancholic beauty, white background, soft shading, detailed beautiful eyes
 ```
 
 ---
 
-## 共通設定・スタイル指定
+### 3-B. 3ヶ月後（再生）
 
-### 推奨スタイルタグ
+**性格:** Peaceful, Hopeful, Renewed
+
+**外見的特徴:**
+- ショートヘア（肩で揺れる長さ）
+- 明るく穏やかな表情
+- 淡いブルーのワンピース＋白カーディガン
+- 健康的な肌色
+
+**キャラクターシート（全身）:**
 ```
-anime style, Japanese animation, light novel illustration, detailed character design, clean lineart, soft cel shading, high quality
+masterpiece, best quality, light novel illustration style, character design sheet, multiple views, front view, side view, back view, full body, beautiful Japanese woman, age 34, short black hair at shoulder length, bright peaceful smile, large clear beautiful eyes, healthy glowing skin, wearing light blue one-piece dress with white cardigan, confident relaxed posture, gentle warm expression, white background, soft shading, detailed beautiful eyes, hopeful radiant beauty
 ```
 
-### 背景設定（遺失物取扱所）
+**バストアップ:**
 ```
-old Japanese train station lost-and-found office, wooden counter, dim desk lamp lighting, shelves with miscellaneous lost items (umbrellas, bags, old guitar, letters), night atmosphere, rainy window, nostalgic and slightly supernatural mood
-```
-
-### ネガティブプロンプト（除外項目）
-```
-low quality, blurry, deformed, bad anatomy, extra limbs, watermark, signature, realistic photo, 3D render, western cartoon style
+masterpiece, best quality, light novel illustration style, portrait, upper body, beautiful Japanese woman, 34 years old, short black hair, bright peaceful smile, healthy glowing skin, light blue dress, white cardigan, radiant hopeful expression, white background, soft shading, detailed beautiful eyes
 ```
 
 ---
 
-## 使用想定API
+### 3-C. 怪異ver（24歳の姿）
 
-| API | 用途 | 備考 |
-|-----|------|------|
-| Midjourney | 高品質イラスト | --niji 6 推奨 |
-| Stable Diffusion | ローカル生成 | NovelAI系モデル推奨 |
-| DALL-E 3 | 簡易生成 | アニメ風は苦手 |
-| Google Imagen | 将来対応 | 現状アクセス限定 |
+**説明:** The abandoned voice, 10 years of loneliness made manifest
+
+**外見的特徴:**
+- 24歳の若い姿
+- 長い黒髪が流れる
+- 苦悩と情熱が混じった表情
+- 光のない空虚な目
+- マイクを持っている
+- 体の端が黒い靄に溶けている
+
+**全身:**
+```
+masterpiece, best quality, light novel illustration style, full body, beautiful young Japanese woman, age 24, long flowing black hair, pained passionate expression, hollow empty beautiful eyes with no light, holding vintage microphone, wearing casual stage clothes, body edges dissolving into black mist and smoke, ghostly ethereal glow, supernatural horror beauty, tragic abandoned spirit, white background fading to black at edges, soft shading, detailed beautiful eyes, dramatic lighting
+```
+
+**バストアップ:**
+```
+masterpiece, best quality, light novel illustration style, portrait, upper body, beautiful young Japanese woman, 24 years old, long flowing black hair, pained expression, hollow beautiful eyes, holding old microphone, body fading into black mist at edges, ghostly ethereal, tragic supernatural beauty, dramatic lighting, white background, soft shading, detailed beautiful eyes
+```
 
 ---
 
-*作成日: 2024年*
+## 4. 澄香の母
+
+### 基本情報
+- 性別: 女性
+- 年齢: 57歳
+- 身長: 158cm
+- 性格: Warm, Caring, Supportive
+
+### 外見的特徴
+- 黒髪に白髪が混じる
+- 温かく優しい笑顔
+- 目元に軽い皺
+- ライトブルーのカーディガン＋ベージュブラウス
+
+### プロンプト
+
+**キャラクターシート（全身）:**
+```
+masterpiece, best quality, light novel illustration style, character design sheet, multiple views, front view, side view, back view, full body, beautiful middle-aged Japanese woman, late 50s, elegant aging, black hair with some gray streaks, warm gentle smile, kind beautiful eyes with slight wrinkles, wearing light blue cardigan over beige blouse, brown pants, graceful mature beauty, motherly warmth, white background, soft shading, detailed beautiful eyes
+```
+
+**バストアップ:**
+```
+masterpiece, best quality, light novel illustration style, portrait, upper body, beautiful middle-aged Japanese woman, 57 years old, elegant aging, black hair with gray streaks, warm gentle smile, kind eyes, light blue cardigan, beige blouse, graceful mature beauty, motherly warmth, white background, soft shading, detailed beautiful eyes
+```
+
+---
+
+## 5. 澄香の父
+
+### 基本情報
+- 性別: 男性
+- 年齢: 32歳（死亡時）
+- 性格: Dreamer, Gentle, Passionate about music
+
+### 外見的特徴
+- 優しい夢追い人の表情
+- ボサボサの黒髪（澄香と似ている）
+- 温かい目
+- チェックシャツ＋ジーンズ
+- アコースティックギターを持っている
+
+### プロンプト
+
+**キャラクターシート（全身）:**
+```
+masterpiece, best quality, light novel illustration style, character design sheet, multiple views, front view, side view, back view, full body, handsome young Japanese man, early 30s, gentle dreamer expression, kind beautiful eyes, slightly messy black hair, warm soft smile, wearing casual plaid shirt over t-shirt, jeans, holding acoustic guitar, aspiring musician appearance, white background, soft shading, detailed beautiful eyes
+```
+
+**バストアップ:**
+```
+masterpiece, best quality, light novel illustration style, portrait, upper body, handsome young Japanese man, early 30s, gentle dreamer expression, kind eyes, messy black hair, warm smile, plaid shirt, holding acoustic guitar, aspiring musician look, white background, soft shading, detailed beautiful eyes
+```
+
+---
+
+## 小道具
+
+### 錆びた鍵（レンの道具）
+```
+masterpiece, best quality, detailed prop illustration, old rusty key, antique brass key with rust and patina, engraved text, worn and aged appearance, simple white background, clean lineart, item reference sheet, multiple angles
+```
+
+### 銀色のギターピック（父の形見）
+```
+masterpiece, best quality, detailed prop illustration, silver guitar pick, shiny metallic surface, small triangular shape, slightly worn edges, precious keepsake appearance, simple white background, clean lineart, item reference sheet, multiple angles
+```
+
+### 錆びたマイク（怪異の核）
+```
+masterpiece, best quality, detailed prop illustration, old vintage microphone on stand, rusted metal surface, retro 1950s style mic, silver guitar pick taped to stand with small piece of tape, abandoned eerie atmosphere, simple white background, clean lineart, item reference sheet, multiple angles
+```
+
+---
+
 *対象作品: 深夜零時の遺失物係（ロスト・アンド・ファウンド）*
